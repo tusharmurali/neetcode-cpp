@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/find-median-from-data-stream/>  
 - **NeetCode:** <https://neetcode.io/problems/find-median-in-a-data-stream>  
 - **Video:** <https://www.youtube.com/watch?v=itmhHWaHupI>  
+- **Video approach:** 2. Heap  
 
 [← Back to index](../INDEX.md)
 
@@ -52,7 +53,7 @@ public:
 
 > Where $m$ is the number of function calls and $n$ is the length of the array.
 
-## 2. Heap
+## 2. Heap ▶ video
 
 To efficiently find the median while numbers keep coming, we split the
 stream into two halves:

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/design-circular-queue/>  
 - **NeetCode:** <https://neetcode.io/problems/design-circular-queue>  
 - **Video:** <https://www.youtube.com/watch?v=aBbsfn863oA>  
+- **Video approach:** 4. Singly Linked List  
 
 [← Back to index](../INDEX.md)
 
@@ -209,7 +210,7 @@ public:
 
 > Where $n$ is the size of the queue.
 
-## 4. Singly Linked List
+## 4. Singly Linked List ▶ video
 
 A singly linked list can also work, using less memory per node than a doubly linked list. We maintain a dummy head node and a pointer to the actual tail. New elements are added at the tail, and elements are removed from the front (after the dummy head). The only complication is updating the tail pointer when the queue becomes empty.
 

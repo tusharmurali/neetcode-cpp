@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/gas-station/>  
 - **NeetCode:** <https://neetcode.io/problems/gas-station>  
 - **Video:** <https://www.youtube.com/watch?v=lJwbPZGo05A>  
+- **Video approach:** 2. Two Pointers  
 
 [← Back to index](../INDEX.md)
 
@@ -57,7 +58,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(1)$
 
-## 2. Two Pointers
+## 2. Two Pointers ▶ video
 
 We need to find a gas station index from which we can complete the full circular route without the gas tank ever becoming negative.
 

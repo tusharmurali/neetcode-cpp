@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/same-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/same-binary-tree>  
 - **Video:** <https://www.youtube.com/watch?v=vRbbcKXCxOw>  
+- **Video approach:** 1. Depth First Search  
 
 [← Back to index](../INDEX.md)
 
-## 1. Depth First Search
+## 1. Depth First Search ▶ video
 
 Two binary trees are the same if:
 

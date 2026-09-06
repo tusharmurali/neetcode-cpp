@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/last-stone-weight/>  
 - **NeetCode:** <https://neetcode.io/problems/last-stone-weight>  
 - **Video:** <https://www.youtube.com/watch?v=B-QCq79-Vfw>  
+- **Video approach:** 3. Heap  
 
 [← Back to index](../INDEX.md)
 
@@ -99,7 +100,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(1)$ or $O(n)$ depending on the sorting algorithm.
 
-## 3. Heap
+## 3. Heap ▶ video
 
 We always need to repeatedly remove the **two heaviest stones**.  
 A **max-heap** is perfect for this because it lets us efficiently extract the largest values.

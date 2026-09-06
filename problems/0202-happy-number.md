@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/happy-number/>  
 - **NeetCode:** <https://neetcode.io/problems/non-cyclical-number>  
 - **Video:** <https://www.youtube.com/watch?v=ljz85bxOYJ0>  
+- **Video approach:** 2. Fast And Slow Pointers - I  
 
 [← Back to index](../INDEX.md)
 
@@ -61,7 +62,7 @@ private:
 - Time complexity: $O(\log n)$
 - Space complexity: $O(\log n)$
 
-## 2. Fast And Slow Pointers - I
+## 2. Fast And Slow Pointers - I ▶ video
 
 A number is **happy** if repeatedly replacing it with the **sum of the squares of its digits** eventually reaches `1`.
 

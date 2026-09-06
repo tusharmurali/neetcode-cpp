@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/clone-graph/>  
 - **NeetCode:** <https://neetcode.io/problems/clone-graph>  
 - **Video:** <https://www.youtube.com/watch?v=mQeF6bN8hMk>  
+- **Video approach:** 1. Depth First Seacrh  
 
 [← Back to index](../INDEX.md)
 
-## 1. Depth First Seacrh
+## 1. Depth First Seacrh ▶ video
 
 The graph may contain **cycles**, so we cannot simply copy nodes recursively without remembering what we've already copied.  
 To handle this, we use a **map (old → new)**:

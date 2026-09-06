@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/multiply-strings/>  
 - **NeetCode:** <https://neetcode.io/problems/multiply-strings>  
 - **Video:** <https://www.youtube.com/watch?v=1vZswirL8Y8>  
+- **Video approach:** 2. Multiplication  
 
 [← Back to index](../INDEX.md)
 
@@ -78,7 +79,7 @@ public:
 
 > Where $m$ is the length of the string $num1$ and $n$ is the length of the string $num2$.
 
-## 2. Multiplication
+## 2. Multiplication ▶ video
 
 Instead of generating partial products and adding them as separate strings, we can use a single result array to accumulate all digit multiplications in place. When we multiply digit `i` of `num1` by digit `j` of `num2`, the result contributes to position `i + j` in the final answer. By reversing both strings first, we can work with indices that naturally align with place values. After processing all digit pairs, we handle carries and convert the result array back to a string.
 

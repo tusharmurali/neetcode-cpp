@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/subarray-sum-equals-k/>  
 - **NeetCode:** <https://neetcode.io/problems/subarray-sum-equals-k>  
 - **Video:** <https://www.youtube.com/watch?v=fFVZt-6sgyo>  
+- **Video approach:** 2. Hash Map  
 
 [← Back to index](../INDEX.md)
 
@@ -35,7 +36,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(1)$
 
-## 2. Hash Map
+## 2. Hash Map ▶ video
 
 The key insight is that if `prefixSum[j] - prefixSum[i] = k`, then the subarray from index `i+1` to `j` has sum `k`. This transforms the problem: for each position, we want to count how many earlier positions have a prefix sum equal to `currentPrefixSum - k`. A hash map lets us track prefix sum frequencies as we iterate, giving O(1) lookups.
 

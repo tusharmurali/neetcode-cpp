@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/minimum-window-substring/>  
 - **NeetCode:** <https://neetcode.io/problems/minimum-window-with-characters>  
 - **Video:** <https://www.youtube.com/watch?v=jSto0O4AJbM>  
+- **Video approach:** 2. Sliding Window  
 
 [← Back to index](../INDEX.md)
 
@@ -63,7 +64,7 @@ public:
 
 > Where $n$ is the length of the string $s$, $m$ is the length of the string $t$, $u$ is the number of unique characters in $t$, and $k$ is the total number of unique characters in $s$ and $t$.
 
-## 2. Sliding Window
+## 2. Sliding Window ▶ video
 
 We want the **smallest window in `s`** that contains all characters of `t` (with the right counts).
 Instead of checking all substrings, we use a **sliding window**:

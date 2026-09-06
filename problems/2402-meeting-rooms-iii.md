@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/meeting-rooms-iii/>  
 - **NeetCode:** <https://neetcode.io/problems/meeting-rooms-iii>  
 - **Video:** <https://www.youtube.com/watch?v=2VLwjvODQbA>  
+- **Video approach:** 2. Two Min-Heaps  
 
 [← Back to index](../INDEX.md)
 
@@ -61,7 +62,7 @@ public:
 
 > Where $n$ is the number of rooms and $m$ is the number of meetings.
 
-## 2. Two Min-Heaps
+## 2. Two Min-Heaps ▶ video
 
 Scanning all rooms for each meeting is slow. Instead, we use two min-heaps: one for available rooms (ordered by room number) and one for rooms in use (ordered by end time, then room number). When a meeting starts, we first move all rooms whose meetings have ended back to the available heap. If available is empty, we pop the earliest-ending room, delay the meeting, and push that room back to available. Then we pop the smallest available room, assign the meeting, and push it to the used heap.
 

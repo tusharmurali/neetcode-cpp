@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/design-hashmap/>  
 - **NeetCode:** <https://neetcode.io/problems/design-hashmap>  
 - **Video:** <https://www.youtube.com/watch?v=cNWsgbKwwoU>  
+- **Video approach:** 2. Linked List  
 
 [← Back to index](../INDEX.md)
 
@@ -40,7 +41,7 @@ public:
 - Time complexity: $O(1)$ for each function call.
 - Space complexity: $O(1000000)$ since the key is in the range $[0, 1000000]$.
 
-## 2. Linked List
+## 2. Linked List ▶ video
 
 To reduce memory usage, we use a hash table with separate chaining. We create an array of buckets (smaller than the key range) and use a hash function (key modulo bucket count) to determine which bucket a key belongs to. Each bucket is a linked list that stores key-value pairs. This handles collisions by chaining multiple entries in the same bucket.
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/balanced-binary-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/balanced-binary-tree>  
 - **Video:** <https://www.youtube.com/watch?v=QfJsau0ItOY>  
+- **Video approach:** 2. Depth First Search  
 
 [← Back to index](../INDEX.md)
 
@@ -59,7 +60,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(n)$
 
-## 2. Depth First Search
+## 2. Depth First Search ▶ video
 
 The brute-force solution wastes time by repeatedly recomputing subtree heights.  
 We fix this by doing **one DFS that returns two things at once** for every node:

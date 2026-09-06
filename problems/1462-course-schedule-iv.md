@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/course-schedule-iv/>  
 - **NeetCode:** <https://neetcode.io/problems/course-schedule-iv>  
 - **Video:** <https://www.youtube.com/watch?v=cEW05ofxhn0>  
+- **Video approach:** 2. Depth First Search (Hash Set)  
 
 [← Back to index](../INDEX.md)
 
@@ -49,7 +50,7 @@ private:
 
 > Where $m$ is the number of queries, $V$ is the number of courses, and $E$ is the number of prerequisites.
 
-## 2. Depth First Search (Hash Set)
+## 2. Depth First Search (Hash Set) ▶ video
 
 Instead of running DFS for every query, we can precompute all prerequisites for each course. For each course, we use DFS to find all courses that are prerequisites (directly or indirectly) and store them in a set. Then answering any query becomes a simple set lookup.
 

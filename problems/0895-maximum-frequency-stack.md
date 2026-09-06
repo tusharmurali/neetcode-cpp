@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/maximum-frequency-stack/>  
 - **NeetCode:** <https://neetcode.io/problems/maximum-frequency-stack>  
 - **Video:** <https://www.youtube.com/watch?v=Z6idIicFDOE>  
+- **Video approach:** 3. Stack Of Stacks (Hash Map)  
 
 [← Back to index](../INDEX.md)
 
@@ -91,7 +92,7 @@ public:
 
 > Where $n$ is the number of elements in the stack.
 
-## 3. Stack Of Stacks (Hash Map)
+## 3. Stack Of Stacks (Hash Map) ▶ video
 
 The key insight is that we can group elements by their frequency level. When an element is pushed for the first time, it goes into stack `1`. When pushed again, it also goes into stack `2` (while remaining in stack `1`). This way, the stack at the highest frequency level always contains the elements we should consider popping first, and the top of that stack is the most recently pushed among them.
 

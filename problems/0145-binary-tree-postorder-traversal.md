@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/binary-tree-postorder-traversal/>  
 - **NeetCode:** <https://neetcode.io/problems/binary-tree-postorder-traversal>  
 - **Video:** <https://www.youtube.com/watch?v=QhszUQhGGlA>  
+- **Video approach:** 2. Iterative Depth First Search - I  
 
 [← Back to index](../INDEX.md)
 
@@ -53,7 +54,7 @@ private:
     - $O(n)$ space for the recursion stack.
     - $O(n)$ space for the output array.
 
-## 2. Iterative Depth First Search - I
+## 2. Iterative Depth First Search - I ▶ video
 
 We use a stack with a `visited` flag to track whether we've already processed a node's children. When we first encounter a node, we push it back with a `visited` flag set to `true`, then push its children. On the second visit (when the flag is `true`), we know both children have been processed, so we add the node's value to the result.
 

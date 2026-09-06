@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/roman-to-integer/>  
 - **NeetCode:** <https://neetcode.io/problems/roman-to-integer>  
 - **Video:** <https://www.youtube.com/watch?v=3jdxYj3DD98>  
+- **Video approach:** 1. Hash Map  
 
 [← Back to index](../INDEX.md)
 
-## 1. Hash Map
+## 1. Hash Map ▶ video
 
 Roman numerals normally add values from left to right. The key insight is handling subtractive notation, where a smaller value before a larger one means subtraction (like IV = 4, not 6). As we scan left to right, if the current symbol is smaller than the next one, we subtract its value; otherwise, we add it. This single rule handles both regular addition and subtractive cases elegantly.
 

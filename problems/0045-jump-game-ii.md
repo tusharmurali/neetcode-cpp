@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/jump-game-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/jump-game-ii>  
 - **Video:** <https://www.youtube.com/watch?v=dJ7sWiOoK7g>  
+- **Video approach:** 4. Breadth First Search (Greedy)  
 
 [← Back to index](../INDEX.md)
 
@@ -145,7 +146,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(n)$
 
-## 4. Breadth First Search (Greedy)
+## 4. Breadth First Search (Greedy) ▶ video
 
 This problem asks for the **minimum number of jumps** needed to reach the last index.
 

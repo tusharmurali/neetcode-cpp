@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/permutation-in-string/>  
 - **NeetCode:** <https://neetcode.io/problems/permutation-string>  
 - **Video:** <https://www.youtube.com/watch?v=UbyhOgBN834>  
+- **Video approach:** 3. Sliding Window  
 
 [← Back to index](../INDEX.md)
 
@@ -92,7 +93,7 @@ public:
 
 > Where $n$ is the length of the string1 and $m$ is the length of string2.
 
-## 3. Sliding Window
+## 3. Sliding Window ▶ video
 
 Since a permutation of `s1` must have the **same character counts**, we can use a fixed-size sliding window over `s2` whose length is exactly `len(s1)`.
 We maintain two frequency arrays:

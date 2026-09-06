@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/meeting-rooms/>  
 - **NeetCode:** <https://neetcode.io/problems/meeting-schedule>  
 - **Video:** <https://www.youtube.com/watch?v=PaJxqZVPhbg>  
+- **Video approach:** 2. Sorting  
 
 [← Back to index](../INDEX.md)
 
@@ -61,7 +62,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(1)$
 
-## 2. Sorting
+## 2. Sorting ▶ video
 
 We want to determine whether a person can attend **all meetings without any overlaps**.
 

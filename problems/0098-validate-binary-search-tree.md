@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/validate-binary-search-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/valid-binary-search-tree>  
 - **Video:** <https://www.youtube.com/watch?v=s6ATEkipzow>  
+- **Video approach:** 2. Depth First Search  
 
 [← Back to index](../INDEX.md)
 
@@ -78,7 +79,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(n)$
 
-## 2. Depth First Search
+## 2. Depth First Search ▶ video
 
 A Binary Search Tree isn’t just about each node being smaller or larger than its parent —  
 **every node must fit within a valid value range decided by all its ancestors**.

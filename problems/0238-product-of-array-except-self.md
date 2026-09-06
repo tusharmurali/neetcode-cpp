@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/product-of-array-except-self/>  
 - **NeetCode:** <https://neetcode.io/problems/products-of-array-discluding-self>  
 - **Video:** <https://www.youtube.com/watch?v=bNvIQI2wAjk>  
+- **Video approach:** 4. Prefix & Suffix (Optimal)  
 
 [← Back to index](../INDEX.md)
 
@@ -142,7 +143,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 4. Prefix & Suffix (Optimal)
+## 4. Prefix & Suffix (Optimal) ▶ video
 
 We can compute the product of all elements except the current one **without using extra prefix and suffix arrays**.
 Instead, we reuse the result array and build the answer in two simple passes:

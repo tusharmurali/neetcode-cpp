@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/>  
 - **NeetCode:** <https://neetcode.io/problems/maximum-twin-sum-of-a-linked-list>  
 - **Video:** <https://www.youtube.com/watch?v=doj95MelfSA>  
+- **Video approach:** 3. Reverse the First Half (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -102,7 +103,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(1)$ extra space.
 
-## 3. Reverse the First Half
+## 3. Reverse the First Half ▶ video
 
 Instead of reversing the second half after finding the middle, we can reverse the first half as we go. While traversing with `slow` and `fast` pointers, we reverse the links behind `slow`. By the time `slow` reaches the middle, the first half is already reversed. Now `slow` points to the start of the second half, and `prev` points to the end of the reversed first half. We can traverse both halves in parallel to find the maximum twin sum.
 

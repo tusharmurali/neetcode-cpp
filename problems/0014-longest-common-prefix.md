@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/longest-common-prefix/>  
 - **NeetCode:** <https://neetcode.io/problems/longest-common-prefix>  
 - **Video:** <https://www.youtube.com/watch?v=0sWShKIJoo4>  
+- **Video approach:** 2. Vertical Scanning  
 
 [← Back to index](../INDEX.md)
 
@@ -40,7 +41,7 @@ public:
 
 > Where $n$ is the length of the shortest string and $m$ is the number of strings.
 
-## 2. Vertical Scanning
+## 2. Vertical Scanning ▶ video
 
 Instead of comparing entire strings horizontally, we can compare characters column by column across all strings. Check if all strings have the same character at position `0`, then position `1`, and so on. The moment we find a mismatch or reach the end of any string, we've found where the common prefix ends.
 

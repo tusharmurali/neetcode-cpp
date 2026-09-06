@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/binary-tree-level-order-traversal/>  
 - **NeetCode:** <https://neetcode.io/problems/level-order-traversal-of-binary-tree>  
 - **Video:** <https://www.youtube.com/watch?v=6ZnyEApgFYg>  
+- **Video approach:** 2. Breadth First Search  
 
 [← Back to index](../INDEX.md)
 
@@ -60,7 +61,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 2. Breadth First Search
+## 2. Breadth First Search ▶ video
 
 Level order traversal visits a tree **level by level**, from left to right.  
 BFS naturally fits this because it processes nodes in the order they appear using a **queue**.

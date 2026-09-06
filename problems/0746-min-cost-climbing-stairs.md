@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/min-cost-climbing-stairs/>  
 - **NeetCode:** <https://neetcode.io/problems/min-cost-climbing-stairs>  
 - **Video:** <https://www.youtube.com/watch?v=ktmzAZWkEZ0>  
+- **Video approach:** 4. Dynamic Programming (Space Optimized)  
 
 [← Back to index](../INDEX.md)
 
@@ -111,7 +112,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 4. Dynamic Programming (Space Optimized)
+## 4. Dynamic Programming (Space Optimized) ▶ video
 
 At each step, you only need the **minimum cost of the next one or two steps**.
 So instead of using a full DP array, we can **reuse the input array** and update it in place.

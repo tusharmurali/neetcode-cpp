@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/reverse-bits/>  
 - **NeetCode:** <https://neetcode.io/problems/reverse-bits>  
 - **Video:** <https://www.youtube.com/watch?v=UcoN6UjAI64>  
+- **Video approach:** 2. Bit Manipulation  
 
 [← Back to index](../INDEX.md)
 
@@ -56,7 +57,7 @@ public:
 - Time complexity: $O(1)$
 - Space complexity: $O(1)$
 
-## 2. Bit Manipulation
+## 2. Bit Manipulation ▶ video
 
 We are given a **32-bit unsigned integer** and need to **reverse all its bits**.
 

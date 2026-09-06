@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/design-hashset/>  
 - **NeetCode:** <https://neetcode.io/problems/design-hashset>  
 - **Video:** <https://www.youtube.com/watch?v=VymjPQUXjL8>  
+- **Video approach:** 1. Brute Force  
 
 [← Back to index](../INDEX.md)
 
-## 1. Brute Force
+## 1. Brute Force ▶ video
 
 The simplest implementation uses a dynamic array to store all keys. For each operation, we search through the array linearly. This works correctly but is inefficient since every operation requires scanning potentially all stored elements.
 

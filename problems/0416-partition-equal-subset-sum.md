@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/partition-equal-subset-sum/>  
 - **NeetCode:** <https://neetcode.io/problems/partition-equal-subset-sum>  
 - **Video:** <https://www.youtube.com/watch?v=IsvocB5BJhw>  
+- **Video approach:** 5. Dynamic Programming (Hash Set)  
 
 [← Back to index](../INDEX.md)
 
@@ -249,7 +250,7 @@ private:
 
 > Where $n$ is the length of the array $nums$ and $target$ is the sum of array elements divided by 2.
 
-## 5. Dynamic Programming (Hash Set)
+## 5. Dynamic Programming (Hash Set) ▶ video
 
 This approach also solves **Partition Equal Subset Sum**, but instead of arrays, it uses a **Hash Set** to track all achievable sums.
 

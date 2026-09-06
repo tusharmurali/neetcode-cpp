@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/reorganize-string/>  
 - **NeetCode:** <https://neetcode.io/problems/reorganize-string>  
 - **Video:** <https://www.youtube.com/watch?v=2g_b1aYTHeg>  
+- **Video approach:** 2. Frequency Count (Max-Heap)  
 
 [← Back to index](../INDEX.md)
 
@@ -70,7 +71,7 @@ private:
     - $O(1)$ extra space, since we have at most $26$ different characters.
     - $O(n)$ space for the output string.
 
-## 2. Frequency Count (Max-Heap)
+## 2. Frequency Count (Max-Heap) ▶ video
 
 A `maxHeap` efficiently gives us the most frequent character at any time. We pop the top character, add it to `res`, then push it back with decremented count after processing the next character. This delay ensures we never place the same character twice in a row. If the heap is empty but we still have a `prev` pending character, reorganization failed.
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/pacific-atlantic-water-flow/>  
 - **NeetCode:** <https://neetcode.io/problems/pacific-atlantic-water-flow>  
 - **Video:** <https://www.youtube.com/watch?v=s-VkcjHqkGI>  
+- **Video approach:** 2. Depth First Search  
 
 [← Back to index](../INDEX.md)
 
@@ -84,7 +85,7 @@ public:
 
 > Where $m$ is the number of rows and $n$ is the number of columns.
 
-## 2. Depth First Search
+## 2. Depth First Search ▶ video
 
 Instead of starting DFS from every cell (slow), we reverse the thinking:
 

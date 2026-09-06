@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/merge-sorted-array/>  
 - **NeetCode:** <https://neetcode.io/problems/merge-sorted-array>  
 - **Video:** <https://www.youtube.com/watch?v=P1Ic85RarKY>  
+- **Video approach:** 3. Three Pointers Without Extra Space - I  
 
 [← Back to index](../INDEX.md)
 
@@ -61,7 +62,7 @@ public:
 
 > Where $m$ and $n$ represent the number of elements in the arrays $nums1$ and $nums2$, respectively.
 
-## 3. Three Pointers Without Extra Space - I
+## 3. Three Pointers Without Extra Space - I ▶ video
 
 The key insight is that `nums1` has empty space at the end. If we fill from the back instead of the front, we never overwrite elements we still need. By comparing the largest remaining elements from both arrays and placing the larger one at the current end position, we can merge in place without extra space.
 

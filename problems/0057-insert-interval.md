@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/insert-interval/>  
 - **NeetCode:** <https://neetcode.io/problems/insert-new-interval>  
 - **Video:** <https://www.youtube.com/watch?v=A8NUOmlwOlM>  
+- **Video approach:** 3. Greedy  
 
 [← Back to index](../INDEX.md)
 
@@ -121,7 +122,7 @@ public:
     - $O(1)$ extra space.
     - $O(n)$ space for the output list.
 
-## 3. Greedy
+## 3. Greedy ▶ video
 
 We are inserting `newInterval` into a list of **sorted, non-overlapping intervals** and want the final result to remain sorted and non-overlapping.
 

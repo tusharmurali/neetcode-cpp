@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/lowest-common-ancestor-in-binary-search-tree>  
 - **Video:** <https://www.youtube.com/watch?v=gs2LMfuOR9k>  
+- **Video approach:** 2. Iteration  
 
 [← Back to index](../INDEX.md)
 
@@ -60,7 +61,7 @@ public:
 
 > Where $h$ is the height of the tree.
 
-## 2. Iteration
+## 2. Iteration ▶ video
 
 This is the iterative version of finding the **Lowest Common Ancestor (LCA)** in a **Binary Search Tree (BST)**.
 Because a BST is ordered:

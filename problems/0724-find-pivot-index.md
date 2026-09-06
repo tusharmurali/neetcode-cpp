@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/find-pivot-index/>  
 - **NeetCode:** <https://neetcode.io/problems/find-pivot-index>  
 - **Video:** <https://www.youtube.com/watch?v=u89i60lYx8U>  
+- **Video approach:** 3. Prefix Sum (Optimal) (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -71,7 +72,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 3. Prefix Sum (Optimal)
+## 3. Prefix Sum (Optimal) ▶ video
 
 We can eliminate the need for a separate prefix sum array by maintaining a running left sum and computing the right sum on the fly. First, calculate the total sum of the array. As we iterate, the right sum at any index equals `total - leftSum - nums[i]`. We update `leftSum` after each comparison, keeping space usage constant.
 

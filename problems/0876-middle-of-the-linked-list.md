@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/middle-of-the-linked-list/>  
 - **NeetCode:** <https://neetcode.io/problems/middle-of-the-linked-list>  
 - **Video:** <https://www.youtube.com/watch?v=A2_ldqM4QcY>  
+- **Video approach:** 3. Fast & Slow Pointers (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -84,7 +85,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(1)$ extra space.
 
-## 3. Fast & Slow Pointers
+## 3. Fast & Slow Pointers ▶ video
 
 The fast and slow pointer technique finds the middle in a single pass. The `slow` pointer moves one step at a time, while the `fast` pointer moves two steps. When the `fast` pointer reaches the end, the `slow` pointer will be at the middle. This works because the `fast` pointer covers twice the distance in the same number of iterations.
 

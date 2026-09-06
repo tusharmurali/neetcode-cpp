@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/majority-element/>  
 - **NeetCode:** <https://neetcode.io/problems/majority-element>  
 - **Video:** <https://www.youtube.com/watch?v=7pnhv842keE>  
+- **Video approach:** 5. Boyer-Moore Voting Algorithm  
 
 [← Back to index](../INDEX.md)
 
@@ -120,7 +121,7 @@ public:
 
 > $32$ represents the number of bits as the given numbers are integers.
 
-## 5. Boyer-Moore Voting Algorithm
+## 5. Boyer-Moore Voting Algorithm ▶ video
 
 The Boyer-Moore algorithm works by maintaining a candidate and a count. When we see the candidate, we increment the count; otherwise, we decrement it. When the count reaches `0`, we pick a new candidate. Since the majority element appears more than half the time, it will survive this elimination process and remain as the final candidate.
 

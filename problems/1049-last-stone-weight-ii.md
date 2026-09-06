@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/last-stone-weight-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/last-stone-weight-ii>  
 - **Video:** <https://www.youtube.com/watch?v=gdXkkmzvR3c>  
+- **Video approach:** 2. Dynamic Programming (Top-Down)  
 
 [← Back to index](../INDEX.md)
 
@@ -42,7 +43,7 @@ private:
 
 > Where $n$ is the number of stones and $m$ is the sum of the weights of the stones.
 
-## 2. Dynamic Programming (Top-Down)
+## 2. Dynamic Programming (Top-Down) ▶ video
 
 The recursive solution recomputes the same subproblems many times. For example, reaching a total of `10` using stones at different indices might happen through multiple paths. By caching results based on the current index and running total, we avoid redundant work and speed up the solution significantly.
 

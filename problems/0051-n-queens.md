@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/n-queens/>  
 - **NeetCode:** <https://neetcode.io/problems/n-queens>  
 - **Video:** <https://www.youtube.com/watch?v=Ph95IHmRp5M>  
+- **Video approach:** 2. Backtracking (Hash Set)  
 
 [← Back to index](../INDEX.md)
 
@@ -66,7 +67,7 @@ public:
 - Time complexity: $O(n!)$
 - Space complexity: $O(n ^ 2)$
 
-## 2. Backtracking (Hash Set)
+## 2. Backtracking (Hash Set) ▶ video
 
 Instead of checking the board every time to see if a queen is safe, we **remember the attacked positions** using hash sets.
 

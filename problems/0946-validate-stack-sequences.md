@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/validate-stack-sequences/>  
 - **NeetCode:** <https://neetcode.io/problems/validate-stack-sequences>  
 - **Video:** <https://www.youtube.com/watch?v=mzua0r94kb8>  
+- **Video approach:** 1. Stack (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Stack
+## 1. Stack ▶ video
 
 We can simulate the actual push and pop operations on a stack to verify if the sequences are valid. The key insight is that whenever we push an element, we should immediately try to pop as many elements as possible that match the expected pop sequence. If the simulation completes with an empty stack, the sequences are valid.
 

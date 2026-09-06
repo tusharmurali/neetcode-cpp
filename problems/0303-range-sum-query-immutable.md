@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/range-sum-query-immutable/>  
 - **NeetCode:** <https://neetcode.io/problems/range-sum-query-immutable>  
 - **Video:** <https://www.youtube.com/watch?v=2pndAmo_sMA>  
+- **Video approach:** 2. Prefix Sum - I (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -36,7 +37,7 @@ public:
 - Time complexity: $O(n)$ for each $sumRange()$ query.
 - Space complexity: $O(1)$ since we only make a reference to the input array.
 
-## 2. Prefix Sum - I
+## 2. Prefix Sum - I ▶ video
 
 We can precompute a prefix sum array where `prefix[i]` stores the sum of all elements from index `0` to `i`. To find the sum of any range `[left, right]`, we take `prefix[right]` and subtract `prefix[left - 1]` (if `left > 0`). This gives us constant-time queries after a linear-time preprocessing step.
 

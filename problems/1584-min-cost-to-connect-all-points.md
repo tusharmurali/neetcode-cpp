@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/min-cost-to-connect-all-points/>  
 - **NeetCode:** <https://neetcode.io/problems/min-cost-to-connect-points>  
 - **Video:** <https://www.youtube.com/watch?v=f7JOBJIC-NA>  
+- **Video approach:** 2. Prim's Algorithm  
 
 [← Back to index](../INDEX.md)
 
@@ -82,7 +83,7 @@ public:
 - Time complexity: $O(n ^ 2 \log n)$
 - Space complexity: $O(n ^ 2)$
 
-## 2. Prim's Algorithm
+## 2. Prim's Algorithm ▶ video
 
 We still want a **Minimum Spanning Tree (MST)**: connect all points with minimum total Manhattan distance.
 

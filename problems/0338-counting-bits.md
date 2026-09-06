@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/counting-bits/>  
 - **NeetCode:** <https://neetcode.io/problems/counting-bits>  
 - **Video:** <https://www.youtube.com/watch?v=RyBM56RIWrM>  
+- **Video approach:** 4. Bit Manipulation (DP)  
 
 [← Back to index](../INDEX.md)
 
@@ -111,7 +112,7 @@ public:
     - $O(1)$ extra space.
     - $O(n)$ space for the output array.
 
-## 4. Bit Manipulation (DP)
+## 4. Bit Manipulation (DP) ▶ video
 
 We want to compute the number of set bits (`1`s) for **all numbers from `0` to `n`** efficiently.
 

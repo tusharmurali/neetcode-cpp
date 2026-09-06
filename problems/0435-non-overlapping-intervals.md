@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/non-overlapping-intervals/>  
 - **NeetCode:** <https://neetcode.io/problems/non-overlapping-intervals>  
 - **Video:** <https://www.youtube.com/watch?v=nONCGxWoUfM>  
+- **Video approach:** 5. Greedy (Sort By Start)  
 
 [← Back to index](../INDEX.md)
 
@@ -219,7 +220,7 @@ public:
 - Time complexity: $O(n \log n)$
 - Space complexity: $O(n)$
 
-## 5. Greedy (Sort By Start)
+## 5. Greedy (Sort By Start) ▶ video
 
 We want to remove the **minimum number of intervals** so that the remaining intervals **do not overlap**.
 

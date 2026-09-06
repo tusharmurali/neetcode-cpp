@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/kth-largest-element-in-an-array/>  
 - **NeetCode:** <https://neetcode.io/problems/kth-largest-element-in-an-array>  
 - **Video:** <https://www.youtube.com/watch?v=XEmy13g1Qxc>  
+- **Video approach:** 2. Min-Heap  
 
 [← Back to index](../INDEX.md)
 
@@ -38,7 +39,7 @@ public:
 - Time complexity: $O(n \log n)$
 - Space complexity: $O(1)$ or $O(n)$ depending on the sorting algorithm.
 
-## 2. Min-Heap
+## 2. Min-Heap ▶ video
 
 Instead of sorting the whole array, we only need to keep track of the **k largest elements** seen so far.
 

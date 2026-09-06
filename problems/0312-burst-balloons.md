@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/burst-balloons/>  
 - **NeetCode:** <https://neetcode.io/problems/burst-balloons>  
 - **Video:** <https://www.youtube.com/watch?v=VFskby7lUbw>  
+- **Video approach:** 3. Dynamic Programming (Bottom-Up)  
 
 [← Back to index](../INDEX.md)
 
@@ -110,7 +111,7 @@ public:
 - Time complexity: $O(n ^ 3)$
 - Space complexity: $O(n ^ 2)$
 
-## 3. Dynamic Programming (Bottom-Up)
+## 3. Dynamic Programming (Bottom-Up) ▶ video
 
 We want the maximum coins we can get by bursting balloons in the best order.
 The key trick is to think in reverse:

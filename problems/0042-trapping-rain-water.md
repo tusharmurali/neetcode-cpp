@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/trapping-rain-water/>  
 - **NeetCode:** <https://neetcode.io/problems/trapping-rain-water>  
 - **Video:** <https://www.youtube.com/watch?v=ZI2z5pq0TqA>  
+- **Video approach:** 4. Two Pointers  
 
 [← Back to index](../INDEX.md)
 
@@ -145,7 +146,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 4. Two Pointers
+## 4. Two Pointers ▶ video
 
 Water at any position depends on the **shorter** wall between the left and right sides.
 So if the left wall is shorter, the right wall can't help us—water is limited by the left side.

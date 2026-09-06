@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/jump-game/>  
 - **NeetCode:** <https://neetcode.io/problems/jump-game>  
 - **Video:** <https://www.youtube.com/watch?v=Yan0cv2cLy8>  
+- **Video approach:** 4. Greedy  
 
 [← Back to index](../INDEX.md)
 
@@ -143,7 +144,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(n)$
 
-## 4. Greedy
+## 4. Greedy ▶ video
 
 We want to check if we can reach the **last index** starting from index `0`.
 

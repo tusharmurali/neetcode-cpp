@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/best-time-to-buy-and-sell-stock/>  
 - **NeetCode:** <https://neetcode.io/problems/buy-and-sell-crypto>  
 - **Video:** <https://www.youtube.com/watch?v=1pkOgXD63yU>  
+- **Video approach:** 3. Dynamic Programming  
 
 [← Back to index](../INDEX.md)
 
@@ -76,7 +77,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(1)$
 
-## 3. Dynamic Programming
+## 3. Dynamic Programming ▶ video
 
 As we scan through the prices, we keep track of two things:
 

@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/insert-into-a-binary-search-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/insert-into-a-binary-search-tree>  
 - **Video:** <https://www.youtube.com/watch?v=Cpg8f79luEA>  
+- **Video approach:** 1. Recursion  
 
 [← Back to index](../INDEX.md)
 
-## 1. Recursion
+## 1. Recursion ▶ video
 
 In a BST, every node's left subtree contains only values smaller than the node, and the right subtree contains only values larger. This property tells us exactly where to go when inserting: compare the value with the current node and recurse left or right accordingly.
 We keep traversing until we hit a null position, which is exactly where the new node belongs. The recursion naturally handles this by returning a new node when we reach an empty spot.

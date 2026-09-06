@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/simplify-path/>  
 - **NeetCode:** <https://neetcode.io/problems/simplify-path>  
 - **Video:** <https://www.youtube.com/watch?v=qYlHrAKJfyA>  
+- **Video approach:** 2. Stack - II  
 
 [← Back to index](../INDEX.md)
 
@@ -49,7 +50,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 2. Stack - II
+## 2. Stack - II ▶ video
 
 Instead of processing character by character, we can split the path by `/` to get all the directory names at once. This simplifies the logic since we directly work with directory names rather than building them up. The same `stack`-based approach applies: push valid directories and pop on `..`.
 

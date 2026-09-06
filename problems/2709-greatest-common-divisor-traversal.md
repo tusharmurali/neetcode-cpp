@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/greatest-common-divisor-traversal/>  
 - **NeetCode:** <https://neetcode.io/problems/greatest-common-divisor-traversal>  
 - **Video:** <https://www.youtube.com/watch?v=jZ-RVp5CVYY>  
+- **Video approach:** 2. Disjoint Set Union  
 
 [← Back to index](../INDEX.md)
 
@@ -55,7 +56,7 @@ private:
 - Time complexity: $O(n ^ 2 \log n)$
 - Space complexity: $O(n ^ 2)$
 
-## 2. Disjoint Set Union
+## 2. Disjoint Set Union ▶ video
 
 Instead of building explicit edges between indices, we can connect indices through their prime factors. Two numbers sharing a prime factor should be in the same component. Using Union-Find, we union each index with the first occurrence of each of its prime factors. This avoids O(n^2) pairwise comparisons.
 

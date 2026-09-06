@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/daily-temperatures/>  
 - **NeetCode:** <https://neetcode.io/problems/daily-temperatures>  
 - **Video:** <https://www.youtube.com/watch?v=cTBiBSnjO3c>  
+- **Video approach:** 2. Stack  
 
 [← Back to index](../INDEX.md)
 
@@ -49,7 +50,7 @@ public:
     - $O(1)$ extra space.
     - $O(n)$ space for the output array.
 
-## 2. Stack
+## 2. Stack ▶ video
 
 We want to know how long it takes until a warmer day for each temperature.  
 A **stack** helps because it keeps track of days that are still waiting for a warmer temperature.  

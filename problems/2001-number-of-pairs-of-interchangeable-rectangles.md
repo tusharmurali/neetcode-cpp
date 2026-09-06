@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/>  
 - **NeetCode:** <https://neetcode.io/problems/number-of-pairs-of-interchangeable-rectangles>  
 - **Video:** <https://www.youtube.com/watch?v=lEQ8ZlLOuyQ>  
+- **Video approach:** 2. Hash Map (Two Pass) (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -35,7 +36,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(1)$
 
-## 2. Hash Map (Two Pass)
+## 2. Hash Map (Two Pass) ▶ video
 
 Instead of comparing every pair, we can group rectangles by their aspect ratio. Rectangles with the same ratio form a group, and any two rectangles in the same group are interchangeable. If a group has `c` rectangles, the number of pairs is `c * (c-1) / 2` (choosing 2 from `c`). We use a hash map to count how many rectangles share each ratio.
 

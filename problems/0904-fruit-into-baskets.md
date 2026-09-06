@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/fruit-into-baskets/>  
 - **NeetCode:** <https://neetcode.io/problems/fruit-into-baskets>  
 - **Video:** <https://www.youtube.com/watch?v=yYtaV0G3mWQ>  
+- **Video approach:** 2. Sliding Window - I (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -42,7 +43,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(1)$
 
-## 2. Sliding Window - I
+## 2. Sliding Window - I ▶ video
 
 Instead of restarting from each position, we maintain a sliding window that always contains at most two fruit types. When we encounter a third type, we shrink the window from the left until only two types remain.
 

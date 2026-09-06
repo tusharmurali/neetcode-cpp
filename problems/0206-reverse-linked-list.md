@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/reverse-linked-list/>  
 - **NeetCode:** <https://neetcode.io/problems/reverse-a-linked-list>  
 - **Video:** <https://www.youtube.com/watch?v=G0_I-ZF0S38>  
+- **Video approach:** 2. Iteration  
 
 [← Back to index](../INDEX.md)
 
@@ -54,7 +55,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 2. Iteration
+## 2. Iteration ▶ video
 
 Reversing a linked list iteratively is all about **flipping pointers one step at a time**.
 We walk through the list from left to right, and for each node, we redirect its `next` pointer to point to the node behind it.

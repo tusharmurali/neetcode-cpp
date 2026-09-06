@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/subsets/>  
 - **NeetCode:** <https://neetcode.io/problems/subsets>  
 - **Video:** <https://www.youtube.com/watch?v=REOH22Xwdkk>  
+- **Video approach:** 1. Backtracking  
 
 [← Back to index](../INDEX.md)
 
-## 1. Backtracking
+## 1. Backtracking ▶ video
 
 The idea is to build all possible subsets by making a choice at each step:
 for every number, we have two options — **include it** or **exclude it**.

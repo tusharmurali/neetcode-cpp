@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/search-in-rotated-sorted-array-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/search-in-rotated-sorted-array-ii>  
 - **Video:** <https://www.youtube.com/watch?v=oUnF7o88_Xc>  
+- **Video approach:** 2. Binary Search  
 
 [← Back to index](../INDEX.md)
 
@@ -32,7 +33,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(1)$
 
-## 2. Binary Search
+## 2. Binary Search ▶ video
 
 A rotated sorted array with duplicates still has a useful property: at least one half (left or right of `mid`) is always sorted. We can determine which half is sorted and check if the target lies within that range. The tricky case is when `nums[l] == nums[m]`, which means we cannot tell which side is sorted. In this case, we simply increment `l` to skip the duplicate and try again.
 

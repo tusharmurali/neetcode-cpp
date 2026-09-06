@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/alien-dictionary/>  
 - **NeetCode:** <https://neetcode.io/problems/foreign-dictionary>  
 - **Video:** <https://www.youtube.com/watch?v=6kTZYvNNyps>  
+- **Video approach:** 1. Depth First Search  
 
 [← Back to index](../INDEX.md)
 
-## 1. Depth First Search
+## 1. Depth First Search ▶ video
 
 The words are already sorted in an unknown alphabet order.  
 So when you compare two **adjacent** words, the **first position where they differ** tells you a rule about letter order:

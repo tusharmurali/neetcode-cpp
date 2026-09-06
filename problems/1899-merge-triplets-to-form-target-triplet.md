@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/merge-triplets-to-form-target-triplet/>  
 - **NeetCode:** <https://neetcode.io/problems/merge-triplets-to-form-target>  
 - **Video:** <https://www.youtube.com/watch?v=kShkQLQZ9K4>  
+- **Video approach:** 1. Greedy  
 
 [← Back to index](../INDEX.md)
 
-## 1. Greedy
+## 1. Greedy ▶ video
 
 We are given several triplets and a target triplet.
 We can merge triplets by taking the **maximum value at each index**, and we want to know if it is possible to obtain the target exactly.

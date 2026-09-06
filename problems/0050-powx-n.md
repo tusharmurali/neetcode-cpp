@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/powx-n/>  
 - **NeetCode:** <https://neetcode.io/problems/pow-x-n>  
 - **Video:** <https://www.youtube.com/watch?v=g9YQyYi4IQQ>  
+- **Video approach:** 2. Binary Exponentiation (Recursive)  
 
 [← Back to index](../INDEX.md)
 
@@ -53,7 +54,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(1)$
 
-## 2. Binary Exponentiation (Recursive)
+## 2. Binary Exponentiation (Recursive) ▶ video
 
 Computing \( x^n \) by multiplying `x` repeatedly works, but it becomes very slow when `n` is large.
 

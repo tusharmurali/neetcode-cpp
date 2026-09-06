@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/reverse-integer/>  
 - **NeetCode:** <https://neetcode.io/problems/reverse-integer>  
 - **Video:** <https://www.youtube.com/watch?v=HAgLH58IgJQ>  
+- **Video approach:** 3. Iteration  
 
 [← Back to index](../INDEX.md)
 
@@ -93,7 +94,7 @@ private:
 - Time complexity: $O(1)$
 - Space complexity: $O(1)$
 
-## 3. Iteration
+## 3. Iteration ▶ video
 
 We want to reverse the digits of an integer **without using strings**, while also ensuring the result fits within the **32-bit signed integer range**.
 

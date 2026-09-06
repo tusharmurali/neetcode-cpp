@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/search-a-2d-matrix/>  
 - **NeetCode:** <https://neetcode.io/problems/search-2d-matrix>  
 - **Video:** <https://www.youtube.com/watch?v=Ber2pi2C0j0>  
+- **Video approach:** 3. Binary Search  
 
 [← Back to index](../INDEX.md)
 
@@ -77,7 +78,7 @@ public:
 
 > Where $m$ is the number of rows and $n$ is the number of columns of matrix.
 
-## 3. Binary Search
+## 3. Binary Search ▶ video
 
 Because each row of the matrix is sorted, and the rows themselves are sorted by their first and last elements, we can apply **binary search twice**:
 

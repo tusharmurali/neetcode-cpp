@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/>  
 - **NeetCode:** <https://neetcode.io/problems/find-minimum-in-rotated-sorted-array>  
 - **Video:** <https://www.youtube.com/watch?v=nIVW4P8b1VA>  
+- **Video approach:** 2. Binary Search  
 
 [← Back to index](../INDEX.md)
 
@@ -29,7 +30,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(1)$
 
-## 2. Binary Search
+## 2. Binary Search ▶ video
 
 A rotated sorted array has one special property:  
 **one part is always sorted, and the other part contains the rotation (and the minimum element).**

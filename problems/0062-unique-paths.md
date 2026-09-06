@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/unique-paths/>  
 - **NeetCode:** <https://neetcode.io/problems/count-paths>  
 - **Video:** <https://www.youtube.com/watch?v=IlEsdxuD4lY>  
+- **Video approach:** 4. Dynamic Programming (Space Optimized)  
 
 [← Back to index](../INDEX.md)
 
@@ -137,7 +138,7 @@ public:
 
 > Where $m$ is the number of rows and $n$ is the number of columns.
 
-## 4. Dynamic Programming (Space Optimized)
+## 4. Dynamic Programming (Space Optimized) ▶ video
 
 Each cell only depends on:
 

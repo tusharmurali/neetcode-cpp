@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/>  
 - **NeetCode:** <https://neetcode.io/problems/find-all-numbers-disappeared-in-an-array>  
 - **Video:** <https://www.youtube.com/watch?v=8i-f24YFWC4>  
+- **Video approach:** 4. Negative Marking (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -98,7 +99,7 @@ public:
 - Time complexity: $O(n \log n)$
 - Space complexity: $O(1)$ or $O(n)$ depending on the sorting algorithm.
 
-## 4. Negative Marking
+## 4. Negative Marking ▶ video
 
 Since values are in range `[1, n]`, we can use the input array itself as a marker. For each value `v`, we mark the position `v-1` as visited by making it negative. After processing all values, any position that remains positive corresponds to a missing number.
 

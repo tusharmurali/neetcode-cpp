@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/minimum-interval-to-include-each-query/>  
 - **NeetCode:** <https://neetcode.io/problems/minimum-interval-including-query>  
 - **Video:** <https://www.youtube.com/watch?v=5hQ5WWW5awQ>  
+- **Video approach:** 3. Min Heap  
 
 [← Back to index](../INDEX.md)
 
@@ -121,7 +122,7 @@ public:
 
 > Where $m$ is the length of the array $queries$ and $n$ is the length of the array $intervals$.
 
-## 3. Min Heap
+## 3. Min Heap ▶ video
 
 For each query `q`, we want the **length of the smallest interval** `[l, r]` such that
 `l ≤ q ≤ r`. If no interval covers `q`, the answer is `-1`.

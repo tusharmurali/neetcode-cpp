@@ -9,10 +9,11 @@ One page for working through the NeetCode 150 / 250 in C++. Search a problem, op
 ## What it does
 
 - **Every list.** Blind 75, NeetCode 150, NeetCode 250, or all 700+ problems NeetCode has written up, grouped by pattern in the site's order.
+- **The video's approach, tagged.** Each problem opens on the approach NeetCode codes in the YouTube walkthrough, marked VIDEO, with the video's Python underneath for side-by-side comparison. That's usually the interview-friendly one. All 150 of the NeetCode 150 and 223 of the 250 are tagged; the rest have no video code in NeetCode's repo.
 - **Every C++ approach.** Tabs per approach, in NeetCode's order. "Show all" stacks them for comparison. The standalone file from NeetCode's repo is included as a final tab when one exists.
 - **Links that matter.** LeetCode, NeetCode (free for the LeetCode Premium ones), and the video walkthrough.
 - **Progress.** Solved marks with a progress bar per list and per pattern. Saved in your browser. Export and import as JSON to move between devices.
-- **Keyboard.** `/` search, `↑` `↓` or `j` `k` move, `Enter` opens on LeetCode, `1`–`9` picks an approach, `a` shows all, `x` toggles solved.
+- **Keyboard.** `/` search, `↑` `↓` or `j` `k` move, `Enter` opens on LeetCode, `1`–`9` picks an approach, `a` shows all, `v` jumps to the video approach, `x` toggles solved.
 - **Direct links.** `#1` opens Two Sum, `#217` opens Contains Duplicate.
 - **Light and dark.** Follows your system, with a manual toggle.
 
@@ -31,6 +32,8 @@ The whole site is a single `index.html` with the data inlined. Download it and i
 python3 build.py            # fresh build, needs network
 python3 build.py --offline  # re-render from .cache/ after editing template.html
 ```
+
+`video-approach.json` maps each problem to the approach used in its video. Those entries were reviewed by reading the video's Python file against each approach; problems not in that file fall back to a conservative code-similarity match, labeled "auto-matched" on the page. Corrections are welcome as pull requests to that file.
 
 A GitHub Action rebuilds the site every Monday and commits if NeetCode added or changed anything.
 

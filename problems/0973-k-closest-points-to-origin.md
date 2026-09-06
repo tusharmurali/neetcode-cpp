@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/k-closest-points-to-origin/>  
 - **NeetCode:** <https://neetcode.io/problems/k-closest-points-to-origin>  
 - **Video:** <https://www.youtube.com/watch?v=rI2EBUEMfTk>  
+- **Video approach:** 2. Min-Heap  
 
 [← Back to index](../INDEX.md)
 
@@ -39,7 +40,7 @@ public:
 - Time complexity: $O(n \log n)$
 - Space complexity: $O(1)$ or $O(n)$ depending on the sorting algorithm.
 
-## 2. Min-Heap
+## 2. Min-Heap ▶ video
 
 A min-heap always gives you the **smallest element first**.
 If we insert every point into a min-heap, using its squared distance from the origin as the priority, then:

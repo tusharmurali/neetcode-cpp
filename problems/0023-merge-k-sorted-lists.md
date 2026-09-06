@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/merge-k-sorted-lists/>  
 - **NeetCode:** <https://neetcode.io/problems/merge-k-sorted-linked-lists>  
 - **Video:** <https://www.youtube.com/watch?v=q5a5OiGbT6Q>  
+- **Video approach:** 6. Divide And Conquer (Iteration)  
 
 [← Back to index](../INDEX.md)
 
@@ -334,7 +335,7 @@ private:
 
 > Where $k$ is the total number of lists and $n$ is the total number of nodes across $k$ lists.
 
-## 6. Divide And Conquer (Iteration)
+## 6. Divide And Conquer (Iteration) ▶ video
 
 This is the **same idea as divide and conquer**, but done **iteratively** instead of using recursion.
 

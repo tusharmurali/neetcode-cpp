@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/sort-an-array/>  
 - **NeetCode:** <https://neetcode.io/problems/sort-an-array>  
 - **Video:** <https://www.youtube.com/watch?v=MsYZSinhuFo>  
+- **Video approach:** 2. Merge Sort  
 
 [← Back to index](../INDEX.md)
 
@@ -67,7 +68,7 @@ int partition(vector<int>& nums, int left, int right) {
 - Time complexity: $O(n \log n)$ in average case, $O(n ^ 2)$ in worst case.
 - Space complexity: $O(\log n)$ for recursive stack.
 
-## 2. Merge Sort
+## 2. Merge Sort ▶ video
 
 Merge sort divides the array into two halves, recursively sorts each half, and then merges the sorted halves. The merge step combines two sorted arrays into one by repeatedly picking the smaller element from the front of each array. This divide-and-conquer approach guarantees O(n log n) time regardless of input order.
 

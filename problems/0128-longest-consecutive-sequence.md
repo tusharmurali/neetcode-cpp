@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/longest-consecutive-sequence/>  
 - **NeetCode:** <https://neetcode.io/problems/longest-consecutive-sequence>  
 - **Video:** <https://www.youtube.com/watch?v=P6RZZMu_maU>  
+- **Video approach:** 3. Hash Set  
 
 [← Back to index](../INDEX.md)
 
@@ -80,7 +81,7 @@ public:
 - Time complexity: $O(n \log n)$
 - Space complexity: $O(1)$ or $O(n)$ depending on the sorting algorithm.
 
-## 3. Hash Set
+## 3. Hash Set ▶ video
 
 To avoid repeatedly recounting the same sequences, we only want to start counting when we find the **beginning** of a consecutive sequence.
 A number is the start of a sequence if `num - 1` is **not** in the set.

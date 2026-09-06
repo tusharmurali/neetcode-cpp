@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/find-polygon-with-the-largest-perimeter/>  
 - **NeetCode:** <https://neetcode.io/problems/find-polygon-with-the-largest-perimeter>  
 - **Video:** <https://www.youtube.com/watch?v=Yk9Mor-Y488>  
+- **Video approach:** 2. Sorting (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -45,7 +46,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(1)$ extra space.
 
-## 2. Sorting
+## 2. Sorting ▶ video
 
 If we sort the array, we can efficiently check the polygon condition. After sorting, as we iterate through each element, all previous elements are smaller or equal. The key insight is that if the running sum of all previous elements exceeds the current element, we have a valid polygon. Since we want the largest perimeter, we keep updating our answer as we find valid configurations, and the last valid one will be the largest.
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/contains-duplicate/>  
 - **NeetCode:** <https://neetcode.io/problems/duplicate-integer>  
 - **Video:** <https://www.youtube.com/watch?v=3OamzN90kPg>  
+- **Video approach:** 3. Hash Set  
 
 [← Back to index](../INDEX.md)
 
@@ -61,7 +62,7 @@ public:
 - Time complexity: $O(n \log n)$
 - Space complexity: $O(1)$ or $O(n)$ depending on the sorting algorithm.
 
-## 3. Hash Set
+## 3. Hash Set ▶ video
 
 We can use a hash set to efficiently keep track of the values we have already encountered.  
 As we iterate through the array, we check whether the current value is already present in the set.  

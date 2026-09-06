@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/min-stack/>  
 - **NeetCode:** <https://neetcode.io/problems/minimum-stack>  
 - **Video:** <https://www.youtube.com/watch?v=qkLl7nAwDPo>  
+- **Video approach:** 2. Two Stacks  
 
 [← Back to index](../INDEX.md)
 
@@ -59,7 +60,7 @@ public:
 - Time complexity: $O(n)$ for $getMin()$ and $O(1)$ for other operations.
 - Space complexity: $O(n)$ for $getMin()$ and $O(1)$ for other operations.
 
-## 2. Two Stacks
+## 2. Two Stacks ▶ video
 
 Instead of searching the whole stack to find the minimum every time, we can keep a **second stack** that always stores the minimum value _up to that point_.
 So whenever we push a new value, we compare it with the current minimum and store the smaller one on the `minStack`.

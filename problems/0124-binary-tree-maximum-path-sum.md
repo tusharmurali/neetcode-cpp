@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/binary-tree-maximum-path-sum/>  
 - **NeetCode:** <https://neetcode.io/problems/binary-tree-maximum-path-sum>  
 - **Video:** <https://www.youtube.com/watch?v=Hr5cWUld4vU>  
+- **Video approach:** 2. Depth First Search (Optimal)  
 
 [← Back to index](../INDEX.md)
 
@@ -78,7 +79,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(n)$
 
-## 2. Depth First Search (Optimal)
+## 2. Depth First Search (Optimal) ▶ video
 
 In the maximum path sum problem, a _path_ can start and end anywhere in the tree, but it must go **downward** at each step (parent → child).
 

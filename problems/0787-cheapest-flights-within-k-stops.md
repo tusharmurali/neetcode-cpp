@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/cheapest-flights-within-k-stops/>  
 - **NeetCode:** <https://neetcode.io/problems/cheapest-flight-path>  
 - **Video:** <https://www.youtube.com/watch?v=5eIK3zUdYmE>  
+- **Video approach:** 2. Bellman Ford Algorithm  
 
 [← Back to index](../INDEX.md)
 
@@ -62,7 +63,7 @@ public:
 
 > Where $n$ is the number of cities, $m$ is the number of flights, and $K = k + 1$ is the maximum number of flights/edges allowed. The layered graph has $O(n \cdot K)$ states and $O(m \cdot K)$ transitions. With the lazy priority queue used here, each successful relaxation can push one heap entry, so the heap operation cost is $\log(m \cdot K)$, and the heap can hold $O(m \cdot K)$ entries in the worst case. The adjacency list takes $O(m)$ space and `dist` takes $O(n \cdot K)$ space.
 
-## 2. Bellman Ford Algorithm
+## 2. Bellman Ford Algorithm ▶ video
 
 We are allowed **at most `k` stops**, which means **at most `k + 1` flights (edges)**.
 Bellman–Ford is perfect here because it relaxes edges **level by level**, where each iteration allows one more edge in the path.

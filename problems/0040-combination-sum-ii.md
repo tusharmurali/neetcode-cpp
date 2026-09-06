@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/combination-sum-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/combination-target-sum-ii>  
 - **Video:** <https://www.youtube.com/watch?v=FOyRpNUSFeA>  
+- **Video approach:** 4. Backtracking (Optimal)  
 
 [← Back to index](../INDEX.md)
 
@@ -184,7 +185,7 @@ public:
 - Time complexity: $O(n * 2 ^ n)$
 - Space complexity: $O(n)$
 
-## 4. Backtracking (Optimal)
+## 4. Backtracking (Optimal) ▶ video
 
 We need all unique combinations where each number can be used **at most once**, and duplicates in the input should not create duplicate combinations.
 

@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/rotting-oranges/>  
 - **NeetCode:** <https://neetcode.io/problems/rotting-fruit>  
 - **Video:** <https://www.youtube.com/watch?v=y704fEOx0s0>  
+- **Video approach:** 1. Breadth First Search  
 
 [← Back to index](../INDEX.md)
 
-## 1. Breadth First Search
+## 1. Breadth First Search ▶ video
 
 This is a **multi-source BFS** problem.
 

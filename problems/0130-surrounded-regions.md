@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/surrounded-regions/>  
 - **NeetCode:** <https://neetcode.io/problems/surrounded-regions>  
 - **Video:** <https://www.youtube.com/watch?v=9z2BunfoZ5Y>  
+- **Video approach:** 1. Depth First Search  
 
 [← Back to index](../INDEX.md)
 
-## 1. Depth First Search
+## 1. Depth First Search ▶ video
 
 Only the **'O' regions that touch the border** can never be surrounded, because they have a path to the outside of the board.  
 So instead of trying to find surrounded regions directly, we do the opposite:

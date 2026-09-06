@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/isomorphic-strings/>  
 - **NeetCode:** <https://neetcode.io/problems/isomorphic-strings>  
 - **Video:** <https://www.youtube.com/watch?v=7yF-U1hLEqQ>  
+- **Video approach:** 2. Hash Map (One Pass) (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -41,7 +42,7 @@ public:
 
 > Where $n$ is the length of the input string and $m$ is the number of unique characters in the strings.
 
-## 2. Hash Map (One Pass)
+## 2. Hash Map (One Pass) ▶ video
 
 We can verify both mapping directions simultaneously in a single pass. By maintaining two hash maps, one for `s -> t` and one for `t -> s`, we check at each position that neither mapping is violated. If a character in `s` was previously mapped to a different character in `t`, or if a character in `t` was previously mapped to a different character in `s`, the strings aren't isomorphic.
 

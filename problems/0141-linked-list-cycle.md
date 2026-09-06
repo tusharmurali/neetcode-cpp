@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/linked-list-cycle/>  
 - **NeetCode:** <https://neetcode.io/problems/linked-list-cycle-detection>  
 - **Video:** <https://www.youtube.com/watch?v=gBTe7lFR3vc>  
+- **Video approach:** 2. Fast And Slow Pointers  
 
 [← Back to index](../INDEX.md)
 
@@ -50,7 +51,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 2. Fast And Slow Pointers
+## 2. Fast And Slow Pointers ▶ video
 
 We use two pointers moving through the list at different speeds:
 

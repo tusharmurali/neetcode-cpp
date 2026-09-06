@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/maximum-ascending-subarray-sum/>  
 - **NeetCode:** <https://neetcode.io/problems/maximum-ascending-subarray-sum>  
 - **Video:** <https://www.youtube.com/watch?v=NcsmaL_e_Zg>  
+- **Video approach:** 2. Iteration (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -40,7 +41,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(1)$
 
-## 2. Iteration
+## 2. Iteration ▶ video
 
 We can solve this in a single pass. As we scan through the array, we maintain a running sum of the current ascending subarray. Whenever we encounter an element that does not continue the ascending pattern, we reset the running sum and start a new subarray from that element.
 

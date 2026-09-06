@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/accounts-merge/>  
 - **NeetCode:** <https://neetcode.io/problems/accounts-merge>  
 - **Video:** <https://www.youtube.com/watch?v=6st4IxEF-90>  
+- **Video approach:** 3. Disjoint Set Union  
 
 [← Back to index](../INDEX.md)
 
@@ -187,7 +188,7 @@ private:
 
 > Where $n$ is the number of accounts and $m$ is the number of emails.
 
-## 3. Disjoint Set Union
+## 3. Disjoint Set Union ▶ video
 
 Union-Find (Disjoint Set Union) is designed for exactly this type of problem: grouping elements into disjoint sets and merging sets efficiently. Instead of building a graph and traversing it, we assign each account an ID and union accounts that share an email. When we see an email for the first time, we record which account it belongs to. If we see it again, we union the current account with the one that first owned it. After processing all accounts, we group emails by their account's root representative.
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/word-search-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/search-for-word-ii>  
 - **Video:** <https://www.youtube.com/watch?v=asbcE9mZz_U>  
+- **Video approach:** 2. Backtracking (Trie + Hash Set)  
 
 [← Back to index](../INDEX.md)
 
@@ -64,7 +65,7 @@ private:
 
 > Where $w$ is the number of words, $m$ is the number of rows, $n$ is the number of columns and $t$ is the maximum length of any word in the array $words$.
 
-## 2. Backtracking (Trie + Hash Set)
+## 2. Backtracking (Trie + Hash Set) ▶ video
 
 Searching each word separately repeats the same work many times.
 A **Trie (prefix tree)** lets us share work: while walking on the board, we only continue paths that match **some prefix** of the given words.

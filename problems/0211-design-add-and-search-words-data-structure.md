@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/design-add-and-search-words-data-structure/>  
 - **NeetCode:** <https://neetcode.io/problems/design-word-search-data-structure>  
 - **Video:** <https://www.youtube.com/watch?v=BTf05gs_8iU>  
+- **Video approach:** 2. Depth First Search (Trie)  
 
 [← Back to index](../INDEX.md)
 
@@ -60,7 +61,7 @@ public:
 
 > Where $m$ is the number of words added and $n$ is the length of the string.
 
-## 2. Depth First Search (Trie)
+## 2. Depth First Search (Trie) ▶ video
 
 ```cpp
 class TrieNode {

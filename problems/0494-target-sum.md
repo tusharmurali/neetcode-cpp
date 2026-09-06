@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/target-sum/>  
 - **NeetCode:** <https://neetcode.io/problems/target-sum>  
 - **Video:** <https://www.youtube.com/watch?v=dwMOrl85Xes>  
+- **Video approach:** 2. Dynamic Programming (Top-Down)  
 
 [← Back to index](../INDEX.md)
 
@@ -45,7 +46,7 @@ public:
 - Time complexity: $O(2 ^ n)$
 - Space complexity: $O(n)$
 
-## 2. Dynamic Programming (Top-Down)
+## 2. Dynamic Programming (Top-Down) ▶ video
 
 This problem asks us to count the number of ways to assign a `+` or `-` sign to each number so that the final sum equals the target.
 

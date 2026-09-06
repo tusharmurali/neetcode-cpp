@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/maximal-square/>  
 - **NeetCode:** <https://neetcode.io/problems/maximal-square>  
 - **Video:** <https://www.youtube.com/watch?v=6X7Ha2PrDmM>  
+- **Video approach:** 2. Dynamic Programming (Top-Down) (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -66,7 +67,7 @@ public:
 
 > Where $m$ is the number of rows and $n$ is the number columns.
 
-## 2. Dynamic Programming (Top-Down)
+## 2. Dynamic Programming (Top-Down) ▶ video
 
 We can define a recursive function where `dp(r, c)` returns the side length of the largest square whose top-left corner is at `(r, c)`. For a cell with `'1'`, the answer depends on how far we can extend to the right, down, and diagonally. The limiting factor is the minimum of these three directions. We memoize results to avoid redundant computation, then scan all cells to find the maximum value.
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/set-matrix-zeroes/>  
 - **NeetCode:** <https://neetcode.io/problems/set-zeroes-in-matrix>  
 - **Video:** <https://www.youtube.com/watch?v=T41rL0L3Pnw>  
+- **Video approach:** 3. Iteration (Space Optimized)  
 
 [← Back to index](../INDEX.md)
 
@@ -113,7 +114,7 @@ public:
 
 > Where $m$ is the number of rows and $n$ is the number of columns.
 
-## 3. Iteration (Space Optimized)
+## 3. Iteration (Space Optimized) ▶ video
 
 We need to set an entire row and column to `0` if any cell in that row or column is `0`.
 

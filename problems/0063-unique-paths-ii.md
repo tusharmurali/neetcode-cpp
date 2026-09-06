@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/unique-paths-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/unique-paths-ii>  
 - **Video:** <https://www.youtube.com/watch?v=d3UOz7zdE4I>  
+- **Video approach:** 3. Dynamic Programming (Space Optimized)  
 
 [← Back to index](../INDEX.md)
 
@@ -88,7 +89,7 @@ public:
 
 > Where $m$ is the number of rows and $n$ is the number of columns.
 
-## 3. Dynamic Programming (Space Optimized)
+## 3. Dynamic Programming (Space Optimized) ▶ video
 
 Looking at the bottom-up approach, we notice that each cell only depends on the cell directly below it and the cell to its right. Since we process row by row from bottom to top, we only need to keep track of one row at a time. The value `dp[c]` before updating represents the count from the row below, and `dp[c+1]` after updating represents the count from the right. This reduces space from `O(m * n)` to `O(n)`.
 

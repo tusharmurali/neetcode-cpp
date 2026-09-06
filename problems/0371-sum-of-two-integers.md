@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/sum-of-two-integers/>  
 - **NeetCode:** <https://neetcode.io/problems/sum-of-two-integers>  
 - **Video:** <https://www.youtube.com/watch?v=gVUrDV4tZfY>  
+- **Video approach:** 3. Bit Manipulation (Optimal)  
 
 [← Back to index](../INDEX.md)
 
@@ -89,7 +90,7 @@ public:
 - Time complexity: $O(1)$
 - Space complexity: $O(1)$
 
-## 3. Bit Manipulation (Optimal)
+## 3. Bit Manipulation (Optimal) ▶ video
 
 We need to add two integers **without using `+` or `-`**.
 Binary addition can be built from two operations:

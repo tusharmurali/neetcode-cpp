@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/excel-sheet-column-title/>  
 - **NeetCode:** <https://neetcode.io/problems/excel-sheet-column-title>  
 - **Video:** <https://www.youtube.com/watch?v=X_vJDpCCuoA>  
+- **Video approach:** 2. Iteration  
 
 [← Back to index](../INDEX.md)
 
@@ -35,7 +36,7 @@ public:
 
 > Where $n$ is the given column number.
 
-## 2. Iteration
+## 2. Iteration ▶ video
 
 The iterative approach works from right to left, building the result string in reverse. At each step, we extract the rightmost character, then reduce the number for the next iteration. Since we build characters from least significant to most significant, we reverse the result at the end.
 

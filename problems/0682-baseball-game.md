@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/baseball-game/>  
 - **NeetCode:** <https://neetcode.io/problems/baseball-game>  
 - **Video:** <https://www.youtube.com/watch?v=Id_tqGdsZQI>  
+- **Video approach:** 1. Stack - I  
 
 [← Back to index](../INDEX.md)
 
-## 1. Stack - I
+## 1. Stack - I ▶ video
 
 A stack is perfect for this problem because each operation depends on the most recent scores. When we see `+`, we need the last two scores. When we see `D`, we need the last score. When we see `C`, we need to remove the last score. A stack gives us efficient access to these recent elements.
 

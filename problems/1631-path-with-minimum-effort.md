@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/path-with-minimum-effort/>  
 - **NeetCode:** <https://neetcode.io/problems/path-with-minimum-effort>  
 - **Video:** <https://www.youtube.com/watch?v=XQlxCCx2vI4>  
+- **Video approach:** 1. Dijkstra's Algorithm  
 
 [← Back to index](../INDEX.md)
 
-## 1. Dijkstra's Algorithm
+## 1. Dijkstra's Algorithm ▶ video
 
 The effort of a path is defined as the maximum absolute difference between consecutive cells along that path. We want to minimize this maximum difference. Dijkstra's algorithm fits well because we can treat the "effort so far" as the cost and always expand the path with the smallest maximum effort. When we reach the destination, we have found the path with minimum effort.
 

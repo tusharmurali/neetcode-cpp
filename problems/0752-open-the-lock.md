@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/open-the-lock/>  
 - **NeetCode:** <https://neetcode.io/problems/open-the-lock>  
 - **Video:** <https://www.youtube.com/watch?v=Pzg3bCDY87w>  
+- **Video approach:** 1. Breadth First Search - I  
 
 [← Back to index](../INDEX.md)
 
-## 1. Breadth First Search - I
+## 1. Breadth First Search - I ▶ video
 
 Think of each lock combination as a node in a graph, where two nodes are connected if you can reach one from the other by turning a single wheel one step. Starting from "0000", we want to find the shortest path to the target while avoiding deadends.
 

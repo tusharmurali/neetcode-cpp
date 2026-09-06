@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/asteroid-collision/>  
 - **NeetCode:** <https://neetcode.io/problems/asteroid-collision>  
 - **Video:** <https://www.youtube.com/watch?v=LN7KjRszjk4>  
+- **Video approach:** 1. Stack  
 
 [← Back to index](../INDEX.md)
 
-## 1. Stack
+## 1. Stack ▶ video
 
 Collisions only happen when a right-moving asteroid (positive) meets a left-moving one (negative). A stack naturally models this: we process asteroids left to right, and when we see a negative asteroid, it can only collide with positive asteroids already on the stack. We keep popping and comparing until either the new asteroid is destroyed, destroys all opposing asteroids, or there are no more collisions possible.
 

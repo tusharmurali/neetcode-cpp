@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/two-sum/>  
 - **NeetCode:** <https://neetcode.io/problems/two-integer-sum>  
 - **Video:** <https://www.youtube.com/watch?v=KLlXCFG5TnA>  
+- **Video approach:** 4. Hash Map (One Pass)  
 
 [← Back to index](../INDEX.md)
 
@@ -104,7 +105,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 4. Hash Map (One Pass)
+## 4. Hash Map (One Pass) ▶ video
 
 We can solve the problem in a single pass by iterating through the array and checking if the complement of the current element exists in the hash map.
 

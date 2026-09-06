@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/find-all-people-with-secret/>  
 - **NeetCode:** <https://neetcode.io/problems/find-all-people-with-secret>  
 - **Video:** <https://www.youtube.com/watch?v=1XujGRSU1bQ>  
+- **Video approach:** 1. Depth First Search (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Depth First Search
+## 1. Depth First Search ▶ video
 
 The secret spreads through meetings in chronological order. At each point in time, all meetings happening simultaneously form a graph where people can share secrets with each other. If anyone in a connected group already knows the secret, everyone in that group learns it by the end of that time slot. We process meetings time by time, using DFS to propagate the secret through connected components.
 

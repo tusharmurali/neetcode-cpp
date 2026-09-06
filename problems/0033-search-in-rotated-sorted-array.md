@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/search-in-rotated-sorted-array/>  
 - **NeetCode:** <https://neetcode.io/problems/find-target-in-rotated-sorted-array>  
 - **Video:** <https://www.youtube.com/watch?v=U8XENwh8Oy8>  
+- **Video approach:** 4. Binary Search (One Pass)  
 
 [← Back to index](../INDEX.md)
 
@@ -157,7 +158,7 @@ public:
 - Time complexity: $O(\log n)$
 - Space complexity: $O(1)$
 
-## 4. Binary Search (One Pass)
+## 4. Binary Search (One Pass) ▶ video
 
 ```cpp
 class Solution {

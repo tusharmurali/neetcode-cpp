@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/combination-sum-iv/>  
 - **NeetCode:** <https://neetcode.io/problems/combination-sum-iv>  
 - **Video:** <https://www.youtube.com/watch?v=dw2nMCxG0ik>  
+- **Video approach:** 3. Dynamic Programming (Bottom-Up) - I  
 
 [← Back to index](../INDEX.md)
 
@@ -86,7 +87,7 @@ public:
 
 > Where $n$ is the size of the array $nums$ and $t$ is the given target.
 
-## 3. Dynamic Programming (Bottom-Up) - I
+## 3. Dynamic Programming (Bottom-Up) - I ▶ video
 
 Instead of working backwards from the target, we can build up the solution by computing the number of ways to reach each sum from 0 to target. For each sum, we check all numbers in the array and add the ways to reach the sum minus that number.
 

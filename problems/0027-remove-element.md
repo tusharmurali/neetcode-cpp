@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/remove-element/>  
 - **NeetCode:** <https://neetcode.io/problems/remove-element>  
 - **Video:** <https://www.youtube.com/watch?v=Pcd1ii9P9ZI>  
+- **Video approach:** 2. Two Pointers - I  
 
 [← Back to index](../INDEX.md)
 
@@ -39,7 +40,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 2. Two Pointers - I
+## 2. Two Pointers - I ▶ video
 
 Instead of using extra space, we can overwrite unwanted elements in place.
 We use a write pointer `k` that tracks where the next valid element should go.

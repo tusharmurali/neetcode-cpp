@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/spiral-matrix/>  
 - **NeetCode:** <https://neetcode.io/problems/spiral-matrix>  
 - **Video:** <https://www.youtube.com/watch?v=BJnMZNwUk1M>  
+- **Video approach:** 2. Iteration  
 
 [← Back to index](../INDEX.md)
 
@@ -65,7 +66,7 @@ public:
 
 > Where $m$ is the number of rows and $n$ is the number of columns.
 
-## 2. Iteration
+## 2. Iteration ▶ video
 
 We want to traverse a matrix in **spiral order**:  
 right → down → left → up, repeatedly, moving inward layer by layer.

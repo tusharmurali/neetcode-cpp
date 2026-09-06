@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/hand-of-straights/>  
 - **NeetCode:** <https://neetcode.io/problems/hand-of-straights>  
 - **Video:** <https://www.youtube.com/watch?v=amnrMCVd2YI>  
+- **Video approach:** 2. Heap  
 
 [← Back to index](../INDEX.md)
 
@@ -53,7 +54,7 @@ public:
 - Time complexity: $O(n \log n)$
 - Space complexity: $O(n)$
 
-## 2. Heap
+## 2. Heap ▶ video
 
 We need to split the cards into groups of size `groupSize`, where each group is made of **consecutive numbers**, and every card is used exactly once.
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/shift-2d-grid/>  
 - **NeetCode:** <https://neetcode.io/problems/shift-2d-grid>  
 - **Video:** <https://www.youtube.com/watch?v=nJYFh4Dl-as>  
+- **Video approach:** 4. Iteration (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -123,7 +124,7 @@ public:
 
 > Where $m$ is the number of rows in the grid and $n$ is the number of columns in the grid.
 
-## 4. Iteration
+## 4. Iteration ▶ video
 
 Instead of actually shifting elements, we can compute where each element should go after k shifts. The position of an element in a flattened grid is `r * n + c`. After k shifts, this becomes `(r * n + c + k) % (m * n)`. We can then convert this back to 2D coordinates.
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/verifying-an-alien-dictionary/>  
 - **NeetCode:** <https://neetcode.io/problems/verifying-an-alien-dictionary>  
 - **Video:** <https://www.youtube.com/watch?v=OVgPAJIyX6o>  
+- **Video approach:** 2. Comparing adjacent words  
 
 [← Back to index](../INDEX.md)
 
@@ -41,7 +42,7 @@ public:
 
 > Where $n$ is the number of words and $m$ is the average length of a word.
 
-## 2. Comparing adjacent words
+## 2. Comparing adjacent words ▶ video
 
 For a list to be sorted, each adjacent pair must be in the correct order. Instead of sorting, we can directly verify that each word is lexicographically less than or equal to the next word according to the alien order. This avoids the overhead of sorting.
 

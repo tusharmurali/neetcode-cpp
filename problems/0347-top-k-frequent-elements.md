@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/top-k-frequent-elements/>  
 - **NeetCode:** <https://neetcode.io/problems/top-k-elements-in-list>  
 - **Video:** <https://www.youtube.com/watch?v=YPTqKIgVk-k>  
+- **Video approach:** 3. Bucket Sort  
 
 [← Back to index](../INDEX.md)
 
@@ -89,7 +90,7 @@ public:
 
 > Where $n$ is the length of the array and $k$ is the number of top frequent elements.
 
-## 3. Bucket Sort
+## 3. Bucket Sort ▶ video
 
 Each number in the array appears a certain number of times, and the maximum possible frequency is the length of the array.
 We can use this idea by creating a list where the index represents a frequency, and at each index we store all numbers that appear exactly that many times.

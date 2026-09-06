@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/>  
 - **NeetCode:** <https://neetcode.io/problems/capacity-to-ship-packages-within-d-days>  
 - **Video:** <https://www.youtube.com/watch?v=ER_oLmdc-nw>  
+- **Video approach:** 2. Binary Search  
 
 [← Back to index](../INDEX.md)
 
@@ -41,7 +42,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(1)$
 
-## 2. Binary Search
+## 2. Binary Search ▶ video
 
 Instead of checking every capacity linearly, we can use binary search because the problem has a monotonic property: if a capacity works, any larger capacity will also work. The search space ranges from the maximum package weight (minimum valid capacity) to the sum of all weights (shipping everything in one day). For each mid-point capacity, we check if it allows shipping within the day limit and adjust our search accordingly.
 

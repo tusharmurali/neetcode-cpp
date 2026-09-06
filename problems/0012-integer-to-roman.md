@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/integer-to-roman/>  
 - **NeetCode:** <https://neetcode.io/problems/integer-to-roman>  
 - **Video:** <https://www.youtube.com/watch?v=ohBNdSJyLh8>  
+- **Video approach:** 1. Math - I (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Math - I
+## 1. Math - I ▶ video
 
 Roman numerals are built by combining symbols that represent specific values. The key insight is to process values from largest to smallest, repeatedly subtracting the largest possible value and appending its symbol. We include the subtractive combinations (like IV for 4, IX for 9) in our value list to handle them naturally.
 

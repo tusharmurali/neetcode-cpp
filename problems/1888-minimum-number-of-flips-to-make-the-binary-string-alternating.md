@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/>  
 - **NeetCode:** <https://neetcode.io/problems/minimum-number-of-flips-to-make-the-binary-string-alternating>  
 - **Video:** <https://www.youtube.com/watch?v=MOeuK6gaC2A>  
+- **Video approach:** 3. Sliding Window (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -89,7 +90,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(1)$ extra space.
 
-## 3. Sliding Window
+## 3. Sliding Window ▶ video
 
 Concatenating the string with itself (`s + s`) simulates all rotations. A window of size `n` sliding over this doubled string represents each rotation. We can maintain mismatch counts incrementally: add the new character's contribution when expanding the window, and remove the old character's contribution when shrinking.
 

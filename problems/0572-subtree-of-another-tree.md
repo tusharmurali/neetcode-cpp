@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/subtree-of-another-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/subtree-of-a-binary-tree>  
 - **Video:** <https://www.youtube.com/watch?v=E36O5SWp-LE>  
+- **Video approach:** 1. Depth First Search (DFS)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Depth First Search (DFS)
+## 1. Depth First Search (DFS) ▶ video
 
 To check whether one tree is a subtree of another, we do two things:
 

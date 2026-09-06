@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/group-anagrams/>  
 - **NeetCode:** <https://neetcode.io/problems/anagram-groups>  
 - **Video:** <https://www.youtube.com/watch?v=vzdNOK2oB2E>  
+- **Video approach:** 2. Hash Table  
 
 [← Back to index](../INDEX.md)
 
@@ -42,7 +43,7 @@ public:
 
 > Where $m$ is the number of strings and $n$ is the length of the longest string.
 
-## 2. Hash Table
+## 2. Hash Table ▶ video
 
 Instead of sorting each string, we can represent every string by the frequency of its characters.
 Since the problem uses lowercase English letters, a fixed-size array of length `26` can capture how many times each character appears.

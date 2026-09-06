@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/climbing-stairs/>  
 - **NeetCode:** <https://neetcode.io/problems/climbing-stairs>  
 - **Video:** <https://www.youtube.com/watch?v=Y0lT9Fck7qI>  
+- **Video approach:** 4. Dynamic Programming (Space Optimized)  
 
 [← Back to index](../INDEX.md)
 
@@ -111,7 +112,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 4. Dynamic Programming (Space Optimized)
+## 4. Dynamic Programming (Space Optimized) ▶ video
 
 At any step, the number of ways depends only on the **previous two steps**.  
 So instead of storing all values in a DP array, we can just keep **two variables** that represent:

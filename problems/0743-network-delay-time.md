@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/network-delay-time/>  
 - **NeetCode:** <https://neetcode.io/problems/network-delay-time>  
 - **Video:** <https://www.youtube.com/watch?v=EaphyqKU4PQ>  
+- **Video approach:** 5. Dijkstra's Algorithm  
 
 [← Back to index](../INDEX.md)
 
@@ -209,7 +210,7 @@ public:
 
 > Where $V$ is the number of vertices and $E$ is the number of edges.
 
-## 5. Dijkstra's Algorithm
+## 5. Dijkstra's Algorithm ▶ video
 
 **Dijkstra's Algorithm** finds the shortest time from the source node `k` to all other nodes when all edge weights are **non-negative**.
 

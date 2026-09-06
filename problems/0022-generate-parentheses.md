@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/generate-parentheses/>  
 - **NeetCode:** <https://neetcode.io/problems/generate-parentheses>  
 - **Video:** <https://www.youtube.com/watch?v=s9fokUqJ76A>  
+- **Video approach:** 2. Backtracking  
 
 [← Back to index](../INDEX.md)
 
@@ -53,7 +54,7 @@ public:
 - Time complexity: $O(2 ^ {2n} * n)$
 - Space complexity: $O(2 ^ {2n} * n)$
 
-## 2. Backtracking
+## 2. Backtracking ▶ video
 
 Instead of generating **all** strings and then checking validity, we **build only valid strings**.
 

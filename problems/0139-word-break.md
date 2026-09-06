@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/word-break/>  
 - **NeetCode:** <https://neetcode.io/problems/word-break>  
 - **Video:** <https://www.youtube.com/watch?v=Sx9NNgInc3A>  
+- **Video approach:** 5. Dynamic Programming (Bottom-Up)  
 
 [← Back to index](../INDEX.md)
 
@@ -230,7 +231,7 @@ public:
 
 > Where $n$ is the length of the string $s$, $m$ is the number of words in $wordDict$ and $t$ is the maximum length of any word in $wordDict$.
 
-## 5. Dynamic Programming (Bottom-Up)
+## 5. Dynamic Programming (Bottom-Up) ▶ video
 
 This is a **bottom-up dynamic programming** approach.
 

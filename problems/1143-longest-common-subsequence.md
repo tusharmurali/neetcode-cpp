@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/longest-common-subsequence/>  
 - **NeetCode:** <https://neetcode.io/problems/longest-common-subsequence>  
 - **Video:** <https://www.youtube.com/watch?v=Ua0GhsJSlWM>  
+- **Video approach:** 3. Dynamic Programming (Bottom-Up)  
 
 [← Back to index](../INDEX.md)
 
@@ -81,7 +82,7 @@ public:
 
 > Where $m$ is the length of the string $text1$ and $n$ is the length of the string $text2$.
 
-## 3. Dynamic Programming (Bottom-Up)
+## 3. Dynamic Programming (Bottom-Up) ▶ video
 
 Instead of starting from the beginning and recursing forward, we can fill a 2D table iteratively from the end. The value `dp[i][j]` represents the LCS length for substrings `text1[i:]` and `text2[j:]`. By processing indices in reverse order, we ensure that when we compute `dp[i][j]`, the values we depend on (`dp[i+1][j+1]`, `dp[i+1][j]`, `dp[i][j+1]`) are already computed.
 

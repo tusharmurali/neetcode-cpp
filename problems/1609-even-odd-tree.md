@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/even-odd-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/even-odd-tree>  
 - **Video:** <https://www.youtube.com/watch?v=FkNWN1Fj_TY>  
+- **Video approach:** 1. Breadth First Search (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Breadth First Search
+## 1. Breadth First Search ▶ video
 
 An Even-Odd tree has specific constraints on each level: even-indexed levels must have strictly increasing odd values, while odd-indexed levels must have strictly decreasing even values. BFS naturally processes the tree level by level, making it ideal for checking these per-level conditions.
 

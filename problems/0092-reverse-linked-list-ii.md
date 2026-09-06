@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/reverse-linked-list-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/reverse-linked-list-ii>  
 - **Video:** <https://www.youtube.com/watch?v=RF_M9tX4Eag>  
+- **Video approach:** 4. Iteration - II  
 
 [← Back to index](../INDEX.md)
 
@@ -173,7 +174,7 @@ private:
 - Time complexity: $O(n)$
 - Space complexity: $O(1)$ extra space.
 
-## 4. Iteration - II
+## 4. Iteration - II ▶ video
 
 This approach reverses in a single pass without explicitly detaching the sublist. After finding the node before the reversal starts, we reverse links one at a time as we traverse. The key is maintaining a reference to the original sublist head (which becomes the tail after reversal) so we can reconnect it to the node following the reversed section.
 

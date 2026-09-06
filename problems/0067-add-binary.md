@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/add-binary/>  
 - **NeetCode:** <https://neetcode.io/problems/add-binary>  
 - **Video:** <https://www.youtube.com/watch?v=keuWJ47xG8g>  
+- **Video approach:** 1. Iteration  
 
 [← Back to index](../INDEX.md)
 
-## 1. Iteration
+## 1. Iteration ▶ video
 
 Adding binary numbers works just like adding decimal numbers by hand, except we only have digits 0 and 1. We start from the rightmost digits (least significant bits) and add corresponding digits along with any carry from the previous position. If the sum is 2 or more, we carry 1 to the next position. We reverse both strings first to make indexing from the right easier, then build the result and reverse it at the end.
 

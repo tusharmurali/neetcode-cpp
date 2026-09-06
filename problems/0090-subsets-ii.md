@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/subsets-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/subsets-ii>  
 - **Video:** <https://www.youtube.com/watch?v=Vn2v6ajA7U0>  
+- **Video approach:** 2. Backtracking - I  
 
 [← Back to index](../INDEX.md)
 
@@ -55,7 +56,7 @@ public:
 - Time complexity: $O(n * 2 ^n)$
 - Space complexity: $O(2 ^ n)$
 
-## 2. Backtracking - I
+## 2. Backtracking - I ▶ video
 
 We want all subsets, but the array may contain duplicates.
 If we blindly generate all subsets, we will produce repeated ones.

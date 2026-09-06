@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/edit-distance/>  
 - **NeetCode:** <https://neetcode.io/problems/edit-distance>  
 - **Video:** <https://www.youtube.com/watch?v=XYi2-LPrwm4>  
+- **Video approach:** 3. Dynamic Programming (Bottom-Up)  
 
 [← Back to index](../INDEX.md)
 
@@ -111,7 +112,7 @@ public:
 
 > Where $m$ is the length of $word1$ and $n$ is the length of $word2$.
 
-## 3. Dynamic Programming (Bottom-Up)
+## 3. Dynamic Programming (Bottom-Up) ▶ video
 
 We want the **minimum number of edits** needed to convert `word1` into `word2`, where an edit can be:
 

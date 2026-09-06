@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/valid-sudoku/>  
 - **NeetCode:** <https://neetcode.io/problems/valid-sudoku>  
 - **Video:** <https://www.youtube.com/watch?v=TjFXEUCMqI8>  
+- **Video approach:** 2. Hash Set (One Pass)  
 
 [← Back to index](../INDEX.md)
 
@@ -66,7 +67,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(n)$
 
-## 2. Hash Set (One Pass)
+## 2. Hash Set (One Pass) ▶ video
 
 Instead of checking rows, columns, and 3×3 boxes separately, we can validate the entire Sudoku board in **one single pass**.  
 For each cell, we check whether the digit has already appeared in:

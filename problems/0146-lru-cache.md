@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/lru-cache/>  
 - **NeetCode:** <https://neetcode.io/problems/lru-cache>  
 - **Video:** <https://www.youtube.com/watch?v=7ABFKPK2hD4>  
+- **Video approach:** 2. Doubly Linked List  
 
 [← Back to index](../INDEX.md)
 
@@ -66,7 +67,7 @@ public:
 - Time complexity: $O(n)$ for each $put()$ and $get()$ operation.
 - Space complexity: $O(n)$
 
-## 2. Doubly Linked List
+## 2. Doubly Linked List ▶ video
 
 We want all operations to be **O(1)** while still following **LRU (Least Recently Used)** rules.
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/remove-duplicates-from-sorted-array/>  
 - **NeetCode:** <https://neetcode.io/problems/remove-duplicates-from-sorted-array>  
 - **Video:** <https://www.youtube.com/watch?v=DEJAZBq0FDA>  
+- **Video approach:** 3. Two Pointers - II  
 
 [← Back to index](../INDEX.md)
 
@@ -58,7 +59,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(1)$
 
-## 3. Two Pointers - II
+## 3. Two Pointers - II ▶ video
 
 A more elegant approach: we compare each element with its predecessor. Since duplicates are consecutive in a sorted array, an element is unique if it differs from the one before it. We maintain a write pointer that only advances when we find a new unique value.
 

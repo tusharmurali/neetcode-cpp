@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/rotate-array/>  
 - **NeetCode:** <https://neetcode.io/problems/rotate-array>  
 - **Video:** <https://www.youtube.com/watch?v=BHr381Guz3Y>  
+- **Video approach:** 4. Using Reverse  
 
 [← Back to index](../INDEX.md)
 
@@ -94,7 +95,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(1)$ extra space.
 
-## 4. Using Reverse
+## 4. Using Reverse ▶ video
 
 A clever observation: rotating an array by `k` is equivalent to moving the last `k` elements to the front. We can achieve this with three reversals. First, reverse the entire array. Now the last `k` elements are at the front, but in reverse order. Reverse the first `k` elements to fix their order. Finally, reverse the remaining elements to restore their original order.
 

@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/maximum-number-of-balloons/>  
 - **NeetCode:** <https://neetcode.io/problems/maximum-number-of-balloons>  
 - **Video:** <https://www.youtube.com/watch?v=G9xeB2-7PqY>  
+- **Video approach:** 1. Hash Map - I (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Hash Map - I
+## 1. Hash Map - I ▶ video
 
 To form the word "balloon", we need specific counts of each letter: one each of 'b', 'a', 'n', and two each of 'l' and 'o'. The number of times we can spell "balloon" is limited by whichever required letter runs out first. By counting all letters in the text and then dividing by the required amounts, we find how many complete words we can form.
 

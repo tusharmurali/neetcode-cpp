@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/task-scheduler/>  
 - **NeetCode:** <https://neetcode.io/problems/task-scheduling>  
 - **Video:** <https://www.youtube.com/watch?v=s8p8ukTyA2I>  
+- **Video approach:** 2. Max-Heap  
 
 [← Back to index](../INDEX.md)
 
@@ -78,7 +79,7 @@ public:
 
 > Where $t$ is the time to process given tasks and $n$ is the cooldown time.
 
-## 2. Max-Heap
+## 2. Max-Heap ▶ video
 
 We always want to run the task that still has the **most remaining occurrences**, because those are the hardest to fit into the schedule (they need more slots with cooldown gaps).
 

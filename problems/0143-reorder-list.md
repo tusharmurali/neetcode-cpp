@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/reorder-list/>  
 - **NeetCode:** <https://neetcode.io/problems/reorder-linked-list>  
 - **Video:** <https://www.youtube.com/watch?v=S5bfdUTrKLM>  
+- **Video approach:** 3. Reverse And Merge  
 
 [← Back to index](../INDEX.md)
 
@@ -123,7 +124,7 @@ private:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 3. Reverse And Merge
+## 3. Reverse And Merge ▶ video
 
 To reorder the list into the pattern
 **L1 → Ln → L2 → Ln−1 → L3 → Ln−2 → ...**,

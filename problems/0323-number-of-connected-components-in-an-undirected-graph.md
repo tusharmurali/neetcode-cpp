@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/>  
 - **NeetCode:** <https://neetcode.io/problems/count-connected-components>  
 - **Video:** <https://www.youtube.com/watch?v=8f1XPm4WOUc>  
+- **Video approach:** 3. Disjoint Set Union (Rank | Size)  
 
 [← Back to index](../INDEX.md)
 
@@ -114,7 +115,7 @@ private:
 
 > Where $V$ is the number of vertices and $E$ is the number of edges in the graph.
 
-## 3. Disjoint Set Union (Rank | Size)
+## 3. Disjoint Set Union (Rank | Size) ▶ video
 
 Disjoint Set Union (DSU) groups nodes into **connected components** efficiently.
 

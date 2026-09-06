@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/encode-and-decode-tinyurl/>  
 - **NeetCode:** <https://neetcode.io/problems/encode-and-decode-tinyurl>  
 - **Video:** <https://www.youtube.com/watch?v=VyBOaboQLGc>  
+- **Video approach:** 3. Hash Map - II (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -68,7 +69,7 @@ public:
 
 > Where $n$ is the number of $longUrls$, $m$ is the average length of the URLs.
 
-## 3. Hash Map - II
+## 3. Hash Map - II ▶ video
 
 This approach uses two hash maps to create a bidirectional mapping. One maps long URLs to short URLs, and the other maps short URLs back to long URLs. This ensures that encoding the same long URL twice returns the same short URL, avoiding duplicates. The trade-off is using more memory for the extra map.
 

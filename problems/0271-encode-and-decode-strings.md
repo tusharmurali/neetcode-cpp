@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/encode-and-decode-strings/>  
 - **NeetCode:** <https://neetcode.io/problems/string-encode-and-decode>  
 - **Video:** <https://www.youtube.com/watch?v=B1k_sxOSgv8>  
+- **Video approach:** 2. Encoding & Decoding (Optimal)  
 
 [← Back to index](../INDEX.md)
 
@@ -67,7 +68,7 @@ public:
 
 > Where $m$ is the sum of lengths of all the strings and $n$ is the number of strings.
 
-## 2. Encoding & Decoding (Optimal)
+## 2. Encoding & Decoding (Optimal) ▶ video
 
 Instead of storing all string lengths first and then appending the strings, we can directly attach each string to its length.  
 For every string, we write **`length#string`**.  

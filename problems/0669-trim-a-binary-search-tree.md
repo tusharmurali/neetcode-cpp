@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/trim-a-binary-search-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/trim-a-binary-search-tree>  
 - **Video:** <https://www.youtube.com/watch?v=jwt5mTjEXGc>  
+- **Video approach:** 1. Depth First Search (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Depth First Search
+## 1. Depth First Search ▶ video
 
 The BST property gives us a powerful pruning strategy. If the current node's value is greater than `high`, then the node and its entire right subtree are too large, so we can discard them and only keep the trimmed left subtree. Similarly, if the value is less than `low`, the node and its left subtree are too small. When the node is within range, we recursively trim both children and attach the results.
 

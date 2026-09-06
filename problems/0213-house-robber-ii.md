@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/house-robber-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/house-robber-ii>  
 - **Video:** <https://www.youtube.com/watch?v=rWAJCfYYOvM>  
+- **Video approach:** 4. Dynamic Programming (Space Optimized)  
 
 [← Back to index](../INDEX.md)
 
@@ -140,7 +141,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 4. Dynamic Programming (Space Optimized)
+## 4. Dynamic Programming (Space Optimized) ▶ video
 
 This is **House Robber II**, where houses are arranged in a **circle**.  
 Because of the circular setup, **you cannot rob both the first and last house**.

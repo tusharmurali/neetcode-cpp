@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/>  
 - **NeetCode:** <https://neetcode.io/problems/minimum-length-of-string-after-deleting-similar-ends>  
 - **Video:** <https://www.youtube.com/watch?v=318hrWVr_5U>  
+- **Video approach:** 1. Greedy + Two Pointers (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Greedy + Two Pointers
+## 1. Greedy + Two Pointers ▶ video
 
 We can repeatedly trim matching characters from both ends of the string. The operation requires the prefix and suffix to consist of the same character, and we must remove at least one character from each end.
 

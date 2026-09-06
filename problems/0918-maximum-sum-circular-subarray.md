@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/maximum-sum-circular-subarray/>  
 - **NeetCode:** <https://neetcode.io/problems/maximum-sum-circular-subarray>  
 - **Video:** <https://www.youtube.com/watch?v=fxT9KjakYPM>  
+- **Video approach:** 3. Kadane's Algorithm  
 
 [← Back to index](../INDEX.md)
 
@@ -79,7 +80,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 3. Kadane's Algorithm
+## 3. Kadane's Algorithm ▶ video
 
 The maximum circular subarray sum falls into one of two cases: either the subarray does not wrap around, or it does. For the non-wrapping case, standard Kadane's algorithm finds the maximum subarray sum. For the wrapping case, if we remove a contiguous middle portion from the array, what remains is a prefix plus a suffix. Removing the minimum subarray sum leaves behind the maximum wrapping sum, which equals `total - minSubarraySum`. We take the better of these two cases, but if all elements are negative, the maximum is simply the largest single element.
 

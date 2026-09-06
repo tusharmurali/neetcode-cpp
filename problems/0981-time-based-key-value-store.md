@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/time-based-key-value-store/>  
 - **NeetCode:** <https://neetcode.io/problems/time-based-key-value-store>  
 - **Video:** <https://www.youtube.com/watch?v=fu2cD_6E8Hw>  
+- **Video approach:** 3. Binary Search (Array)  
 
 [← Back to index](../INDEX.md)
 
@@ -92,7 +93,7 @@ public:
 
 > Where $n$ is the total number of values associated with a key and $m$ is the total number of keys.
 
-## 3. Binary Search (Array)
+## 3. Binary Search (Array) ▶ video
 
 Each key stores its values in the order they were inserted, and timestamps are **guaranteed to be increasing** for each key.  
 This means we can keep a simple list of `(value, timestamp)` pairs for every key.

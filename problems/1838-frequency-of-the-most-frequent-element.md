@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/frequency-of-the-most-frequent-element/>  
 - **NeetCode:** <https://neetcode.io/problems/frequency-of-the-most-frequent-element>  
 - **Video:** <https://www.youtube.com/watch?v=vgBrQ0NM5vE>  
+- **Video approach:** 3. Sliding Window (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -84,7 +85,7 @@ public:
 - Time complexity: $O(n \log n)$
 - Space complexity: $O(n)$
 
-## 3. Sliding Window
+## 3. Sliding Window ▶ video
 
 Since the array is sorted, we can use a sliding window. As we expand the window by moving the right pointer, we add elements and check if the cost to make all elements equal to the rightmost exceeds `k`. If it does, we shrink from the left.
 

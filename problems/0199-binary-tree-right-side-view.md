@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/binary-tree-right-side-view/>  
 - **NeetCode:** <https://neetcode.io/problems/binary-tree-right-side-view>  
 - **Video:** <https://www.youtube.com/watch?v=d4zLyf32e3I>  
+- **Video approach:** 2. Breadth First Search  
 
 [← Back to index](../INDEX.md)
 
@@ -62,7 +63,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 2. Breadth First Search
+## 2. Breadth First Search ▶ video
 
 In BFS we explore the tree level by level.  
 If we look at each level from **left to right**, the **last node we encounter at that level** is the one visible from the right side.

@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/detect-squares/>  
 - **NeetCode:** <https://neetcode.io/problems/count-squares>  
 - **Video:** <https://www.youtube.com/watch?v=bahebearrDc>  
+- **Video approach:** 1. Hash Map - I  
 
 [← Back to index](../INDEX.md)
 
-## 1. Hash Map - I
+## 1. Hash Map - I ▶ video
 
 We are asked to count how many **axis-aligned squares** can be formed using a given point as one corner and previously added points as the other three corners.
 

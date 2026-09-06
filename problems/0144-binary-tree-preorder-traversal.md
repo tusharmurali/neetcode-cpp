@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/binary-tree-preorder-traversal/>  
 - **NeetCode:** <https://neetcode.io/problems/binary-tree-preorder-traversal>  
 - **Video:** <https://www.youtube.com/watch?v=afTpieEZXck>  
+- **Video approach:** 2. Iterative Depth First Search  
 
 [← Back to index](../INDEX.md)
 
@@ -63,7 +64,7 @@ private:
     - $O(n)$ space for the recursion stack.
     - $O(n)$ space for the output array.
 
-## 2. Iterative Depth First Search
+## 2. Iterative Depth First Search ▶ video
 
 Preorder traversal follows the pattern:
 

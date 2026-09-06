@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/>  
 - **NeetCode:** <https://neetcode.io/problems/least-number-of-unique-integers-after-k-removals>  
 - **Video:** <https://www.youtube.com/watch?v=Nsp_ta7SlEk>  
+- **Video approach:** 2. Min-Heap (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -47,7 +48,7 @@ public:
 - Time complexity: $O(n \log n)$
 - Space complexity: $O(n)$
 
-## 2. Min-Heap
+## 2. Min-Heap ▶ video
 
 A min-heap naturally gives us access to the smallest frequency first. Instead of sorting all frequencies upfront, we can repeatedly extract the minimum frequency and try to remove that integer. This approach works similarly to sorting but uses a heap data structure for extraction.
 

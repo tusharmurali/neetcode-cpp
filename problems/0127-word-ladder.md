@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/word-ladder/>  
 - **NeetCode:** <https://neetcode.io/problems/word-ladder>  
 - **Video:** <https://www.youtube.com/watch?v=h9iTnkgv05E>  
+- **Video approach:** 3. Breadth First Search - III  
 
 [← Back to index](../INDEX.md)
 
@@ -139,7 +140,7 @@ public:
 
 > Where $n$ is the number of words and $m$ is the length of the word.
 
-## 3. Breadth First Search - III
+## 3. Breadth First Search - III ▶ video
 
 We can use wildcard patterns to efficiently group words that are one character apart. For each word, create patterns by replacing each character with a wildcard. Words sharing the same pattern are neighbors. This precomputation allows `O(1)` neighbor lookup during `BFS`, as we only need to check the pattern buckets.
 

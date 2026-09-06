@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/swap-nodes-in-pairs/>  
 - **NeetCode:** <https://neetcode.io/problems/swap-nodes-in-pairs>  
 - **Video:** <https://www.youtube.com/watch?v=o811TZLAWOo>  
+- **Video approach:** 3. Iteration (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -93,7 +94,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$ for recursion stack.
 
-## 3. Iteration
+## 3. Iteration ▶ video
 
 We can swap pairs in place by carefully managing pointers. A dummy node simplifies handling the head change. For each pair, we need to: save the reference to the next pair, reverse the current pair's pointers, and connect the previous node to the new first node of the swapped pair. Moving two nodes at a time ensures we process each pair exactly once.
 

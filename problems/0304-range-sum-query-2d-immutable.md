@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/range-sum-query-2d-immutable/>  
 - **NeetCode:** <https://neetcode.io/problems/range-sum-query-2d-immutable>  
 - **Video:** <https://www.youtube.com/watch?v=KE8MQuwE2yA>  
+- **Video approach:** 3. Two Dimensional Prefix Sum  
 
 [← Back to index](../INDEX.md)
 
@@ -85,7 +86,7 @@ public:
 
 > Where $m$ is the number of rows and $n$ is the number of columns in the matrix.
 
-## 3. Two Dimensional Prefix Sum
+## 3. Two Dimensional Prefix Sum ▶ video
 
 We can extend prefix sums to two dimensions. The idea is to precompute `sumMat[r][c]` as the sum of all elements in the rectangle from `(0, 0)` to `(r - 1, c - 1)`. To find the sum of any rectangular region, we use the inclusion-exclusion principle: take the sum up to the bottom-right corner, subtract the regions above and to the left, then add back the top-left corner (which was subtracted twice).
 

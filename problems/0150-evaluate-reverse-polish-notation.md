@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/evaluate-reverse-polish-notation/>  
 - **NeetCode:** <https://neetcode.io/problems/evaluate-reverse-polish-notation>  
 - **Video:** <https://www.youtube.com/watch?v=iu0082c4HDE>  
+- **Video approach:** 4. Stack  
 
 [← Back to index](../INDEX.md)
 
@@ -189,7 +190,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 4. Stack
+## 4. Stack ▶ video
 
 A stack fits Reverse Polish Notation perfectly because the most recent numbers are always the ones used next.  
 As we scan the tokens:

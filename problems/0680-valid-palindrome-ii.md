@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/valid-palindrome-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/valid-palindrome-ii>  
 - **Video:** <https://www.youtube.com/watch?v=JrxRYBwG6EI>  
+- **Video approach:** 3. Two Pointers (Optimal)  
 
 [← Back to index](../INDEX.md)
 
@@ -93,7 +94,7 @@ private:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 3. Two Pointers (Optimal)
+## 3. Two Pointers (Optimal) ▶ video
 
 The previous two-pointer solution creates new substrings, which costs `O(n)` space. We can optimize this by passing index bounds to our palindrome check function instead of creating new strings. This way, we check the same characters without allocating extra memory. The logic remains identical: find the first mismatch, then verify if skipping either character leads to a valid palindrome.
 

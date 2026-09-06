@@ -1,0 +1,1502 @@
+{
+ "0001-two-sum": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video uses a single pass with a prevMap checking target-n before inserting, matching Hash Map (One Pass).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0002-add-two-numbers": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video iterates both lists with a dummy head and carry, identical to Iteration.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0003-longest-substring-without-repeating-characters": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses a set-based sliding window shrinking from the left while a duplicate exists, identical to Sliding Window (not the last-index map variant).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0004-median-of-two-sorted-arrays": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video partitions the smaller array with binary search and compares Aleft/Aright/Bleft/Bright; identical to Binary Search (Optimal).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0005-longest-palindromic-substring": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video expands around each center for odd and even lengths, matching Two Pointers.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0007-reverse-integer": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video pops digits with math.fmod and checks overflow against MAX//10 and MIN//10 before appending, identical to Iteration.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0010-regular-expression-matching": {
+  "approach": 2,
+  "confidence": "medium",
+  "note": "File holds two solutions without a video marker; the first is the bottom-up 2D table over (i,j), matching bottom-up DP (the second is the top-down memo version).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0011-container-with-most-water": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses converging two pointers moving the shorter side, identical to Two Pointers.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0013-roman-to-integer": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video uses a value hash map and subtracts when a smaller numeral precedes a larger one, identical to Hash Map.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0014-longest-common-prefix": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video iterates character positions of strs[0] and checks every string at that column, matching Vertical Scanning.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0015-3sum": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video sorts, fixes one element, and runs two pointers with duplicate skipping, identical to Two Pointers.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0017-letter-combinations-of-a-phone-number": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video uses recursive backtracking over digitToChar, identical to the Backtracking approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0018-4sum": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video uses a recursive findNsum that reduces N down to a two-pointer base case, matching K-Sum + Two Pointers.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0019-remove-nth-node-from-end-of-list": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video uses a dummy node and two pointers offset by n in a single pass, identical to Two Pointers.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0020-valid-parentheses": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses a stack with a close-to-open bracket map, identical to Stack.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0021-merge-two-sorted-lists": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "File has two solutions; the first (labeled Iterative) merges with a dummy node and matches Iteration; the second recursive one is not the video's.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0022-generate-parentheses": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video backtracks with openN/closedN counts and a stack, identical to the Backtracking approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0023-merge-k-sorted-lists": {
+  "approach": 5,
+  "confidence": "high",
+  "note": "Video merges lists pairwise in a while loop until one remains, identical to Divide And Conquer (Iteration).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0025-reverse-nodes-in-k-group": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses a dummy node, getKth helper, and in-place reversal of each group iteratively, identical to Iteration.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0026-remove-duplicates-from-sorted-array": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video uses L starting at 1 and a for-loop R comparing nums[R] to nums[R-1], identical to Two Pointers - II.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0027-remove-element": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "First Solution class compacts non-val elements forward with a write pointer k, matching Two Pointers - I.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0033-search-in-rotated-sorted-array": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video does a single binary search deciding left/right sorted portion each iteration; identical to Binary Search (One Pass).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0035-search-insert-position": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video uses l=0, r=len(nums), while l<r with r=mid on nums[mid]>=target, returning l; this is the Lower Bound binary search.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0036-valid-sudoku": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses defaultdict sets for rows, cols and 3x3 squares in one pass over the board, matching Hash Set (One Pass).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0039-combination-sum": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video does include-same-index/skip-index DFS with total pruning; identical to the plain Backtracking approach (no sort, no for-loop).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0040-combination-sum-ii": {
+  "approach": 3,
+  "confidence": "medium",
+  "note": "Video sorts and uses a for-loop backtrack skipping duplicates via prev; matches the for-loop Backtracking (Optimal) structure, though it prunes with target<=0 return rather than break on overflow.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0041-first-missing-positive": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "First method zeroes negatives then marks seen indices negative in place, matching Negative Marking (the set-based method is a second alternative).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0042-trapping-rain-water": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video uses two pointers with running leftMax/rightMax, identical to Two Pointers.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0043-multiply-strings": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses the reversed-digit product array with in-place carry, identical to Multiplication.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0045-jump-game-ii": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video expands a [l, r] window to the farthest reachable index each step, counting levels, i.e. the BFS/greedy approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0046-permutations": {
+  "approach": 0,
+  "confidence": "medium",
+  "note": "Video is pure recursion (remove one element, permute the rest, append it back) rather than backtracking; closest to the Recursion approach, though the article inserts the element at every position instead of rotating with pop(0).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0047-permutations-ii": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video backtracks over a Counter of remaining counts, matching the Hash Map approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0048-rotate-image": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video rotates layer by layer moving four cells at a time with l/r pointers, identical to Rotate By Four Cells.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0049-group-anagrams": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video keys groups by a character-frequency count (dict-count first, 26-array second), matching Hash Table rather than sorting the string.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0050-powx-n": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses recursive helper(x*x, n//2) binary exponentiation, identical to Binary Exponentiation (Recursive).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0051-n-queens": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses col/posDiag/negDiag hash sets, identical to Backtracking (Hash Set).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0052-n-queens-ii": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video counts solutions with col/posDiag/negDiag hash sets, matching Backtracking (Hash Set).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0053-maximum-subarray": {
+  "approach": 5,
+  "confidence": "high",
+  "note": "Video keeps a running sum reset to 0 when negative while tracking the max, which is Kadane's algorithm.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0054-spiral-matrix": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses left/right/top/bottom boundaries with a mid-loop break, identical to Iteration.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0055-jump-game": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video walks backwards moving the goal pointer whenever i + nums[i] reaches it, the greedy approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0056-merge-intervals": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video sorts by start and merges into an output list by comparing with the last end, identical to the sorting approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0057-insert-interval": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video loops once, returning early with res + intervals[i:] when newInterval ends before the current one and merging otherwise, identical to the greedy approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0062-unique-paths": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video uses row/newRow of size n iterated m-1 times, identical to Space Optimized.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0063-unique-paths-ii": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "First solution uses a single 1D dp row updated bottom-up with obstacle zeroing, matching Space Optimized; a memoized dfs follows as dead code.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0064-minimum-path-sum": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video uses a rolling prev/dp row of size n bottom-up from the corner, matching Space Optimized.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0066-plus-one": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video reverses digits, carries a 'one' flag through a while loop, appends if needed and reverses back, matching Iteration - I.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0067-add-binary": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video reverses both strings and prepends each result bit to a string with a carry, identical to Iteration.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0069-sqrtx": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video binary searches 0..x on mid*mid vs x and returns r after the loop instead of tracking res; same Binary Search algorithm.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0070-climbing-stairs": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video iterates with two rolling variables (n1, n2) summing Fibonacci-style, which is the space-optimized bottom-up DP.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0071-simplify-path": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video splits the path on '/' and processes tokens with a stack, which is Stack - II (approach 0 scans char by char instead).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0072-edit-distance": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video builds the full 2D dp table backwards with the min of three neighbors, identical to bottom-up DP.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0073-set-matrix-zeroes": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video uses first row/column as markers plus a rowZero flag, identical to Iteration (Space Optimized).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0074-search-a-2d-matrix": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video first binary searches for the row, then binary searches within the row; identical to the two-phase Binary Search approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0075-sort-colors": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video uses low/mid/high Dutch-flag swapping with a single scan pointer, matching Three Pointers - I.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0076-minimum-window-substring": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses the have/need count-map sliding window, identical to Sliding Window.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0077-combinations": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video backtracks with a for-loop from start and stops when len(comb)==k, identical to Backtracking - II.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0078-subsets": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video does include/exclude DFS backtracking; identical to the Backtracking approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0079-word-search": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video DFS tracks the current path in a hash set (plus a word-reversal heuristic), matching Backtracking (Hash Set).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0081-search-in-rotated-sorted-array-ii": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video is the modified binary search with left/right sorted portions and left+=1 on duplicates; identical to Binary Search.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0084-largest-rectangle-in-histogram": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video does a single pass with a stack of (start index, height) pairs and extends start on pop; identical to Stack (One Pass).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0088-merge-sorted-array": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video merges from the back decrementing m and n directly, then copies leftover nums2 into the front; matches Three Pointers Without Extra Space - I (the -II variant uses a single loop over j).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0090-subsets-ii": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video sorts, uses include/exclude backtracking and skips duplicates with a while loop on the exclude branch, identical to Backtracking - I.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0091-decode-ways": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "First solution in the file is memoized dfs with dp={len(s):1}, matching Top-Down; a bottom-up version follows as unreachable code.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0092-reverse-linked-list-ii": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video walks to leftPrev with a dummy, reverses right-left+1 nodes in place, then fixes the two boundary pointers, identical to Iteration - II.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0094-binary-tree-inorder-traversal": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "First solution in the video file is the stack-based iterative inorder traversal, matching Iterative Depth First Search (a recursive version follows it in the file).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0097-interleaving-string": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video fills a 2D boolean dp table from the end, identical to Bottom-Up.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0098-validate-binary-search-tree": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video does recursive DFS with (left, right) bounds; identical to the Depth First Search approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0100-same-tree": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video compares trees with simple recursion on both nodes, identical to Depth First Search.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0102-binary-tree-level-order-traversal": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video does level-by-level BFS with a deque and per-level list, matching Breadth First Search (video skips None children instead of enqueueing them, same idea).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0104-maximum-depth-of-binary-tree": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "First Solution in the video file is the recursive 1 + max(left, right) DFS, matching Recursive DFS (iterative DFS and BFS versions follow in the file).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0105-construct-binary-tree-from-preorder-and-inorder-traversal": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video recursively slices preorder/inorder using inorder.index; identical to the plain DFS approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0110-balanced-binary-tree": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses a recursive DFS returning [balanced, height] pairs, identical to Depth First Search.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0115-distinct-subsequences": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video fills a full 2D (i,j) table iteratively from the end of both strings, which is the bottom-up DP (dict instead of list, same algorithm).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0121-best-time-to-buy-and-sell-stock": {
+  "approach": 2,
+  "confidence": "medium",
+  "note": "Video code tracks the running lowest price and max profit in one pass, matching Dynamic Programming; the article's Two Pointers variant (l/r indices) is conceptually similar but structured differently.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0122-best-time-to-buy-and-sell-stock-ii": {
+  "approach": 4,
+  "confidence": "high",
+  "note": "Video sums every positive day-to-day price increase, matching Greedy.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0124-binary-tree-maximum-path-sum": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video does single-pass DFS returning max no-split path while tracking split max in res; identical to DFS (Optimal).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0125-valid-palindrome": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video builds a filtered lowercase string and compares it with its reverse, matching Reverse String.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0127-word-ladder": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video builds a wildcard-pattern adjacency map (e.g. h*t) and runs level-by-level BFS from beginWord; identical to BFS - III.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0128-longest-consecutive-sequence": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video puts numbers in a set and only extends sequences from elements without a left neighbor, matching Hash Set.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0130-surrounded-regions": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video does recursive DFS from border 'O' cells to mark reachable cells (via a set / 'T' marker) then flips the rest to 'X', matching the DFS approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0131-palindrome-partitioning": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses dfs(i) with a for-loop over j and an isPali helper, identical to Backtracking - II.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0133-clone-graph": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video uses recursive DFS with an oldToNew hash map, identical to the DFS approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0134-gas-station": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video starts with start=n-1 and end=0 and moves start back while total is negative, otherwise extends end; that is the two pointers approach, not the sum-check greedy.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0136-single-number": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video XORs all numbers, identical to Bit Manipulation.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0138-copy-list-with-random-pointer": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video builds an old-to-copy hash map in a first pass and wires next/random in a second pass, identical to Hash Map (Two Pass).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0139-word-break": {
+  "approach": 4,
+  "confidence": "high",
+  "note": "Video uses a boolean dp array from the end checking each word at position i, matching Bottom-Up.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0140-word-break-ii": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "0141-linked-list-cycle": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses slow/fast pointers (Floyd's cycle detection); identical to Fast And Slow Pointers.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0143-reorder-list": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video finds the middle with slow/fast pointers, reverses the second half, and merges alternately, identical to Reverse And Merge.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0144-binary-tree-preorder-traversal": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video does iterative preorder with a stack that pushes right children and walks left, identical to Iterative Depth First Search.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0145-binary-tree-postorder-traversal": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses a stack with a parallel visited-flag stack for iterative postorder, identical to Iterative Depth First Search - I.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0146-lru-cache": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses a hash map plus a doubly linked list with left/right sentinel nodes and remove/insert helpers, identical to Doubly Linked List.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0150-evaluate-reverse-polish-notation": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video evaluates tokens with a single stack, popping operands per operator, identical to Stack.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0152-maximum-product-subarray": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video tracks curMin/curMax per element, matching Kadane's Algorithm.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0153-find-minimum-in-rotated-sorted-array": {
+  "approach": 1,
+  "confidence": "medium",
+  "note": "Video binary searches while tracking a running min and shrinking with end=mid-1 like approach 1, but compares nums[mid] against nums[end] as in the Lower Bound variant; closer to approach 1's res-tracking style.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0155-min-stack": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video keeps a parallel minStack alongside the main stack, identical to Two Stacks.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0167-two-sum-ii-input-array-is-sorted": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video uses the classic converging two-pointer scan on the sorted array, identical to Two Pointers.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0168-excel-sheet-column-title": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video loops while columnNumber > 0 taking (n-1)%26 and reversing at the end, matching Iteration.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0169-majority-element": {
+  "approach": 4,
+  "confidence": "high",
+  "note": "Video keeps a candidate and a count that resets at zero, matching Boyer-Moore Voting.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0189-rotate-array": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video reverses the whole array then reverses the two segments, matching Using Reverse (inlined instead of a helper).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0190-reverse-bits": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video extracts bit i and shifts it into position 31-i over 32 iterations, identical to Bit Manipulation.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0191-number-of-1-bits": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video uses n &= n-1 to clear the lowest set bit each iteration, identical to Bit Mask (Optimal).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0198-house-robber": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video uses the rob1/rob2 two-variable rolling DP, matching Space Optimized.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0199-binary-tree-right-side-view": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video does level-by-level BFS keeping the last node seen at each level, identical to Breadth First Search.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0200-number-of-islands": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "File comment marks the 'BFS Version From Video'; that solution does BFS from each unvisited land cell with a visited set, matching Breadth First Search.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0201-bitwise-and-of-numbers-range": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "First (video) solution checks each set bit of left against the distance to the next carry into that bit, identical to Bit Manipulation - I.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0202-happy-number": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses Floyd slow/fast pointers over sum-of-squares, identical to Fast And Slow Pointers - I.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0206-reverse-linked-list": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video reverses the list iteratively with prev/curr pointers; identical to Iteration.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0207-course-schedule": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video builds a prereq map and runs DFS with a 'visiting' set for cycle detection, clearing prereqs on success; identical to Cycle Detection (DFS).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0208-implement-trie-prefix-tree": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video TrieNode uses a 26-slot children array, matching Prefix Tree (Array).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0209-minimum-size-subarray-sum": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses a variable-size sliding window with running total shrinking while total >= target, identical to Sliding Window.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0210-course-schedule-ii": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video runs DFS with visit and cycle sets, appending courses post-order; identical to Cycle Detection (DFS).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0211-design-add-and-search-words-data-structure": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses a hash-map trie with recursive DFS for '.' wildcards, identical to Depth First Search (Trie).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0212-word-search-ii": {
+  "approach": 1,
+  "confidence": "medium",
+  "note": "Video uses a hash-map trie, a visit set and a result set exactly like Backtracking (Trie + Hash Set), adding refs-count pruning via removeWord; approach 2 uses array children, board marking and different pruning.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0213-house-robber-ii": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video runs the rob1/rob2 helper on nums[1:] and nums[:-1], matching Space Optimized.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0215-kth-largest-element-in-an-array": {
+  "approach": 1,
+  "confidence": "medium",
+  "note": "First solution heapifies nums and pops until size k (min-heap of k largest), which is the Min-Heap approach's idea though the article uses heapq.nlargest; the file's later classes are sorting and quickselect.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0217-contains-duplicate": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video scans once with a hash set and returns True on a repeat, matching Hash Set.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0219-contains-duplicate-ii": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video maintains a sliding-window set of the last k elements, identical to Hash Set.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0225-implement-stack-using-queues": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses a single deque and rotates it after each push, identical to Using One Queue.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0226-invert-binary-tree": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video swaps children and recurses on both subtrees, identical to Depth First Search.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0229-majority-element-ii": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "0230-kth-smallest-element-in-a-bst": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video does iterative inorder traversal with an explicit stack, decrementing k; identical to Iterative DFS (Optimal).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0232-implement-queue-using-stacks": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses two stacks and only transfers when the output stack is empty, matching Using Two Stacks (Amortized Complexity).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0235-lowest-common-ancestor-of-a-binary-search-tree": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video walks down the BST in a while loop comparing p and q values to the current node, identical to Iteration.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0238-product-of-array-except-self": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video stores prefix products in res then multiplies a running postfix in a second pass without extra arrays, matching Prefix & Suffix (Optimal).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0239-sliding-window-maximum": {
+  "approach": 4,
+  "confidence": "high",
+  "note": "Video uses a monotonic deque of indices with l/r pointers, identical to Deque.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0242-valid-anagram": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video builds two count dictionaries and compares them, matching Hash Map (the sorted one-liner is only a comment).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0252-meeting-rooms": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video sorts by start and checks each adjacent pair for overlap, identical to the sorting approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0253-meeting-rooms-ii": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video builds (time, +1/-1) events, sorts them, and tracks the running max count, identical to the tuple-sort greedy approach (approach 3), not the map-based sweep line.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0261-graph-valid-tree": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video's first solution builds an adjacency list and does DFS with a parent parameter to detect cycles, then checks all nodes visited; matches Cycle Detection (DFS).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0268-missing-number": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video starts res = n and adds i - nums[i] for each index, identical to Math.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0269-alien-dictionary": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video builds the char adjacency from adjacent words and does post-order DFS with a visited dict (True = on current path) for cycle detection, then reverses; identical to Depth First Search.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0271-encode-and-decode-strings": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video encodes each string as length + '#' + string inline and decodes by parsing length before '#', matching the Optimal encoding.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0279-perfect-squares": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "0286-walls-and-gates": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video seeds a queue with all gates and expands level by level, identical to Multi Source BFS.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0287-find-the-duplicate-number": {
+  "approach": 6,
+  "confidence": "high",
+  "note": "Video uses Floyd's cycle detection (slow/fast then second slow pointer), identical to Fast And Slow Pointers.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0295-find-median-from-data-stream": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses two heaps (max-heap small, min-heap large) kept balanced; identical to the Heap approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0297-serialize-and-deserialize-binary-tree": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video serializes with preorder DFS and 'N' for nulls and deserializes recursively (pop(0) instead of an index); same DFS approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0300-longest-increasing-subsequence": {
+  "approach": 4,
+  "confidence": "high",
+  "note": "Video uses LIS[i] = max(1 + LIS[j]) for j > i iterating backwards, matching Bottom-Up II.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0304-range-sum-query-2d-immutable": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video builds a (rows+1)x(cols+1) 2D prefix-sum matrix and answers queries in O(1), matching Two Dimensional Prefix Sum.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0309-best-time-to-buy-and-sell-stock-with-cooldown": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses dfs(i, buying) with a memo dict, identical to Top-Down.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0310-minimum-height-trees": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "0312-burst-balloons": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video iterates interval lengths (offset) and pivots over a padded array with a cache dict, i.e. bottom-up interval DP.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0322-coin-change": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video fills dp[a] = min over coins of 1 + dp[a-c], matching Bottom-Up.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0323-number-of-connected-components-in-an-undirected-graph": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video uses a dict-based union-find with path compression and counts distinct roots; the DSU approach is the only union-find option.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0329-longest-increasing-path-in-a-matrix": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video does DFS with a (r,c) memo dict and returns max(dp.values()), identical to the top-down DP approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0332-reconstruct-itinerary": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video sorts adjacency lists, recursively consumes edges (popping the smallest destination) and appends the airport post-order then reverses, which is recursive Hierholzer's, not the backtracking DFS of approach 0.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0337-house-robber-iii": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "0338-counting-bits": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "First (video) solution uses dp[i] = 1 + dp[i - offset] with a power-of-two offset, identical to Bit Manipulation (DP).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0343-integer-break": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "0344-reverse-string": {
+  "approach": 4,
+  "confidence": "high",
+  "note": "Video swaps characters from both ends inward with l and r pointers, matching Two Pointers.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0347-top-k-frequent-elements": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video counts frequencies then fills a freq bucket array indexed by count and reads from the top, matching Bucket Sort.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0355-design-twitter": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video merges followees' latest tweets via a min-heap with a decreasing counter; identical to the Heap approach (no 10-tweet cap so not the Optimal one).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0371-sum-of-two-integers": {
+  "approach": 2,
+  "confidence": "medium",
+  "note": "Video adds via XOR for sum and (a&b)<<1 for carry (recursively, with Python sign special-casing), same core idea as Bit Manipulation (Optimal) rather than the per-bit loop of index 1.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0374-guess-number-higher-or-lower": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video is a plain binary search over 1..n driven by guess(); matches Binary Search.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0377-combination-sum-iv": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "First solution is the bottom-up dict cache[total] += cache[total-n], matching Bottom-Up I; a memoized dfs follows as dead code.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0394-decode-string": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video pushes every char except ']' onto one stack, then pops substring and digits on ']'; matches One Stack.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0399-evaluate-division": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "0410-split-array-largest-sum": {
+  "approach": 4,
+  "confidence": "high",
+  "note": "Video binary searches the answer in [max, sum] with a greedy canSplit check; matches Binary Search (not the prefix-sum variant).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0416-partition-equal-subset-sum": {
+  "approach": 4,
+  "confidence": "high",
+  "note": "Video builds a set of reachable sums and checks for target, matching Dynamic Programming (Hash Set).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0417-pacific-atlantic-water-flow": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video runs recursive DFS from the border cells into two visited sets (pac, atl) and intersects them, identical to the DFS approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0424-longest-repeating-character-replacement": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video uses a count map plus maxf and shrinks the window when length - maxf > k, matching Sliding Window (Optimal); it uses if instead of while but same algorithm.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0427-construct-quad-tree": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "0435-non-overlapping-intervals": {
+  "approach": 4,
+  "confidence": "high",
+  "note": "Video sorts by start and keeps prevEnd = min(end, prevEnd) on overlap, identical to greedy sort by start.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0450-delete-node-in-a-bst": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video recursively finds the key, and for two children copies the right-subtree minimum value then recursively deletes it, identical to Recursion - I.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0460-lfu-cache": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "0463-island-perimeter": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video recursive DFS with a visit set returning 1 at water/boundary, matching Depth First Search.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0473-matchsticks-to-square": {
+  "approach": 1,
+  "confidence": "medium",
+  "note": "Video sorts descending and prunes with sides[j]+stick<=length like Backtracking (Pruning), but lacks the sides[side]==0 break; still much closer to 1 than to the brute force.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0494-target-sum": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses backtrack(i, total) with an (i,total) memo dict, identical to Top-Down.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0502-ipo": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video uses a min-heap on capital and a max-heap on profit with tuples; identical to the Two Heaps approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0518-coin-change-ii": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "First solution is memoized dfs(i, a) over (coin index, running amount), matching Top-Down; 2D and 1D bottom-up versions follow as dead code.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0543-diameter-of-binary-tree": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses a single recursive DFS returning height while updating a nonlocal diameter, identical to Depth First Search.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0560-subarray-sum-equals-k": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video keeps a running sum and a prefix-sum count map seeded with {0:1}, adding counts of sum-k, matching Hash Map.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0567-permutation-in-string": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video uses 26-length count arrays with a matches counter over a fixed-size window, identical to Sliding Window.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0572-subtree-of-another-tree": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video recursively checks isSameTree at every node of root, identical to the DFS approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0621-task-scheduler": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "First solution uses a max-heap of counts plus a cooldown queue; identical to the Max-Heap approach (the greedy math version is a second solution).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0622-design-circular-queue": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video implements the queue as a singly linked list with head/tail pointers and a size counter, matching the Singly Linked List approach (article uses a dummy head and remaining-space counter, same idea).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0647-palindromic-substrings": {
+  "approach": 3,
+  "confidence": "medium",
+  "note": "Video uses a countPali helper expanding from centers i,i and i,i+1; identical to Two Pointers (Optimal), though Two Pointers (index 2) is the same algorithm inlined.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0649-dota2-senate": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "0658-find-k-closest-elements": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "First Solution in the file binary-searches for the closest index then expands l/r outward k-1 times, matching Binary Search + Two Pointers; the second (log(n-k)) solution matches Binary Search but is not the first.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0678-valid-parenthesis-string": {
+  "approach": 1,
+  "confidence": "medium",
+  "note": "File holds two solutions without a video marker; the first is top-down DFS over (i, open) with a memo dict, matching the top-down DP approach (the second is the leftMin/leftMax greedy).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0680-valid-palindrome-ii": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video uses a helper that checks the remaining window with two pointers on the first mismatch, without slicing, matching Two Pointers (Optimal).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0682-baseball-game": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video pushes every score onto a stack and sums at the end, matching Stack - I (Stack - II keeps a running total).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0684-redundant-connection": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video uses union-find by rank with path compression and returns the first edge whose union fails; identical to Disjoint Set Union.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0695-max-area-of-island": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video recursive DFS with a visit set summing 1 + neighbors, identical to Depth First Search.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0698-partition-to-k-equal-sum-subsets": {
+  "approach": 0,
+  "confidence": "medium",
+  "note": "Video backtracks with a visited set and target check like the plain Backtracking approach (plus a duplicate-skip), without the subsetSum==0 pruning of approach 1.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0701-insert-into-a-binary-search-tree": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video inserts recursively by comparing val to root.val, identical to Recursion.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0703-kth-largest-element-in-a-stream": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video keeps a min-heap of the k largest elements; identical to the Min-Heap approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0704-binary-search": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video is the standard iterative l<=r binary search with early return; identical to Iterative Binary Search.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0705-design-hashset": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video stores keys in a plain list with linear membership checks, matching Brute Force.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0706-design-hashmap": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses 1000 buckets of dummy-headed linked lists with key % size hashing, matching Linked List chaining.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0721-accounts-merge": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video unions account indices via an emailToAcc map with a rank-based UnionFind and groups emails by leader; identical to Disjoint Set Union.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0735-asteroid-collision": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video uses a stack, popping positive asteroids while a negative one collides; identical to the Stack approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0739-daily-temperatures": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses a monotonic stack of (temp, index) pairs; identical to the Stack approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0743-network-delay-time": {
+  "approach": 4,
+  "confidence": "high",
+  "note": "Video runs Dijkstra with a min-heap and a visit set, tracking the last popped time; identical to Dijkstra's Algorithm.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0746-min-cost-climbing-stairs": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video modifies cost in place from right to left with cost[i] += min(cost[i+1], cost[i+2]) and returns min of the first two; identical to DP (Space Optimized).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0752-open-the-lock": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video uses a children() helper and a single BFS queue of (wheel, turns) pairs with deadends seeded into the visit set, identical to BFS - I.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0763-partition-labels": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video records last index per char then scans extending a goal until i == goal, the two pointers greedy approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0767-reorganize-string": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses a max-heap of counts with a held-back prev element; identical to Frequency Count (Max-Heap).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0778-swim-in-rising-water": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video runs a min-heap Dijkstra on max(t, grid height) with a visit set; identical to Dijkstra's Algorithm.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0787-cheapest-flights-within-k-stops": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video relaxes all flights k+1 times using a copied prices array each round, which is Bellman-Ford; identical to Bellman Ford Algorithm.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0846-hand-of-straights": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video builds a count map and a min-heap of distinct keys, popping when a count hits zero, identical to the heap approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0853-car-fleet": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video sorts by position descending and pushes arrival times onto a stack, popping merged fleets; identical to the Stack approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0867-transpose-matrix": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "0875-koko-eating-bananas": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video binary searches speed k in [1, max(piles)] summing ceil(p/k); identical to Binary Search.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0877-stone-game": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "0881-boats-to-save-people": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video sorts and pairs the heaviest with the lightest using two pointers, matching Sorting + Two Pointers.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0895-maximum-frequency-stack": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video uses a count map, maxCnt, and a hash map from frequency to stack; identical to Stack Of Stacks (Hash Map).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0901-online-stock-span": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video keeps a monotonic decreasing stack of (price, span) pairs and merges spans on pop; identical to approach 1.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0912-sort-an-array": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video implements recursive top-down merge sort with a merge helper, matching Merge Sort.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0918-maximum-sum-circular-subarray": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video runs Kadane for both global max and global min and returns max(globMax, total - globMin), identical to the Kadane's approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0953-verifying-an-alien-dictionary": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video compares each adjacent pair at the first differing character using an order index map, matching Comparing adjacent words.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0973-k-closest-points-to-origin": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video heapifies all (dist, x, y) tuples and pops k times; identical to the Min-Heap approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0978-longest-turbulent-subarray": {
+  "approach": 3,
+  "confidence": "high",
+  "note": "Video uses l/r pointers with a prev sign string and resets the window on equal or repeated sign, identical to the sliding window approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0981-time-based-key-value-store": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video stores per-key lists of [value, timestamp] and binary searches the list in get; identical to Binary Search (Array).",
+  "source": "reviewed 2026-09-07"
+ },
+ "0994-rotting-oranges": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video does level-order BFS from all rotten oranges with a fresh counter, identical to Breadth First Search.",
+  "source": "reviewed 2026-09-07"
+ },
+ "0997-find-the-town-judge": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses a single delta counter (indegree minus outdegree) and checks n-1, matching Indegree & Outdegree (Optimal).",
+  "source": "reviewed 2026-09-07"
+ },
+ "1011-capacity-to-ship-packages-within-d-days": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video binary searches capacity in [max, sum] with a canShip feasibility check; same as Binary Search (article adds an early-exit in canShip).",
+  "source": "reviewed 2026-09-07"
+ },
+ "1046-last-stone-weight": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "First solution in the file negates values into a min-heap as a max-heap; identical to the Heap approach (the _heapify_max version is a second solution).",
+  "source": "reviewed 2026-09-07"
+ },
+ "1049-last-stone-weight-ii": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses dfs(i, total) with a (i,total) memo dict and target ceil(sum/2), matching Top-Down.",
+  "source": "reviewed 2026-09-07"
+ },
+ "1071-greatest-common-divisor-of-strings": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "1094-car-pooling": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "1095-find-in-mountain-array": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "1137-n-th-tribonacci-number": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses recursion with a memo dict (class-level), matching Dynamic Programming (Top-Down).",
+  "source": "reviewed 2026-09-07"
+ },
+ "1140-stone-game-ii": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "1143-longest-common-subsequence": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video uses a full 2D dp table filled from the bottom-right, matching Bottom-Up.",
+  "source": "reviewed 2026-09-07"
+ },
+ "1325-delete-leaves-with-a-given-value": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "135-candy": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "1405-longest-happy-string": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "1406-stone-game-iii": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "1448-count-good-nodes-in-binary-tree": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video does recursive DFS passing the running max down; identical to the DFS approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "1462-course-schedule-iv": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video reverses edges and uses DFS to build a hash set of all indirect prereqs per course (prereqMap), then answers queries by set lookup; identical to DFS (Hash Set).",
+  "source": "reviewed 2026-09-07"
+ },
+ "1489-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video computes the MST weight with Kruskal's, then for each edge rebuilds the MST without it (critical) and with it forced (pseudo) using a rank-based UnionFind and max(uf.rank) connectivity check; identical to Kruskal's Algorithm - I.",
+  "source": "reviewed 2026-09-07"
+ },
+ "1584-min-cost-to-connect-all-points": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video builds a full adjacency list of Manhattan distances and runs heap-based Prim's with a visit set; identical to Prim's Algorithm.",
+  "source": "reviewed 2026-09-07"
+ },
+ "1631-path-with-minimum-effort": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video runs Dijkstra with a min-heap on max-edge-difference (using an efforts distance array instead of a visited set); matches Dijkstra's Algorithm.",
+  "source": "reviewed 2026-09-07"
+ },
+ "1768-merge-strings-alternately": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video uses two pointers i/j in a while loop over both strings then appends the leftover slices, identical to Two Pointers - I.",
+  "source": "reviewed 2026-09-07"
+ },
+ "1834-single-threaded-cpu": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video sorts tasks by enqueue time with index, then uses one min-heap on processing time; matches Sorting + Min-Heap.",
+  "source": "reviewed 2026-09-07"
+ },
+ "1851-minimum-interval-to-include-each-query": {
+  "approach": 2,
+  "confidence": "high",
+  "note": "Video sorts intervals and queries, pushes (size, end) onto a min-heap and pops expired ones, identical to Min Heap.",
+  "source": "reviewed 2026-09-07"
+ },
+ "1863-sum-of-all-subset-xor-totals": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "1871-jump-game-vii": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "1899-merge-triplets-to-form-target-triplet": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video skips triplets exceeding target and collects matching indices into a set of size 3, identical to the first greedy approach.",
+  "source": "reviewed 2026-09-07"
+ },
+ "1929-concatenation-of-array": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video appends every element twice via an outer range(2) loop, matching the Two Pass iteration.",
+  "source": "reviewed 2026-09-07"
+ },
+ "2013-detect-squares": {
+  "approach": 0,
+  "confidence": "high",
+  "note": "Video stores a point-count map plus a list of points and checks diagonals, identical to Hash Map - I.",
+  "source": "reviewed 2026-09-07"
+ },
+ "2392-build-a-matrix-with-conditions": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "2402-meeting-rooms-iii": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video uses an available-rooms min-heap plus a used-rooms (end_time, room) min-heap, identical to Two Min-Heaps.",
+  "source": "reviewed 2026-09-07"
+ },
+ "2707-extra-characters-in-a-string": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "2709-greatest-common-divisor-traversal": {
+  "approach": 1,
+  "confidence": "high",
+  "note": "Video trial-divides each number for prime factors and unions the index with the first index seen for each factor via a size-based UnionFind, checking component count == 1; identical to Disjoint Set Union.",
+  "source": "reviewed 2026-09-07"
+ },
+ "2807-insert-greatest-common-divisors-in-linked-list": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "3133-minimum-array-end": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ },
+ "860-lemonade-change": {
+  "approach": null,
+  "confidence": "none",
+  "note": "no video file in repo",
+  "source": "reviewed 2026-09-07"
+ }
+}

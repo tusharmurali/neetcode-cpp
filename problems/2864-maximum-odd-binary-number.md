@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/maximum-odd-binary-number/>  
 - **NeetCode:** <https://neetcode.io/problems/maximum-odd-binary-number>  
 - **Video:** <https://www.youtube.com/watch?v=EUKLOAv4-IQ>  
+- **Video approach:** 2. Greedy (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -37,7 +38,7 @@ public:
 - Time complexity: $O(n \log n)$
 - Space complexity: $O(n)$
 
-## 2. Greedy
+## 2. Greedy ▶ video
 
 We do not actually need to sort. The optimal answer has a simple structure: place all but one `1` at the beginning, followed by all `0`s, and end with a single `1`.
 

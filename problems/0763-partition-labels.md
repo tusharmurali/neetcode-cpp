@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/partition-labels/>  
 - **NeetCode:** <https://neetcode.io/problems/partition-labels>  
 - **Video:** <https://www.youtube.com/watch?v=B7m8UmZE-vw>  
+- **Video approach:** 1. Two Pointers (Greedy)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Two Pointers (Greedy)
+## 1. Two Pointers (Greedy) ▶ video
 
 We want to split the string into as many parts as possible such that **each letter appears in at most one part**.
 

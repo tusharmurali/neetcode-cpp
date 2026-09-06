@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/remove-linked-list-elements/>  
 - **NeetCode:** <https://neetcode.io/problems/remove-linked-list-elements>  
 - **Video:** <https://www.youtube.com/watch?v=JI71sxtHTng>  
+- **Video approach:** 3. Iteration (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -95,7 +96,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$ for recursion stack.
 
-## 3. Iteration
+## 3. Iteration ▶ video
 
 To remove nodes in place without recursion, we use a dummy node to handle edge cases like removing the head.
 We maintain two pointers: `prev` (the last valid node) and `curr` (the node being examined).

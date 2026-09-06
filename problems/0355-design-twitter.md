@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/design-twitter/>  
 - **NeetCode:** <https://neetcode.io/problems/design-twitter-feed>  
 - **Video:** <https://www.youtube.com/watch?v=pNichitDD2E>  
+- **Video approach:** 2. Heap  
 
 [← Back to index](../INDEX.md)
 
@@ -69,7 +70,7 @@ public:
 
 > Where $n$ is the total number of $followeeIds$ associated with the $userId$, $m$ is the maximum number of tweets by any user, $t$ is the total number of tweets associated with the $userId$ and its $followeeIds$, $N$ is the total number of $userIds$ and $M$ is the maximum number of followees for any user.
 
-## 2. Heap
+## 2. Heap ▶ video
 
 Each user can follow many people, and each of those people may have many tweets.  
 Instead of combining **all** tweets and sorting them (which is slow), we only need the **`10` most recent tweets**.

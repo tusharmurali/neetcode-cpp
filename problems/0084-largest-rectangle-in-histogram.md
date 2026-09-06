@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/largest-rectangle-in-histogram/>  
 - **NeetCode:** <https://neetcode.io/problems/largest-rectangle-in-histogram>  
 - **Video:** <https://www.youtube.com/watch?v=zx5Sw9130L0>  
+- **Video approach:** 4. Stack (One Pass)  
 
 [← Back to index](../INDEX.md)
 
@@ -203,7 +204,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 4. Stack (One Pass)
+## 4. Stack (One Pass) ▶ video
 
 We want, for each bar, the widest area where it can act as the **shortest bar**.  
 With a single pass and a stack, we can do this on the fly:

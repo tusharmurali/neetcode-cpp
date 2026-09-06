@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/reverse-string/>  
 - **NeetCode:** <https://neetcode.io/problems/reverse-string>  
 - **Video:** <https://www.youtube.com/watch?v=_d0T_2Lk2qA>  
+- **Video approach:** 5. Two Pointers  
 
 [← Back to index](../INDEX.md)
 
@@ -103,7 +104,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(1)$
 
-## 5. Two Pointers
+## 5. Two Pointers ▶ video
 
 The most efficient approach uses two pointers starting at opposite ends of the array. We swap the characters at these pointers, then move them toward each other. When the pointers meet or cross, every character has been swapped exactly once, and the array is reversed. This achieves O(1) space since we only swap in place.
 

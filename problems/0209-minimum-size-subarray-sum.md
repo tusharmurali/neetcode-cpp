@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/minimum-size-subarray-sum/>  
 - **NeetCode:** <https://neetcode.io/problems/minimum-size-subarray-sum>  
 - **Video:** <https://www.youtube.com/watch?v=aYqYMIqZx5s>  
+- **Video approach:** 2. Sliding Window  
 
 [← Back to index](../INDEX.md)
 
@@ -42,7 +43,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(1)$ extra space.
 
-## 2. Sliding Window
+## 2. Sliding Window ▶ video
 
 Since all elements are positive, we can use a sliding window approach. We expand the window by moving the right pointer to increase the sum. Once the sum meets or exceeds the target, we try to shrink the window from the left to find the minimum length. This works because removing elements from the left will only decrease the sum, and we want the smallest window that still satisfies the condition.
 

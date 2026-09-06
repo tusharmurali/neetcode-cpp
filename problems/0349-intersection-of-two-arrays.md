@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/intersection-of-two-arrays/>  
 - **NeetCode:** <https://neetcode.io/problems/intersection-of-two-arrays>  
 - **Video:** <https://www.youtube.com/watch?v=fwUTXaMom6U>  
+- **Video approach:** 5. Hash Set (Optimal) (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -140,7 +141,7 @@ public:
 
 > Where $n$ is the size of the array $nums1$ and $m$ is the size of the array $nums2$.
 
-## 5. Hash Set (Optimal)
+## 5. Hash Set (Optimal) ▶ video
 
 We can improve on the two-set approach by using only one set. Store all elements from `nums1` in a set, then iterate through `nums2`. When we find a match, add it to the result and remove it from the set to avoid duplicates.
 

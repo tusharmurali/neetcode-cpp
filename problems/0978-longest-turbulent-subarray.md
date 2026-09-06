@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/longest-turbulent-subarray/>  
 - **NeetCode:** <https://neetcode.io/problems/longest-turbulent-subarray>  
 - **Video:** <https://www.youtube.com/watch?v=V_iHUhR8Dek>  
+- **Video approach:** 4. Sliding Window  
 
 [← Back to index](../INDEX.md)
 
@@ -128,7 +129,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 4. Sliding Window
+## 4. Sliding Window ▶ video
 
 We maintain a window that represents a valid turbulent subarray. As we move the `right` pointer, we check if the current comparison alternates from the previous one. If it does, we extend the window. If not (or if elements are equal), we shrink the window by moving the `left` pointer to start fresh from the breaking point.
 

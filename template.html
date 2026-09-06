@@ -113,6 +113,18 @@ code,pre,.mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Co
 .tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
 .tabs button .k{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--muted);margin-right:6px}
 .tabs button.all{margin-left:auto}
+.tabs button .vid{display:inline-block;margin-left:6px;font-size:10px;font-weight:700;letter-spacing:.04em;color:var(--accent-ink);background:var(--accent);border-radius:4px;padding:1px 5px;vertical-align:1px}
+.vline{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:-6px 0 18px;font-size:13px}
+.vline .play{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--accent);color:var(--accent-text);background:var(--accent-soft);border-radius:999px;padding:3px 10px;font-weight:600;cursor:pointer}
+.vline .play:hover{filter:brightness(.97)}
+.vline .conf{color:var(--muted);font-size:12px}
+.vline .miss{color:var(--muted)}
+details.vpy{margin:-4px 0 30px;border:1px dashed var(--line-strong);border-radius:10px;background:var(--surface)}
+details.vpy summary{cursor:pointer;padding:10px 14px;font-weight:600;color:var(--muted);list-style:none;display:flex;align-items:center;gap:8px}
+details.vpy summary::before{content:"▸";font-size:12px}
+details[open].vpy summary::before{content:"▾"}
+details.vpy summary:hover{color:var(--ink)}
+details.vpy .codebox{margin:0 10px 10px;border-radius:8px}
 
 .appr h2{font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:600;font-size:20px;margin:0 0 8px}
 .appr .intu{max-width:68ch;color:var(--ink);margin:0 0 14px}
@@ -284,6 +296,13 @@ code,pre,.mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Co
     const tab = Math.min(state.tab, apps.length);
     const shown = tab===apps.length ? apps : [apps[tab]];
     const premium = PREMIUM.has(p.id) ? `<div class="note">This one is LeetCode Premium. NeetCode hosts a free version at the NeetCode link.</div>` : '';
+    const va = p.video_approach, vc = p.video_confidence;
+    const confTxt = vc==='auto' ? 'auto-matched, not reviewed' : vc==='medium' ? 'close call with a sibling approach' : vc==='low' ? 'best guess' : '';
+    const vline = va!=null
+      ? `<div class="vline"><button class="play" data-tab="${va}" title="${esc(p.video_note||'')}">▶ Video uses ${va+1}. ${esc(p.approaches[va].title)}</button>${confTxt?`<span class="conf">${confTxt}</span>`:''}</div>`
+      : p.video_py ? `<div class="vline"><span class="miss">▶ The video's code doesn't line up with any written approach.${p.video_note?' '+esc(p.video_note):''}</span></div>`
+      : p.video ? `<div class="vline"><span class="miss">▶ No code from the video in NeetCode's repo, so the video approach isn't tagged.</span></div>` : '';
+    const vpy = p.video_py ? `<details class="vpy"><summary>Python from the video, for comparison</summary><div class="codebox"><button class="copy" data-copy-py="1">Copy</button><pre><code class="language-python">${esc(p.video_py)}</code></pre></div></details>` : '';
     detail.innerHTML = `<div class="wrap">
       <div class="hd">
         <div>
@@ -299,8 +318,9 @@ code,pre,.mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Co
         </div>
       </div>
       ${premium}
+      ${vline}
       <div class="tabs" role="tablist">
-        ${apps.map((a,i)=>`<button role="tab" aria-selected="${tab===i}" data-tab="${i}"><span class="k">${i+1}</span>${esc(a.title)}</button>`).join('')}
+        ${apps.map((a,i)=>`<button role="tab" aria-selected="${tab===i}" data-tab="${i}"><span class="k">${i+1}</span>${esc(a.title)}${i===va?'<span class="vid">VIDEO</span>':''}</button>`).join('')}
         ${apps.length>1?`<button class="all" role="tab" aria-selected="${tab===apps.length}" data-tab="${apps.length}">Show all</button>`:''}
       </div>
       ${shown.map(a=>`<article class="appr">
@@ -308,9 +328,11 @@ code,pre,.mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Co
         <div class="intu">${md(a.intuition)}</div>
         <div class="codebox"><button class="copy" data-copy="${apps.indexOf(a)}">Copy</button><pre><code class="language-cpp">${a.cpp?esc(a.cpp):'// NeetCode has no C++ version of this approach yet.'}</code></pre></div>
         ${a.complexity?`<div class="cx">${complexity(a.complexity)}</div>`:''}
+        ${apps.indexOf(a)===va ? vpy : ''}
       </article>`).join('')}
-      <div class="hint"><span><kbd>/</kbd> search</span><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>Enter</kbd> open on LeetCode</span><span><kbd>1</kbd>–<kbd>9</kbd> pick approach</span><span><kbd>a</kbd> show all</span><span><kbd>x</kbd> toggle solved</span></div>
-      <p class="credit">Problem list and solutions are from <a href="https://neetcode.io" target="_blank" rel="noopener">NeetCode</a> and its MIT-licensed <a href="https://github.com/neetcode-gh/leetcode" target="_blank" rel="noopener">GitHub repo</a>. Not affiliated with NeetCode or LeetCode. Data updated ${META.updated}. Progress is saved in this browser only; use Export to move it.</p>
+      ${va==null && p.video_py ? vpy : ''}
+      <div class="hint"><span><kbd>/</kbd> search</span><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>Enter</kbd> open on LeetCode</span><span><kbd>1</kbd>–<kbd>9</kbd> pick approach</span><span><kbd>a</kbd> show all</span><span><kbd>v</kbd> video approach</span><span><kbd>x</kbd> toggle solved</span></div>
+      <p class="credit">Problem list and solutions are from <a href="https://neetcode.io" target="_blank" rel="noopener">NeetCode</a> and its MIT-licensed <a href="https://github.com/neetcode-gh/leetcode" target="_blank" rel="noopener">GitHub repo</a>. Not affiliated with NeetCode or LeetCode. The "video" tag marks the approach coded in NeetCode's YouTube walkthrough, matched from the Python file in that repo. Data updated ${META.updated}. Progress is saved in this browser only; use Export to move it.</p>
     </div>`;
     if(window.hljs) detail.querySelectorAll('pre code').forEach(el => { try{ hljs.highlightElement(el); }catch(e){} });
     detail.scrollTop = 0;
@@ -318,7 +340,7 @@ code,pre,.mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Co
   }
 
   function select(id, keepTab){
-    state.cur = id; if(!keepTab) state.tab = 0;
+    state.cur = id; if(!keepTab){ const p = byId[id]; state.tab = (p && p.video_approach!=null) ? p.video_approach : 0; }
     store.set('cur', id);
     try{ history.replaceState(null,'','#'+id); }catch(e){}
     renderList(); renderDetail();
@@ -361,7 +383,9 @@ code,pre,.mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Co
   detail.addEventListener('click', e => {
     const t = e.target.closest('[data-tab]'); if(t){ state.tab = +t.dataset.tab; renderDetail(); return; }
     const c = e.target.closest('[data-copy]');
-    if(c){ const a = detail._apps[+c.dataset.copy]; navigator.clipboard.writeText(a.cpp||'').then(()=>{ c.textContent='Copied'; c.classList.add('ok'); setTimeout(()=>{c.textContent='Copy'; c.classList.remove('ok');},1200); }); return; }
+    const cp = e.target.closest('[data-copy-py]');
+    if(c||cp){ const btn = c||cp; const text = c ? (detail._apps[+c.dataset.copy].cpp||'') : (byId[state.cur].video_py||'');
+      navigator.clipboard.writeText(text).then(()=>{ btn.textContent='Copied'; btn.classList.add('ok'); setTimeout(()=>{btn.textContent='Copy'; btn.classList.remove('ok');},1200); }); return; }
     if(e.target.id==='done-btn') toggleDone(state.cur);
   });
   $('#lists').addEventListener('click', e => {
@@ -391,6 +415,7 @@ code,pre,.mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Co
     else if(!typing && e.key==='x' && state.cur){ toggleDone(state.cur); }
     else if(!typing && /^[1-9]$/.test(e.key) && detail._apps){ const n=+e.key-1; if(n<detail._apps.length){ state.tab=n; renderDetail(); } }
     else if(!typing && e.key==='a' && detail._apps){ state.tab=detail._apps.length; renderDetail(); }
+    else if(!typing && e.key==='v' && byId[state.cur] && byId[state.cur].video_approach!=null){ state.tab=byId[state.cur].video_approach; renderDetail(); }
   });
   window.addEventListener('hashchange', () => { const id = parseInt(location.hash.slice(1),10); if(byId[id] && id!==state.cur) select(id); });
 

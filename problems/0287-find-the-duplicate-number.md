@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/find-the-duplicate-number/>  
 - **NeetCode:** <https://neetcode.io/problems/find-duplicate-integer>  
 - **Video:** <https://www.youtube.com/watch?v=wjYnzkAhcNk>  
+- **Video approach:** 7. Fast And Slow Pointers  
 
 [← Back to index](../INDEX.md)
 
@@ -217,7 +218,7 @@ public:
 - Time complexity: $O(32 * n)$
 - Space complexity: $O(1)$
 
-## 7. Fast And Slow Pointers
+## 7. Fast And Slow Pointers ▶ video
 
 Treat the array like a **linked list**, where each index points to the next index given by its value.  
 Because one number is duplicated, two indices will point into the **same chain**, creating a **cycle** — exactly like a linked list with a loop.

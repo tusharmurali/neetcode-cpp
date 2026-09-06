@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/combination-sum/>  
 - **NeetCode:** <https://neetcode.io/problems/combination-target-sum>  
 - **Video:** <https://www.youtube.com/watch?v=GBKI9VSKdGg>  
+- **Video approach:** 1. Backtracking  
 
 [← Back to index](../INDEX.md)
 
-## 1. Backtracking
+## 1. Backtracking ▶ video
 
 We want to build all combinations of numbers that add up to the target.  
 Each number can be used multiple times, so at every index we have two choices:

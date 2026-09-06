@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/n-queens-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/n-queens-ii>  
 - **Video:** <https://www.youtube.com/watch?v=nalYyLZgvCY>  
+- **Video approach:** 2. Backtracking (Hash Set)  
 
 [← Back to index](../INDEX.md)
 
@@ -57,7 +58,7 @@ public:
 - Time complexity: $O(n!)$
 - Space complexity: $O(n ^ 2)$
 
-## 2. Backtracking (Hash Set)
+## 2. Backtracking (Hash Set) ▶ video
 
 Instead of scanning the board to check for conflicts, we can track which columns and diagonals are already occupied using hash sets. Each column has a unique index. For diagonals, cells on the same positive diagonal (bottom-left to top-right) share the same value of `row + col`, while cells on the same negative diagonal (top-left to bottom-right) share the same value of `row - col`. By checking set membership, we determine in constant time whether a position is under attack.
 

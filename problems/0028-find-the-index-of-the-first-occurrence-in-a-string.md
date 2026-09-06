@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/>  
 - **NeetCode:** <https://neetcode.io/problems/find-the-index-of-the-first-occurrence-in-a-string>  
 - **Video:** <https://www.youtube.com/watch?v=JoF0Z7nVSrA>  
+- **Video approach:** 2. Knuth-Morris-Pratt (KMP) Algorithm (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -40,7 +41,7 @@ public:
 
 > Where $n$ is the length of the string $heystack$ and $m$ is the length of the string $needle$.
 
-## 2. Knuth-Morris-Pratt (KMP) Algorithm
+## 2. Knuth-Morris-Pratt (KMP) Algorithm ▶ video
 
 The brute force approach wastes work by restarting from scratch after each mismatch. KMP improves this by preprocessing the needle to build a "longest proper prefix which is also suffix" (LPS) array. When a mismatch occurs, the LPS array tells us how many characters we can skip, leveraging the pattern structure to avoid redundant comparisons.
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/reconstruct-itinerary/>  
 - **NeetCode:** <https://neetcode.io/problems/reconstruct-flight-path>  
 - **Video:** <https://www.youtube.com/watch?v=ZyB_gQ8vqGA>  
+- **Video approach:** 2. Hierholzer's Algorithm (Recursion)  
 
 [← Back to index](../INDEX.md)
 
@@ -74,7 +75,7 @@ private:
 
 > Where $E$ is the number of tickets (edges) and $V$ is the number of airports (vertices).
 
-## 2. Hierholzer's Algorithm (Recursion)
+## 2. Hierholzer's Algorithm (Recursion) ▶ video
 
 This problem is an **Eulerian Path** problem:  
 we must use **every ticket exactly once** and form a valid path starting from `"JFK"`.

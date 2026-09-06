@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/island-perimeter/>  
 - **NeetCode:** <https://neetcode.io/problems/island-perimeter>  
 - **Video:** <https://www.youtube.com/watch?v=fISIuAFRM2s>  
+- **Video approach:** 1. Depth First Search  
 
 [← Back to index](../INDEX.md)
 
-## 1. Depth First Search
+## 1. Depth First Search ▶ video
 
 The perimeter of an island comes from the edges of land cells that touch either water or the grid boundary. Using DFS, we can traverse all connected land cells starting from any land cell. Each time we step outside the grid or hit water, we've found one edge of the perimeter. By recursively exploring in all four directions and counting these boundary crossings, we accumulate the total perimeter.
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/intersection-of-two-linked-lists/>  
 - **NeetCode:** <https://neetcode.io/problems/intersection-of-two-linked-lists>  
 - **Video:** <https://www.youtube.com/watch?v=D0X0BONOQhI>  
+- **Video approach:** 4. Two Pointers - II (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -145,7 +146,7 @@ public:
 
 > Where $m$ is the length of the first list and $n$ is the length of the second list.
 
-## 4. Two Pointers - II
+## 4. Two Pointers - II ▶ video
 
 A clever approach avoids computing lengths explicitly. Two pointers start at the heads of each list. When a pointer reaches the end, it jumps to the head of the other list. After at most `m + n` steps, both pointers will have traversed the same total distance. If an intersection exists, they will meet there; otherwise, they both reach `null` simultaneously.
 

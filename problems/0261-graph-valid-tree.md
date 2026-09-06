@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/graph-valid-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/valid-tree>  
 - **Video:** <https://www.youtube.com/watch?v=bXsUuownnoQ>  
+- **Video approach:** 1. Cycle Detection (DFS)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Cycle Detection (DFS)
+## 1. Cycle Detection (DFS) ▶ video
 
 A graph is a **valid tree** if:
 

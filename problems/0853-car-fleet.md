@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/car-fleet/>  
 - **NeetCode:** <https://neetcode.io/problems/car-fleet>  
 - **Video:** <https://www.youtube.com/watch?v=Pr6T-3yB9RM>  
+- **Video approach:** 1. Stack  
 
 [← Back to index](../INDEX.md)
 
-## 1. Stack
+## 1. Stack ▶ video
 
 Cars that start closer to the target are processed first.  
 For each car, we compute the **time** it will take to reach the target.  

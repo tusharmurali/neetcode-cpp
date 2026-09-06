@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/>  
 - **NeetCode:** <https://neetcode.io/problems/buy-and-sell-crypto-with-cooldown>  
 - **Video:** <https://www.youtube.com/watch?v=I7j0F7AHpb8>  
+- **Video approach:** 2. Dynamic Programming (Top-Down)  
 
 [← Back to index](../INDEX.md)
 
@@ -57,7 +58,7 @@ private:
 - Time complexity: $O(2 ^ n)$
 - Space complexity: $O(n)$
 
-## 2. Dynamic Programming (Top-Down)
+## 2. Dynamic Programming (Top-Down) ▶ video
 
 This problem asks for the maximum profit from buying and selling stocks, with the restriction that **after selling a stock, you must wait one day before buying again (cooldown)**.
 

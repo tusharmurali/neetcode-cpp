@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/walls-and-gates/>  
 - **NeetCode:** <https://neetcode.io/problems/islands-and-treasure>  
 - **Video:** <https://www.youtube.com/watch?v=e69C6xhiSQE>  
+- **Video approach:** 3. Multi Source BFS  
 
 [← Back to index](../INDEX.md)
 
@@ -135,7 +136,7 @@ public:
 
 > Where $m$ is the number of rows and $n$ is the number of columns in the $grid$.
 
-## 3. Multi Source BFS
+## 3. Multi Source BFS ▶ video
 
 Instead of running BFS from **every empty room**, run BFS **once** starting from **all treasures (`0` cells) at the same time**.
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/maximum-subarray/>  
 - **NeetCode:** <https://neetcode.io/problems/maximum-subarray>  
 - **Video:** <https://www.youtube.com/watch?v=5WZl3MMT0Eg>  
+- **Video approach:** 6. Kadane's Algorithm  
 
 [← Back to index](../INDEX.md)
 
@@ -212,7 +213,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 6. Kadane's Algorithm
+## 6. Kadane's Algorithm ▶ video
 
 We want the **maximum sum of a contiguous subarray**.
 

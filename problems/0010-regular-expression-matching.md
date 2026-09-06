@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/regular-expression-matching/>  
 - **NeetCode:** <https://neetcode.io/problems/regular-expression-matching>  
 - **Video:** <https://www.youtube.com/watch?v=HAA8mgxlov8>  
+- **Video approach:** 3. Dynamic Programming (Bottom-Up)  
 
 [← Back to index](../INDEX.md)
 
@@ -118,7 +119,7 @@ private:
 
 > Where $m$ is the length of the string $s$ and $n$ is the length of the string $p$.
 
-## 3. Dynamic Programming (Bottom-Up)
+## 3. Dynamic Programming (Bottom-Up) ▶ video
 
 We want to check whether the string `s` matches the pattern `p`, where:
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/first-missing-positive/>  
 - **NeetCode:** <https://neetcode.io/problems/first-missing-positive>  
 - **Video:** <https://www.youtube.com/watch?v=8g78yfzMlao>  
+- **Video approach:** 4. Negative Marking  
 
 [← Back to index](../INDEX.md)
 
@@ -107,7 +108,7 @@ public:
 - Time complexity: $O(n \log n)$
 - Space complexity: $O(1)$ or $O(n)$ depending on the sorting algorithm.
 
-## 4. Negative Marking
+## 4. Negative Marking ▶ video
 
 Can we achieve O(1) space without sorting? Yes, by using the input array itself as our hash map.
 

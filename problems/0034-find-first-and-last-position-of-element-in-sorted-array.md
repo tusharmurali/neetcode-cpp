@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/>  
 - **NeetCode:** <https://neetcode.io/problems/find-first-and-last-position-of-element-in-sorted-array>  
 - **Video:** <https://www.youtube.com/watch?v=4sQL7R5ySUU>  
+- **Video approach:** 2. Binary Search - I (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -39,7 +40,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(1)$
 
-## 2. Binary Search - I
+## 2. Binary Search - I ▶ video
 
 Binary search can find any occurrence of the target in O(log n) time, but we need both the first and last occurrences. The key insight is that when we find the target, instead of returning immediately, we continue searching. For the leftmost occurrence, we search the left half after finding a match. For the rightmost, we search the right half. This gives us two separate binary searches with a bias parameter.
 

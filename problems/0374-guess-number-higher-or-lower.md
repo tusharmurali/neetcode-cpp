@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/guess-number-higher-or-lower/>  
 - **NeetCode:** <https://neetcode.io/problems/guess-number-higher-or-lower>  
 - **Video:** <https://www.youtube.com/watch?v=xW4QsTtaCa4>  
+- **Video approach:** 2. Binary Search  
 
 [← Back to index](../INDEX.md)
 
@@ -39,7 +40,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(1)$
 
-## 2. Binary Search
+## 2. Binary Search ▶ video
 
 Since the numbers from `1` to `n` are sorted, we can use binary search to find the target efficiently. The `guess` API tells us whether to search higher or lower, which is exactly the feedback binary search needs to halve the search space with each guess.
 

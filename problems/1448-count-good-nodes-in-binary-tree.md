@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/count-good-nodes-in-binary-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/count-good-nodes-in-binary-tree>  
 - **Video:** <https://www.youtube.com/watch?v=7cp5imvDzl4>  
+- **Video approach:** 1. Depth First Search  
 
 [← Back to index](../INDEX.md)
 
-## 1. Depth First Search
+## 1. Depth First Search ▶ video
 
 A node is “good” if on the path from the root to that node, **no earlier node has a value greater than it**.  
 So while traversing the tree, we just need to carry the **maximum value seen so far** on the current path.

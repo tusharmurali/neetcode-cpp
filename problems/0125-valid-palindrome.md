@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/valid-palindrome/>  
 - **NeetCode:** <https://neetcode.io/problems/is-palindrome>  
 - **Video:** <https://www.youtube.com/watch?v=jJXJ16kPFWg>  
+- **Video approach:** 1. Reverse String  
 
 [← Back to index](../INDEX.md)
 
-## 1. Reverse String
+## 1. Reverse String ▶ video
 
 To check if a string is a palindrome, we only care about letters and digits—everything else can be ignored.  
 We can build a cleaned version of the string that contains only alphanumeric characters, all converted to lowercase for consistency.  

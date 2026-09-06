@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/implement-trie-prefix-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/implement-prefix-tree>  
 - **Video:** <https://www.youtube.com/watch?v=oobqoCJlHA0>  
+- **Video approach:** 1. Prefix Tree (Array)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Prefix Tree (Array)
+## 1. Prefix Tree (Array) ▶ video
 
 A **Prefix Tree (Trie)** is a tree-like data structure designed for **fast string operations**.
 

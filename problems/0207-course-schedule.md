@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/course-schedule/>  
 - **NeetCode:** <https://neetcode.io/problems/course-schedule>  
 - **Video:** <https://www.youtube.com/watch?v=EgI5nU9etnU>  
+- **Video approach:** 1. Cycle Detection (DFS)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Cycle Detection (DFS)
+## 1. Cycle Detection (DFS) ▶ video
 
 Each course is a node, and each prerequisite is a **directed edge**.  
 You can finish all courses **only if there is no cycle** in this directed graph.

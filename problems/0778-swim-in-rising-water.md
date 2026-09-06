@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/swim-in-rising-water/>  
 - **NeetCode:** <https://neetcode.io/problems/swim-in-rising-water>  
 - **Video:** <https://www.youtube.com/watch?v=amvrKlMLuGY>  
+- **Video approach:** 4. Dijkstra's Algorithm  
 
 [← Back to index](../INDEX.md)
 
@@ -182,7 +183,7 @@ private:
     - The binary search runs for $O(\log(n ^ 2))$ iterations because the height range contains at most $n ^ 2$ values. Since $\log(n ^ 2) = 2\log n$, this simplifies to $O(\log n)$ iterations, with each DFS taking $O(n ^ 2)$ time.
 - Space complexity: $O(n ^ 2)$
 
-## 4. Dijkstra's Algorithm
+## 4. Dijkstra's Algorithm ▶ video
 
 Think of each cell’s height as the **earliest time** you’re allowed to stand on it (water must be at least that high).  
 While moving from start to end, the **total time of a path** is not the sum — it’s the **maximum height** you ever step on (because water must rise to that max).

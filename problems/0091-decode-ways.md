@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/decode-ways/>  
 - **NeetCode:** <https://neetcode.io/problems/decode-ways>  
 - **Video:** <https://www.youtube.com/watch?v=6aEyTjOwlJU>  
+- **Video approach:** 2. Dynamic Programming (Top-Down)  
 
 [← Back to index](../INDEX.md)
 
@@ -62,7 +63,7 @@ public:
 - Time complexity: $O(2 ^ n)$
 - Space complexity: $O(n)$
 
-## 2. Dynamic Programming (Top-Down)
+## 2. Dynamic Programming (Top-Down) ▶ video
 
 This is the same decoding logic as the recursive approach, but with **memoization** to avoid recomputing the same subproblems.
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/palindrome-number/>  
 - **NeetCode:** <https://neetcode.io/problems/palindrome-number>  
 - **Video:** <https://www.youtube.com/watch?v=yubRKwixN-U>  
+- **Video approach:** 4. Two Pointers (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -95,7 +96,7 @@ public:
 
 > Where $n$ is the number of digits in the given integer.
 
-## 4. Two Pointers
+## 4. Two Pointers ▶ video
 
 We can compare digits from both ends without converting to a string or reversing the entire number. The idea is to extract the leftmost and rightmost digits and compare them.
 

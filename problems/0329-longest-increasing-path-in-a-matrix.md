@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/longest-increasing-path-in-a-matrix/>  
 - **NeetCode:** <https://neetcode.io/problems/longest-increasing-path-in-matrix>  
 - **Video:** <https://www.youtube.com/watch?v=wCc_nd-GiEc>  
+- **Video approach:** 2. Dynamic Programming (Top-Down)  
 
 [← Back to index](../INDEX.md)
 
@@ -59,7 +60,7 @@ public:
 
 > Where $m$ is the number of rows and $n$ is the number of columns in the given $matrix$.
 
-## 2. Dynamic Programming (Top-Down)
+## 2. Dynamic Programming (Top-Down) ▶ video
 
 We want the length of the longest path in a grid where every move goes to a **strictly larger** value, and we can move in 4 directions (up, down, left, right).
 

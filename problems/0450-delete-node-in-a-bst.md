@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/delete-node-in-a-bst/>  
 - **NeetCode:** <https://neetcode.io/problems/delete-node-in-a-bst>  
 - **Video:** <https://www.youtube.com/watch?v=LFzAoJJt92M>  
+- **Video approach:** 1. Recursion - I  
 
 [← Back to index](../INDEX.md)
 
-## 1. Recursion - I
+## 1. Recursion - I ▶ video
 
 To delete a node in a BST, we first need to locate it using the BST property (left children are smaller, right children are larger). Once found, we handle three cases: if the node has no left child, replace it with its right child; if no right child, replace with the left child. The tricky case is when the node has both children. We find the in-order successor (the smallest node in the right subtree), copy its value to the current node, and then delete that successor node. This approach swaps values rather than restructuring pointers.
 

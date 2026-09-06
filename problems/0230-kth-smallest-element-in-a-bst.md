@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/kth-smallest-element-in-a-bst/>  
 - **NeetCode:** <https://neetcode.io/problems/kth-smallest-integer-in-bst>  
 - **Video:** <https://www.youtube.com/watch?v=5LUXSvjmGCw>  
+- **Video approach:** 4. Iterative DFS (Optimal)  
 
 [← Back to index](../INDEX.md)
 
@@ -163,7 +164,7 @@ public:
 - Time complexity: $O(h + k)$ in terms of nodes visited, worst-case $O(n)$
 - Space complexity: $O(h)$ for the recursion stack, worst-case $O(n)$
 
-## 4. Iterative DFS (Optimal)
+## 4. Iterative DFS (Optimal) ▶ video
 
 In a BST, an **inorder traversal** (left -> node -> right) gives nodes in **sorted order**.
 Instead of recursion, we simulate this traversal with a **stack**:

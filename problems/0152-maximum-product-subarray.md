@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/maximum-product-subarray/>  
 - **NeetCode:** <https://neetcode.io/problems/maximum-product-subarray>  
 - **Video:** <https://www.youtube.com/watch?v=lXVy6YWFcRM>  
+- **Video approach:** 3. Kadane's Algorithm  
 
 [← Back to index](../INDEX.md)
 
@@ -114,7 +115,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 3. Kadane's Algorithm
+## 3. Kadane's Algorithm ▶ video
 
 This is the **Kadane-style solution adapted for products**.
 

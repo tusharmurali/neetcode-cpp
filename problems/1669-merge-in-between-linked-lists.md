@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/merge-in-between-linked-lists/>  
 - **NeetCode:** <https://neetcode.io/problems/merge-in-between-linked-lists>  
 - **Video:** <https://www.youtube.com/watch?v=pI775VutBxg>  
+- **Video approach:** 2. Two Pointers (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -55,7 +56,7 @@ public:
 
 > Where $n$ is the length of the first list and $m$ is the length of the second list.
 
-## 2. Two Pointers
+## 2. Two Pointers ▶ video
 
 Instead of using extra space to store all nodes, we can traverse `list1` directly using pointers. We walk through the list, counting nodes until we reach position `a - 1` (the node just before the removal range). We save this position, then continue until we pass position `b` to find the node that should come after `list2`. Finally, we rewire the pointers to splice `list2` in place.
 

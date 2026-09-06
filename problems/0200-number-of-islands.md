@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/number-of-islands/>  
 - **NeetCode:** <https://neetcode.io/problems/count-number-of-islands>  
 - **Video:** <https://www.youtube.com/watch?v=pV2kpPD66nE>  
+- **Video approach:** 2. Breadth First Search  
 
 [← Back to index](../INDEX.md)
 
@@ -56,7 +57,7 @@ public:
 
 > Where $m$ is the number of rows and $n$ is the number of columns in the $grid$.
 
-## 2. Breadth First Search
+## 2. Breadth First Search ▶ video
 
 Treat the grid like a map where `'1'` represents land and `'0'` represents water.  
 Each **island** is a group of connected land cells.  

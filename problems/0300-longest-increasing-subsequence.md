@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/longest-increasing-subsequence/>  
 - **NeetCode:** <https://neetcode.io/problems/longest-increasing-subsequence>  
 - **Video:** <https://www.youtube.com/watch?v=cjWnW0hdF1Y>  
+- **Video approach:** 5. Dynamic Programming (Bottom-Up) - II  
 
 [← Back to index](../INDEX.md)
 
@@ -158,7 +159,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(n ^ 2)$
 
-## 5. Dynamic Programming (Bottom-Up) - II
+## 5. Dynamic Programming (Bottom-Up) - II ▶ video
 
 A simpler 1D approach: let `LIS[i]` be the length of the longest increasing subsequence starting at index `i`. Working from right to left, for each `i`, we check all `j > i`. If `nums[i] < nums[j]`, we can extend the subsequence starting at `j`. We take the maximum extension and add 1 for the current element.
 

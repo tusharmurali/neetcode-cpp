@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/permutations/>  
 - **NeetCode:** <https://neetcode.io/problems/permutations>  
 - **Video:** <https://www.youtube.com/watch?v=FZe0UqISmUw>  
+- **Video approach:** 1. Recursion  
 
 [← Back to index](../INDEX.md)
 
-## 1. Recursion
+## 1. Recursion ▶ video
 
 The idea is to generate permutations by **building them from smaller permutations**.
 

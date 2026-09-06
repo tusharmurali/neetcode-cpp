@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/>  
 - **NeetCode:** <https://neetcode.io/problems/number-of-submatrices-that-sum-to-target>  
 - **Video:** <https://www.youtube.com/watch?v=43DRBP2DUHg>  
+- **Video approach:** 3. Horizontal 1D Prefix Sum (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -97,7 +98,7 @@ public:
 
 > Where $m$ is the number of rows and $n$ is the number of columns of the given matrix.
 
-## 3. Horizontal 1D Prefix Sum
+## 3. Horizontal 1D Prefix Sum ▶ video
 
 We reduce the 2D problem to multiple 1D subarray sum problems. After fixing a row range `(r1 to r2)`, the submatrix sum becomes a horizontal prefix sum across columns. We apply the classic technique of using a hash map to count how many previous prefix sums differ by exactly the target.
 

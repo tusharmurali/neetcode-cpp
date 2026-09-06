@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/valid-parentheses/>  
 - **NeetCode:** <https://neetcode.io/problems/validate-parentheses>  
 - **Video:** <https://www.youtube.com/watch?v=WTzjTskDFMg>  
+- **Video approach:** 2. Stack  
 
 [← Back to index](../INDEX.md)
 
@@ -47,7 +48,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(n)$
 
-## 2. Stack
+## 2. Stack ▶ video
 
 Valid parentheses must follow a last-opened, first-closed order — just like stacking plates.
 So we use a **stack** to track opening brackets.

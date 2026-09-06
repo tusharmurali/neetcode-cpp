@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/merge-strings-alternately/>  
 - **NeetCode:** <https://neetcode.io/problems/merge-strings-alternately>  
 - **Video:** <https://www.youtube.com/watch?v=LECWOvTo-Sc>  
+- **Video approach:** 1. Two Pointers - I  
 
 [← Back to index](../INDEX.md)
 
-## 1. Two Pointers - I
+## 1. Two Pointers - I ▶ video
 
 We want to interleave characters from both strings, taking one from each in turn. Using two pointers, we can walk through both strings simultaneously. While both strings have characters remaining, we append one from each. Once one string is exhausted, we append whatever remains from the other string.
 

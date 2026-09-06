@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/is-subsequence/>  
 - **NeetCode:** <https://neetcode.io/problems/is-subsequence>  
 - **Video:** <https://www.youtube.com/watch?v=99RVfqklbCE>  
+- **Video approach:** 4. Two Pointers (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -111,7 +112,7 @@ public:
 
 > Where $n$ is the length of the string $s$ and $m$ is the length of the string $t$.
 
-## 4. Two Pointers
+## 4. Two Pointers ▶ video
 
 The most efficient approach uses two pointers since we only need to make a single pass through both strings. Pointer `i` tracks our position in `s`, and pointer `j` tracks our position in `t`. We always advance `j`, but only advance `i` when we find a matching character. If we reach the end of `s`, all characters were found in order. This is optimal because each character in `t` is examined exactly once.
 

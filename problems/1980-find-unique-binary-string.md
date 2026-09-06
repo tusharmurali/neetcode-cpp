@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/find-unique-binary-string/>  
 - **NeetCode:** <https://neetcode.io/problems/find-unique-binary-string>  
 - **Video:** <https://www.youtube.com/watch?v=aHqn4Dynd1k>  
+- **Video approach:** 1. Backtracking (Recursion) (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Backtracking (Recursion)
+## 1. Backtracking (Recursion) ▶ video
 
 We need to find any binary string of length `n` that is not in the given array. Since there are `2^n` possible strings but only `n` strings in the input, at least one must be missing. We can systematically try building strings character by character, checking at each complete string whether it exists in the set.
 

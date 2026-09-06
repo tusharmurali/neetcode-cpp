@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/partition-to-k-equal-sum-subsets/>  
 - **NeetCode:** <https://neetcode.io/problems/partition-to-k-equal-sum-subsets>  
 - **Video:** <https://www.youtube.com/watch?v=mBk4I0X46oI>  
+- **Video approach:** 1. Backtracking  
 
 [← Back to index](../INDEX.md)
 
-## 1. Backtracking
+## 1. Backtracking ▶ video
 
 The problem asks whether we can divide the array into exactly `k` subsets, each with the same sum. First, we check if the total sum is divisible by `k`. If not, it's impossible. Otherwise, each subset must sum to `target = total / k`.
 

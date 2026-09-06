@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/plus-one/>  
 - **NeetCode:** <https://neetcode.io/problems/plus-one>  
 - **Video:** <https://www.youtube.com/watch?v=jIaA8boiG1s>  
+- **Video approach:** 2. Iteration - I  
 
 [← Back to index](../INDEX.md)
 
@@ -49,7 +50,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 2. Iteration - I
+## 2. Iteration - I ▶ video
 
 We are given a number as an array of digits and need to **add one** to it.
 

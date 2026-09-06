@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/two-city-scheduling/>  
 - **NeetCode:** <https://neetcode.io/problems/two-city-scheduling>  
 - **Video:** <https://www.youtube.com/watch?v=d-B_gk_gJtQ>  
+- **Video approach:** 5. Greedy (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -170,7 +171,7 @@ public:
 
 > Where $n$ is the half of the size of the array $costs$.
 
-## 5. Greedy
+## 5. Greedy ▶ video
 
 For each person, the "cost difference" `cost[B] - cost[A]` tells us how much extra we pay to send them to city B instead of A. A negative difference means B is cheaper. If we sort by this difference, the first half of people have the smallest (most negative) differences, meaning they benefit most from going to city B.
 

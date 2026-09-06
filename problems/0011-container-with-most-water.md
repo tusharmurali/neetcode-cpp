@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/container-with-most-water/>  
 - **NeetCode:** <https://neetcode.io/problems/max-water-container>  
 - **Video:** <https://www.youtube.com/watch?v=UuiTKBwPgAo>  
+- **Video approach:** 2. Two Pointers  
 
 [← Back to index](../INDEX.md)
 
@@ -35,7 +36,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(1)$
 
-## 2. Two Pointers
+## 2. Two Pointers ▶ video
 
 Using two pointers lets us efficiently search for the maximum area without checking every pair.  
 We start with the widest container (left at start, right at end).  

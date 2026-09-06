@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/single-number/>  
 - **NeetCode:** <https://neetcode.io/problems/single-number>  
 - **Video:** <https://www.youtube.com/watch?v=qMPX1AOa83k>  
+- **Video approach:** 4. Bit Manipulation  
 
 [← Back to index](../INDEX.md)
 
@@ -124,7 +125,7 @@ public:
 - Time complexity: $O(n \log n)$
 - Space complexity: $O(1)$ or $O(n)$ depending on the sorting algorithm.
 
-## 4. Bit Manipulation
+## 4. Bit Manipulation ▶ video
 
 We are given an array where **every number appears exactly twice except one**, and we need to find that unique number.
 

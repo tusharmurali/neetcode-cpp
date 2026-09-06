@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree>  
 - **Video:** <https://www.youtube.com/watch?v=83JnUxrLKJU>  
+- **Video approach:** 1. Kruskal's Algorithm - I  
 
 [← Back to index](../INDEX.md)
 
-## 1. Kruskal's Algorithm - I
+## 1. Kruskal's Algorithm - I ▶ video
 
 An edge is critical if removing it increases the MST weight or disconnects the graph. An edge is pseudo-critical if it can appear in some MST but is not mandatory. We test each edge by building the MST without it (to check criticality) and by forcing it into the MST first (to check if it can be part of a valid MST without increasing weight).
 

@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/max-area-of-island/>  
 - **NeetCode:** <https://neetcode.io/problems/max-area-of-island>  
 - **Video:** <https://www.youtube.com/watch?v=iJGr1OtmH0c>  
+- **Video approach:** 1. Depth First Search  
 
 [← Back to index](../INDEX.md)
 
-## 1. Depth First Search
+## 1. Depth First Search ▶ video
 
 An island is a group of connected `1`s.
 To find the **maximum area**, we explore each island fully and count how many cells it contains.

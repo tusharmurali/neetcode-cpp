@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/matchsticks-to-square/>  
 - **NeetCode:** <https://neetcode.io/problems/matchsticks-to-square>  
 - **Video:** <https://www.youtube.com/watch?v=hUe0cUKV-YY>  
+- **Video approach:** 2. Backtracking (Pruning)  
 
 [← Back to index](../INDEX.md)
 
@@ -46,7 +47,7 @@ private:
 - Time complexity: $O(4 ^ n)$
 - Space complexity: $O(n)$ for recursion stack.
 
-## 2. Backtracking (Pruning)
+## 2. Backtracking (Pruning) ▶ video
 
 The brute force approach explores many redundant paths. We can prune significantly with two optimizations. First, sort matchsticks in descending order so larger sticks are placed first, failing faster when a configuration is impossible. Second, skip trying to place a matchstick on an empty side if we already tried another empty side, since empty sides are interchangeable.
 

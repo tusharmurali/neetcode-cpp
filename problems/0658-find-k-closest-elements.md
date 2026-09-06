@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/find-k-closest-elements/>  
 - **NeetCode:** <https://neetcode.io/problems/find-k-closest-elements>  
 - **Video:** <https://www.youtube.com/watch?v=o-YDQzHoaKM>  
+- **Video approach:** 4. Binary Search + Two Pointers  
 
 [← Back to index](../INDEX.md)
 
@@ -113,7 +114,7 @@ public:
 
 > Where $n$ is the size of the input array and $k$ is the number of closest elements to find.
 
-## 4. Binary Search + Two Pointers
+## 4. Binary Search + Two Pointers ▶ video
 
 Instead of scanning linearly to find the starting point, we can use binary search to quickly locate where `x` would fit in the sorted array. From that position, we expand outward with two pointers to collect `k` closest elements.
 

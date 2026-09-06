@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/convert-sorted-array-to-binary-search-tree>  
 - **Video:** <https://www.youtube.com/watch?v=0K0uCMYq5ng>  
+- **Video approach:** 1. Depth First Search (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Depth First Search
+## 1. Depth First Search ▶ video
 
 To create a height-balanced BST from a sorted array, we need to ensure that for every node, the left and right subtrees have roughly equal heights. Since the array is sorted, the middle element should become the root. All elements before the middle go to the left subtree, and all elements after go to the right subtree. Applying this recursively builds a balanced tree.
 

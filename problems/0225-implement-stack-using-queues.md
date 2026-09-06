@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/implement-stack-using-queues/>  
 - **NeetCode:** <https://neetcode.io/problems/implement-stack-using-queues>  
 - **Video:** <https://www.youtube.com/watch?v=rW4vm0-DLYc>  
+- **Video approach:** 2. Using One Queue  
 
 [← Back to index](../INDEX.md)
 
@@ -57,7 +58,7 @@ public:
     - $O(1)$ time for each $pop()$ function call.
 - Space complexity: $O(n)$
 
-## 2. Using One Queue
+## 2. Using One Queue ▶ video
 
 We can achieve the same result with just one queue. The trick is to rotate the queue after each push so the newest element moves to the front.
 When we add an element, we push it to the back of the queue, then dequeue and re-enqueue all the elements that were already there. This effectively moves the new element to the front.

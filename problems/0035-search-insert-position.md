@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/search-insert-position/>  
 - **NeetCode:** <https://neetcode.io/problems/search-insert-position>  
 - **Video:** <https://www.youtube.com/watch?v=K-RYzDZkzCI>  
+- **Video approach:** 4. Binary Search (Lower Bound)  
 
 [← Back to index](../INDEX.md)
 
@@ -94,7 +95,7 @@ public:
 - Time complexity: $O(\log n)$
 - Space complexity: $O(1)$ extra space.
 
-## 4. Binary Search (Lower Bound)
+## 4. Binary Search (Lower Bound) ▶ video
 
 This is the classic lower bound algorithm. We find the smallest index where the element is greater than or equal to the target. By using `l < r` as the condition and setting `r = m` when `nums[m] >= target`, we converge on the lower bound without needing a separate result variable.
 

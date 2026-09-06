@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/copy-list-with-random-pointer/>  
 - **NeetCode:** <https://neetcode.io/problems/copy-linked-list-with-random-pointer>  
 - **Video:** <https://www.youtube.com/watch?v=5Y2EiZST97Y>  
+- **Video approach:** 2. Hash Map (Two Pass)  
 
 [← Back to index](../INDEX.md)
 
@@ -61,7 +62,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 2. Hash Map (Two Pass)
+## 2. Hash Map (Two Pass) ▶ video
 
 We want to copy a linked list where each node has both `next` and `random` pointers.  
 The challenge is that the `random` pointer can point anywhere — forward, backward, or even `None`.  

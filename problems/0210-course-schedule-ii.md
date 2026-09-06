@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/course-schedule-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/course-schedule-ii>  
 - **Video:** <https://www.youtube.com/watch?v=Akt3glAwyfY>  
+- **Video approach:** 1. Cycle Detection (DFS)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Cycle Detection (DFS)
+## 1. Cycle Detection (DFS) ▶ video
 
 Each course is a **node**, and each prerequisite is a **directed edge**.  
 We want an order of courses such that all prerequisites of a course are taken **before** it.

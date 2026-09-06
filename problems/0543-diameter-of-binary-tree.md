@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/diameter-of-binary-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/binary-tree-diameter>  
 - **Video:** <https://www.youtube.com/watch?v=K81C31ytOZE>  
+- **Video approach:** 2. Depth First Search  
 
 [← Back to index](../INDEX.md)
 
@@ -56,7 +57,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(n)$
 
-## 2. Depth First Search
+## 2. Depth First Search ▶ video
 
 The diameter of a binary tree is the **longest path between any two nodes**.  
 This path _must go through some node_, and at that node the path length is:

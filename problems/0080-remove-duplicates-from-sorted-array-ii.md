@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/remove-duplicates-from-sorted-array-ii>  
 - **Video:** <https://www.youtube.com/watch?v=ycAq8iqh0TI>  
+- **Video approach:** 3. Two Pointers (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -84,7 +85,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 3. Two Pointers
+## 3. Two Pointers ▶ video
 
 We process groups of consecutive duplicates together. For each group, we write at most two copies to the result portion of the array. The left pointer tracks where to write, and the right pointer scans through the array finding groups.
 

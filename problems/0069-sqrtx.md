@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/sqrtx/>  
 - **NeetCode:** <https://neetcode.io/problems/sqrtx>  
 - **Video:** <https://www.youtube.com/watch?v=zdMhGxRWutQ>  
+- **Video approach:** 3. Binary Search  
 
 [← Back to index](../INDEX.md)
 
@@ -57,7 +58,7 @@ public:
 - Time complexity: $O(1)$
 - Space complexity: $O(1)$
 
-## 3. Binary Search
+## 3. Binary Search ▶ video
 
 Since we are looking for the largest integer whose square is at most `x`, and the squares of integers are monotonically increasing, we can use binary search. The search space is `[0, x]`, and we narrow it down by checking if the middle value squared is less than, greater than, or equal to `x`.
 

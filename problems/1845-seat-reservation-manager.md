@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/seat-reservation-manager/>  
 - **NeetCode:** <https://neetcode.io/problems/seat-reservation-manager>  
 - **Video:** <https://www.youtube.com/watch?v=ahobllKXEEY>  
+- **Video approach:** 2. Min-Heap (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -45,7 +46,7 @@ public:
     - $O(1)$ time for each $unreserve()$ function call.
 - Space complexity: $O(n)$
 
-## 2. Min-Heap
+## 2. Min-Heap ▶ video
 
 To efficiently retrieve the smallest available seat, we can use a min-heap. By initializing the heap with all seat numbers from 1 to `n`, the smallest seat is always at the top. Reserving pops from the heap, and unreserving pushes back onto it. The heap maintains the ordering automatically.
 

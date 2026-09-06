@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/contiguous-array/>  
 - **NeetCode:** <https://neetcode.io/problems/contiguous-array>  
 - **Video:** <https://www.youtube.com/watch?v=agB1LyObUNE>  
+- **Video approach:** 3. Hash Map (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -74,7 +75,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 3. Hash Map
+## 3. Hash Map ▶ video
 
 This approach uses the same logic as the array solution but replaces the fixed-size array with a hash map. The key insight remains the same: if the difference between ones and zeros at two different indices is the same, the subarray between them contains equal zeros and ones. A hash map provides more flexibility and can be more memory-efficient when the array is sparse or when we want cleaner code.
 

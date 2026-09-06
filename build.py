@@ -76,12 +76,45 @@ def parse_article(path):
                                complexity=comp.group(1).strip() if comp else ''))
     return approaches
 
+def parse_python_blocks(path):
+    t = open(path, encoding='utf-8').read()
+    parts = re.split(r'^## (\d+)\. (.+)$', t, flags=re.M)
+    out = []
+    for i in range(1, len(parts), 3):
+        body = re.split(r'^## (?!Intuition|Algorithm|Time)', parts[i + 2], flags=re.M)[0]
+        m = re.search(r'^```python\n(.*?)^```', body, flags=re.M | re.S)
+        out.append(m.group(1) if m else '')
+    return out
+
+def _norm(code):
+    code = re.sub(r'#.*', '', code)
+    return re.sub(r'\s+', '', code)
+
+def guess_video_approach(video_py, blocks):
+    """Text-similarity fallback for problems nobody has reviewed. Only answers when it is clearly one approach."""
+    import difflib
+    if not video_py or not blocks: return None
+    first = re.split(r'^(?=class Solution)', video_py, flags=re.M)
+    first = next((x for x in first if x.strip().startswith('class Solution')), video_py)
+    v = _norm(first)
+    scores = [difflib.SequenceMatcher(None, v, _norm(b)).ratio() if b else 0 for b in blocks]
+    order = sorted(range(len(scores)), key=lambda i: -scores[i])
+    best = order[0]; second = scores[order[1]] if len(order) > 1 else 0
+    if scores[best] >= 0.8 and scores[best] - second >= 0.1: return best
+    return None
+
+def load_reviewed():
+    p = os.path.join(ROOT, 'video-approach.json')
+    return json.load(open(p, encoding='utf-8')) if os.path.exists(p) else {}
+
 def lists_of(d):
     return [n for k, n in [('blind75', 'Blind 75'), ('neetcode150', 'NeetCode 150'), ('neetcode250', 'NeetCode 250')] if d.get(k)]
 
 def build_records(site):
     arts = {f[:-3] for f in os.listdir(f'{NC_REPO}/articles')}
     cpps = {f[:-4] for f in os.listdir(f'{NC_REPO}/cpp')}
+    pys = {f[:-3] for f in os.listdir(f'{NC_REPO}/python')}
+    reviewed = load_reviewed()
     rows = []
     for d in site:
         if d.get('pattern') == 'JavaScript': continue
@@ -89,13 +122,23 @@ def build_records(site):
         has_art, has_cpp = slug in arts, d['code'] in cpps
         if not has_art and not has_cpp: continue
         num = int(d['code'].split('-')[0])
+        video_py = open(f"{NC_REPO}/python/{d['code']}.py", encoding='utf-8').read().rstrip('\n') if d['code'] in pys else None
+        approaches = parse_article(f'{NC_REPO}/articles/{slug}.md') if has_art else []
+        rv = reviewed.get(d['code'])
+        if rv is not None:
+            va = rv.get('approach'); vc = rv.get('confidence', 'high'); vn = rv.get('note', '')
+            if va is not None and not (0 <= va < len(approaches)): va, vc, vn = None, 'low', 'Reviewed index no longer matches the article; needs re-review.'
+        else:
+            va = guess_video_approach(video_py, parse_python_blocks(f'{NC_REPO}/articles/{slug}.md') if has_art else [])
+            vc, vn = ('auto', 'Matched automatically by code similarity, not reviewed.') if va is not None else (None, '')
         rows.append(dict(
             id=num, title=d['problem'], difficulty=d['difficulty'], pattern=d['pattern'], lists=lists_of(d),
             leetcode=f"https://leetcode.com/problems/{d['link'].strip('/')}/",
             neetcode=f'https://neetcode.io/problems/{slug}',
             video=f"https://www.youtube.com/watch?v={d['video']}" if d.get('video') else None,
             code=d['code'],
-            approaches=parse_article(f'{NC_REPO}/articles/{slug}.md') if has_art else [],
+            approaches=approaches,
+            video_approach=va, video_confidence=vc, video_note=vn, video_py=video_py,
             repo_cpp=open(f"{NC_REPO}/cpp/{d['code']}.cpp", encoding='utf-8').read().rstrip('\n') if has_cpp else None))
     return rows
 
@@ -109,9 +152,11 @@ def write_markdown(rows):
              f"- **Lists:** {', '.join(r['lists']) or 'NeetCode All'}  ",
              f"- **LeetCode:** <{r['leetcode']}>  ", f"- **NeetCode:** <{r['neetcode']}>  "]
         if r['video']: L.append(f"- **Video:** <{r['video']}>  ")
+        if r['video_approach'] is not None:
+            L.append(f"- **Video approach:** {r['video_approach'] + 1}. {r['approaches'][r['video_approach']]['title']}" + (' (auto-matched)' if r['video_confidence'] == 'auto' else '') + '  ')
         L += ['', '[← Back to index](../INDEX.md)', '']
         for i, a in enumerate(r['approaches']):
-            L += [f"## {i + 1}. {a['title']}", '']
+            L += [f"## {i + 1}. {a['title']}" + (' ▶ video' if i == r['video_approach'] else ''), '']
             if a['intuition']: L += [a['intuition'], '']
             L += ['```cpp', a['cpp'] or '// NeetCode has no C++ version of this approach yet.', '```', '']
             if a['complexity']: L += ['**Complexity**', '', a['complexity'], '']

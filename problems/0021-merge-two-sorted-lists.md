@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/merge-two-sorted-lists/>  
 - **NeetCode:** <https://neetcode.io/problems/merge-two-sorted-linked-lists>  
 - **Video:** <https://www.youtube.com/watch?v=XIdigk956u0>  
+- **Video approach:** 2. Iteration  
 
 [← Back to index](../INDEX.md)
 
@@ -58,7 +59,7 @@ public:
 
 > Where $n$ is the length of $list1$ and $m$ is the length of $list2$.
 
-## 2. Iteration
+## 2. Iteration ▶ video
 
 To merge two sorted linked lists iteratively, we build the result step-by-step.
 We keep a pointer (`node`) to the current end of the merged list, and at each step we choose the **smaller head node** from `list1` or `list2`.

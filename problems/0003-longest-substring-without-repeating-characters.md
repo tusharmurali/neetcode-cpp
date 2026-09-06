@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/longest-substring-without-repeating-characters/>  
 - **NeetCode:** <https://neetcode.io/problems/longest-substring-without-duplicates>  
 - **Video:** <https://www.youtube.com/watch?v=wiGpQwVHdE0>  
+- **Video approach:** 2. Sliding Window  
 
 [← Back to index](../INDEX.md)
 
@@ -43,7 +44,7 @@ public:
 
 > Where $n$ is the length of the string and $m$ is the total number of unique characters in the string.
 
-## 2. Sliding Window
+## 2. Sliding Window ▶ video
 
 Instead of restarting at every index like brute force, we can keep one **window** that always has _unique_ characters.
 We expand the window by moving the `right` pointer.

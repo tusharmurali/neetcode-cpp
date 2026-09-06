@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/distinct-subsequences/>  
 - **NeetCode:** <https://neetcode.io/problems/count-subsequences>  
 - **Video:** <https://www.youtube.com/watch?v=-RDzMJ33nx8>  
+- **Video approach:** 3. Dynamic Programming (Bottom-Up)  
 
 [← Back to index](../INDEX.md)
 
@@ -110,7 +111,7 @@ private:
 
 > Where $m$ is the length of the string $s$ and $n$ is the length of the string $t$.
 
-## 3. Dynamic Programming (Bottom-Up)
+## 3. Dynamic Programming (Bottom-Up) ▶ video
 
 We want to count how many **distinct subsequences** of string `s` are equal to string `t`.
 

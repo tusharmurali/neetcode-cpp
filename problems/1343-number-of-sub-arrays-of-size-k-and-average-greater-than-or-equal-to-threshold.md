@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/>  
 - **NeetCode:** <https://neetcode.io/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold>  
 - **Video:** <https://www.youtube.com/watch?v=D8B4tKxMTnY>  
+- **Video approach:** 3. Sliding Window - I (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -74,7 +75,7 @@ public:
 
 > Where $n$ is the size of the array $arr$ and $k$ is the size of the sub-array.
 
-## 3. Sliding Window - I
+## 3. Sliding Window - I ▶ video
 
 We maintain a running sum of the current window. When the window slides, we add the new element entering from the right and remove the element leaving from the left. This gives constant-time updates per window instead of recalculating from scratch.
 

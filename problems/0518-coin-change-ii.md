@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/coin-change-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/coin-change-ii>  
 - **Video:** <https://www.youtube.com/watch?v=Mjy4hd2xgrs>  
+- **Video approach:** 2. Dynamic Programming (Top-Down)  
 
 [← Back to index](../INDEX.md)
 
@@ -58,7 +59,7 @@ private:
 
 > Where $n$ is the number of coins, $a$ is the given amount and $m$ is the minimum value among all the coins.
 
-## 2. Dynamic Programming (Top-Down)
+## 2. Dynamic Programming (Top-Down) ▶ video
 
 This problem is about counting how many **different combinations** of coins can make up a given amount, where each coin can be used **any number of times**.
 

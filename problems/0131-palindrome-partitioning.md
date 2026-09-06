@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/palindrome-partitioning/>  
 - **NeetCode:** <https://neetcode.io/problems/palindrome-partitioning>  
 - **Video:** <https://www.youtube.com/watch?v=3jvWodd7ht0>  
+- **Video approach:** 2. Backtracking - II  
 
 [← Back to index](../INDEX.md)
 
@@ -72,7 +73,7 @@ public:
     - $O(n)$ extra space.
     - $O(n * 2 ^ n)$ space for the output list.
 
-## 2. Backtracking - II
+## 2. Backtracking - II ▶ video
 
 We build the partition **from left to right**.
 

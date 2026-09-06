@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/invert-binary-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/invert-a-binary-tree>  
 - **Video:** <https://www.youtube.com/watch?v=OnSn2XEQ4MY>  
+- **Video approach:** 2. Depth First Search  
 
 [← Back to index](../INDEX.md)
 
@@ -47,7 +48,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 2. Depth First Search
+## 2. Depth First Search ▶ video
 
 ```cpp
 /**

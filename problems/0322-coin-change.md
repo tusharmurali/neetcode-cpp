@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/coin-change/>  
 - **NeetCode:** <https://neetcode.io/problems/coin-change>  
 - **Video:** <https://www.youtube.com/watch?v=H9bfqozjoqs>  
+- **Video approach:** 3. Dynamic Programming (Bottom-Up)  
 
 [← Back to index](../INDEX.md)
 
@@ -101,7 +102,7 @@ public:
 
 > Where $n$ is the length of the array $coins$ and $t$ is the given $amount$.
 
-## 3. Dynamic Programming (Bottom-Up)
+## 3. Dynamic Programming (Bottom-Up) ▶ video
 
 This is the **bottom-up DP version** of Coin Change.
 

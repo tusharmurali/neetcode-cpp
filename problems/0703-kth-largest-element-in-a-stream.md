@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/kth-largest-element-in-a-stream/>  
 - **NeetCode:** <https://neetcode.io/problems/kth-largest-integer-in-a-stream>  
 - **Video:** <https://www.youtube.com/watch?v=hOjcdrqMoQ8>  
+- **Video approach:** 2. Min-Heap  
 
 [← Back to index](../INDEX.md)
 
@@ -45,7 +46,7 @@ public:
 
 > Where $m$ is the number of calls made to $add()$ and $n$ is the current size of the array.
 
-## 2. Min-Heap
+## 2. Min-Heap ▶ video
 
 To maintain the **k-th largest element** in a stream of numbers, we do **not** need to store all values.  
 Instead, we only need to keep track of the **k largest elements seen so far**.

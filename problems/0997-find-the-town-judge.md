@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/find-the-town-judge/>  
 - **NeetCode:** <https://neetcode.io/problems/find-the-town-judge>  
 - **Video:** <https://www.youtube.com/watch?v=QiGaxdUINJ8>  
+- **Video approach:** 2. Indegree & Outdegree (Optimal)  
 
 [← Back to index](../INDEX.md)
 
@@ -41,7 +42,7 @@ public:
 
 > Where $V$ is the number of vertices and $E$ is the number of edges.
 
-## 2. Indegree & Outdegree (Optimal)
+## 2. Indegree & Outdegree (Optimal) ▶ video
 
 We can combine the two arrays into one by using the difference: `delta[i] = incoming[i] - outgoing[i]`. The judge has `n - 1` people trusting them and trusts 0 people, so their delta equals `(n - 1) - 0 = n - 1`. Anyone who trusts at least one person will have a delta less than `n - 1`.
 

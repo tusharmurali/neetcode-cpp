@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/boats-to-save-people/>  
 - **NeetCode:** <https://neetcode.io/problems/boats-to-save-people>  
 - **Video:** <https://www.youtube.com/watch?v=XbaxWuHIWUs>  
+- **Video approach:** 1. Sorting + Two Pointers  
 
 [← Back to index](../INDEX.md)
 
-## 1. Sorting + Two Pointers
+## 1. Sorting + Two Pointers ▶ video
 
 Since each boat can carry at most two people and has a weight limit, we want to pair the heaviest person with the lightest person when possible. By sorting the weights, we can use two pointers: one at the heaviest person and one at the lightest. If they can share a boat, we move both pointers; otherwise, the heaviest person takes a boat alone.
 

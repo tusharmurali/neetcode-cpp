@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/median-of-two-sorted-arrays/>  
 - **NeetCode:** <https://neetcode.io/problems/median-of-two-sorted-arrays>  
 - **Video:** <https://www.youtube.com/watch?v=q6IEA26hvXc>  
+- **Video approach:** 4. Binary Search (Optimal)  
 
 [← Back to index](../INDEX.md)
 
@@ -158,7 +159,7 @@ public:
 
 > Where $n$ is the length of $nums1$ and $m$ is the length of $nums2$.
 
-## 4. Binary Search (Optimal)
+## 4. Binary Search (Optimal) ▶ video
 
 We want the median of two **sorted** arrays without fully merging them.
 

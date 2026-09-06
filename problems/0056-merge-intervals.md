@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/merge-intervals/>  
 - **NeetCode:** <https://neetcode.io/problems/merge-intervals>  
 - **Video:** <https://www.youtube.com/watch?v=44H3cEC2fFM>  
+- **Video approach:** 1. Sorting  
 
 [← Back to index](../INDEX.md)
 
-## 1. Sorting
+## 1. Sorting ▶ video
 
 We are given a list of intervals, and some of them may **overlap**.
 The goal is to merge all overlapping intervals so that the final list contains only **non-overlapping intervals**, covering the same ranges.

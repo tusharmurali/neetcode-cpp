@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/combinations/>  
 - **NeetCode:** <https://neetcode.io/problems/combinations>  
 - **Video:** <https://www.youtube.com/watch?v=q0s6m7AiM7o>  
+- **Video approach:** 2. Backtracking - II  
 
 [← Back to index](../INDEX.md)
 
@@ -47,7 +48,7 @@ private:
 
 > Where $n$ is the number of elements and $k$ is the number of elements to be picked.
 
-## 2. Backtracking - II
+## 2. Backtracking - II ▶ video
 
 Instead of making include/exclude decisions, we iterate through available numbers and always include one. Starting from a given position ensures we never revisit smaller numbers, avoiding duplicates. We stop when the combination reaches size `k`.
 

@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/serialize-and-deserialize-binary-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/serialize-and-deserialize-binary-tree>  
 - **Video:** <https://www.youtube.com/watch?v=u4JAi2JJhI8>  
+- **Video approach:** 1. Depth First Search  
 
 [← Back to index](../INDEX.md)
 
-## 1. Depth First Search
+## 1. Depth First Search ▶ video
 
 We want to turn a tree into a string (serialize) and then rebuild the same tree from that string (deserialize).
 We use **preorder DFS (root → left → right)** because it naturally records a node before its children.

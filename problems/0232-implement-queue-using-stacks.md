@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/implement-queue-using-stacks/>  
 - **NeetCode:** <https://neetcode.io/problems/implement-queue-using-stacks>  
 - **Video:** <https://www.youtube.com/watch?v=eanwa3ht3YQ>  
+- **Video approach:** 2. Using Two Stacks (Amortized Complexity)  
 
 [← Back to index](../INDEX.md)
 
@@ -70,7 +71,7 @@ public:
     - $O(n)$ time for each $pop()$ and $peek()$ function calls.
 - Space complexity: $O(n)$
 
-## 2. Using Two Stacks (Amortized Complexity)
+## 2. Using Two Stacks (Amortized Complexity) ▶ video
 
 Instead of moving elements back after each pop, we can keep them in the second stack.
 `stack1` handles incoming elements (push), while `stack2` holds elements in reversed order for popping.

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/palindromic-substrings/>  
 - **NeetCode:** <https://neetcode.io/problems/palindromic-substrings>  
 - **Video:** <https://www.youtube.com/watch?v=4RACzI5-du8>  
+- **Video approach:** 4. Two Pointers (Optimal)  
 
 [← Back to index](../INDEX.md)
 
@@ -147,7 +148,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(1)$
 
-## 4. Two Pointers (Optimal)
+## 4. Two Pointers (Optimal) ▶ video
 
 Every palindromic substring can be identified by **expanding from its center**.
 

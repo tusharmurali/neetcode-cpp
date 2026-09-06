@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/ugly-number/>  
 - **NeetCode:** <https://neetcode.io/problems/ugly-number>  
 - **Video:** <https://www.youtube.com/watch?v=M0Zay1Qr9ws>  
+- **Video approach:** 1. Math (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Math
+## 1. Math ▶ video
 
 An ugly number has only 2, 3, and 5 as prime factors. This means if we keep dividing the number by 2, 3, and 5 (as long as it is divisible), we should eventually reach 1. If any other prime factor exists, the number will not reduce to 1.
 

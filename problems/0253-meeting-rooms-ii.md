@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/meeting-rooms-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/meeting-schedule-ii>  
 - **Video:** <https://www.youtube.com/watch?v=FdzJmTCVyJU>  
+- **Video approach:** 4. Greedy  
 
 [← Back to index](../INDEX.md)
 
@@ -183,7 +184,7 @@ public:
 - Time complexity: $O(n \log n)$
 - Space complexity: $O(n)$
 
-## 4. Greedy
+## 4. Greedy ▶ video
 
 We want to find the **minimum number of meeting rooms** required so that no meetings overlap.
 

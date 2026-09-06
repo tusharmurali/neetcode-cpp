@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/interleaving-string/>  
 - **NeetCode:** <https://neetcode.io/problems/interleaving-string>  
 - **Video:** <https://www.youtube.com/watch?v=3Rw3p9LrgvE>  
+- **Video approach:** 3. Dynamic Programming (Bottom-Up)  
 
 [← Back to index](../INDEX.md)
 
@@ -116,7 +117,7 @@ public:
 
 > Where $m$ is the length of the string $s1$ and $n$ is the length of the string $s2$.
 
-## 3. Dynamic Programming (Bottom-Up)
+## 3. Dynamic Programming (Bottom-Up) ▶ video
 
 We need to check whether the string `s3` can be formed by interleaving `s1` and `s2`, while keeping the relative order of characters from both strings.
 

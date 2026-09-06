@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/longest-palindromic-substring/>  
 - **NeetCode:** <https://neetcode.io/problems/longest-palindromic-substring>  
 - **Video:** <https://www.youtube.com/watch?v=XYQecbcd6_c>  
+- **Video approach:** 3. Two Pointers  
 
 [← Back to index](../INDEX.md)
 
@@ -105,7 +106,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(n ^ 2)$
 
-## 3. Two Pointers
+## 3. Two Pointers ▶ video
 
 A palindrome **expands symmetrically from its center**.
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/find-all-duplicates-in-an-array/>  
 - **NeetCode:** <https://neetcode.io/problems/find-all-duplicates-in-an-array>  
 - **Video:** <https://www.youtube.com/watch?v=Y8x0iAVEITo>  
+- **Video approach:** 5. Negative Marking (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -126,7 +127,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 5. Negative Marking
+## 5. Negative Marking ▶ video
 
 Since all values are in the range `[1, n]` where `n` is the array length, we can use the array itself as a hash map. The key insight is that each value `v` can be mapped to index `v-1`. When we encounter a value, we mark the element at its corresponding index as negative. If we encounter a value whose corresponding index is already negative, that value must be a duplicate.
 

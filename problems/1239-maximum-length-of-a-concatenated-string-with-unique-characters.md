@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/>  
 - **NeetCode:** <https://neetcode.io/problems/maximum-length-of-a-concatenated-string-with-unique-characters>  
 - **Video:** <https://www.youtube.com/watch?v=d4SPuvkaeoo>  
+- **Video approach:** 1. Backtracking (Hash Set) (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Backtracking (Hash Set)
+## 1. Backtracking (Hash Set) ▶ video
 
 We want to find the longest concatenation of strings where all characters are unique. Since we need to try different combinations of strings, backtracking is a natural fit. For each string, we have two choices: include it (if it doesn't conflict with already chosen characters) or skip it. A hash set helps us efficiently check for character conflicts between the current selection and the next candidate string.
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/add-two-numbers/>  
 - **NeetCode:** <https://neetcode.io/problems/add-two-numbers>  
 - **Video:** <https://www.youtube.com/watch?v=wgFPrzTjm7s>  
+- **Video approach:** 2. Iteration  
 
 [← Back to index](../INDEX.md)
 
@@ -83,7 +84,7 @@ public:
 
 > Where $m$ is the length of $l1$ and $n$ is the length of $l2$.
 
-## 2. Iteration
+## 2. Iteration ▶ video
 
 We simulate normal addition the same way we do on paper — digit by digit.
 

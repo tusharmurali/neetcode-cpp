@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/sliding-window-maximum/>  
 - **NeetCode:** <https://neetcode.io/problems/sliding-window-maximum>  
 - **Video:** <https://www.youtube.com/watch?v=DfljaUwZsOk>  
+- **Video approach:** 5. Deque  
 
 [← Back to index](../INDEX.md)
 
@@ -214,7 +215,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 5. Deque
+## 5. Deque ▶ video
 
 A deque helps us efficiently track the maximum inside the sliding window.  
 The key idea is to keep the deque storing **indices** of elements in **decreasing order of their values**.  

@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/word-pattern/>  
 - **NeetCode:** <https://neetcode.io/problems/word-pattern>  
 - **Video:** <https://www.youtube.com/watch?v=W_akoecmCbM>  
+- **Video approach:** 1. Two Hash Maps (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Two Hash Maps
+## 1. Two Hash Maps ▶ video
 
 A valid pattern match requires a bijection (one-to-one correspondence) between pattern characters and words. Each character must map to exactly one word, and each word must map to exactly one character. Using two hash maps allows us to verify both directions of this mapping simultaneously as we iterate through the `pattern` and `words`.
 

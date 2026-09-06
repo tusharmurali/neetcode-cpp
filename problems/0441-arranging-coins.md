@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/arranging-coins/>  
 - **NeetCode:** <https://neetcode.io/problems/arranging-coins>  
 - **Video:** <https://www.youtube.com/watch?v=5rHz_6s2Buw>  
+- **Video approach:** 2. Binary Search (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -34,7 +35,7 @@ public:
 - Time complexity: $O(\sqrt {n})$
 - Space complexity: $O(1)$
 
-## 2. Binary Search
+## 2. Binary Search ▶ video
 
 Building rows one by one is slow for large `n`. Instead, we can use the formula for the sum of first `k` integers: `k * (k + 1) / 2`. If this sum is at most `n`, we can build `k` complete rows.
 

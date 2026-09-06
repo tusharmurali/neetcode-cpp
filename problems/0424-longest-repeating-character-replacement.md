@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/longest-repeating-character-replacement/>  
 - **NeetCode:** <https://neetcode.io/problems/longest-repeating-substring-with-replacement>  
 - **Video:** <https://www.youtube.com/watch?v=gqXU1UyA8pk>  
+- **Video approach:** 3. Sliding Window (Optimal)  
 
 [← Back to index](../INDEX.md)
 
@@ -97,7 +98,7 @@ public:
 
 > Where $n$ is the length of the string and $m$ is the total number of unique characters in the string.
 
-## 3. Sliding Window (Optimal)
+## 3. Sliding Window (Optimal) ▶ video
 
 We want the longest window where we can make all characters the same using at most `k` replacements.
 Using the true current maximum frequency, the window is valid as long as:

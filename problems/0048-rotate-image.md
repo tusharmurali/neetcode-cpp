@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/rotate-image/>  
 - **NeetCode:** <https://neetcode.io/problems/rotate-matrix>  
 - **Video:** <https://www.youtube.com/watch?v=fMSJSS7eO1w>  
+- **Video approach:** 2. Rotate By Four Cells  
 
 [← Back to index](../INDEX.md)
 
@@ -48,7 +49,7 @@ public:
 - Time complexity: $O(n ^ 2)$
 - Space complexity: $O(n ^ 2)$
 
-## 2. Rotate By Four Cells
+## 2. Rotate By Four Cells ▶ video
 
 We want to rotate an `n x n` matrix **90 degrees clockwise**, but this time **in-place**, without using extra space.
 

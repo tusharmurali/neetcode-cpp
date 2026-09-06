@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/decode-string/>  
 - **NeetCode:** <https://neetcode.io/problems/decode-string>  
 - **Video:** <https://www.youtube.com/watch?v=qB0zZpBJlh8>  
+- **Video approach:** 2. One Stack  
 
 [← Back to index](../INDEX.md)
 
@@ -57,7 +58,7 @@ public:
 
 > Where $n$ is the length of the input string and $N$ is the length of the output string.
 
-## 2. One Stack
+## 2. One Stack ▶ video
 
 We can convert the recursive approach to an iterative one using a single stack. Push every character onto the stack until we hit a closing bracket `]`. At that point, pop characters to extract the substring inside the brackets, then pop the digits to get the repeat count `k`. Multiply the substring and push the result back onto the stack. This simulates the recursive call stack.
 

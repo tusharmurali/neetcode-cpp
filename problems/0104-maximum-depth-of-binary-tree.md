@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/maximum-depth-of-binary-tree/>  
 - **NeetCode:** <https://neetcode.io/problems/depth-of-binary-tree>  
 - **Video:** <https://www.youtube.com/watch?v=hTM3phVI6YQ>  
+- **Video approach:** 1. Recursive DFS  
 
 [← Back to index](../INDEX.md)
 
-## 1. Recursive DFS
+## 1. Recursive DFS ▶ video
 
 ```cpp
 /**

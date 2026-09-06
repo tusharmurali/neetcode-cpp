@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/number-of-1-bits/>  
 - **NeetCode:** <https://neetcode.io/problems/number-of-one-bits>  
 - **Video:** <https://www.youtube.com/watch?v=5Km3utixwZs>  
+- **Video approach:** 3. Bit Mask (Optimal)  
 
 [← Back to index](../INDEX.md)
 
@@ -81,7 +82,7 @@ public:
 - Time complexity: $O(1)$
 - Space complexity: $O(1)$
 
-## 3. Bit Mask (Optimal)
+## 3. Bit Mask (Optimal) ▶ video
 
 We want to count the number of `1` bits in the binary representation of an integer `n` (Hamming Weight).
 

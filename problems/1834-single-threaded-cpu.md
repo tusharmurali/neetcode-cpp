@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/single-threaded-cpu/>  
 - **NeetCode:** <https://neetcode.io/problems/single-threaded-cpu>  
 - **Video:** <https://www.youtube.com/watch?v=RR1n-d4oYqE>  
+- **Video approach:** 2. Sorting + Min-Heap  
 
 [← Back to index](../INDEX.md)
 
@@ -55,7 +56,7 @@ public:
 - Time complexity: $O(n \log n)$
 - Space complexity: $O(n)$
 
-## 2. Sorting + Min-Heap
+## 2. Sorting + Min-Heap ▶ video
 
 Instead of using two heaps, we can sort the tasks by enqueue time first. This allows us to iterate through tasks in order and add them to the available heap as they become ready. We only need one heap for available tasks, simplifying the implementation while maintaining the same logic.
 

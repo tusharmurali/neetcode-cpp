@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/valid-anagram/>  
 - **NeetCode:** <https://neetcode.io/problems/is-anagram>  
 - **Video:** <https://www.youtube.com/watch?v=9UtInBqnCgA>  
+- **Video approach:** 2. Hash Map  
 
 [← Back to index](../INDEX.md)
 
@@ -37,7 +38,7 @@ public:
 
 > Where $n$ is the length of string $s$ and $m$ is the length of string $t$.
 
-## 2. Hash Map
+## 2. Hash Map ▶ video
 
 If two strings are anagrams, they must use the same characters with the same frequencies.  
 Instead of sorting, we can count how many times each character appears in both strings.  

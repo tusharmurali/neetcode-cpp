@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/remove-all-adjacent-duplicates-in-string-ii>  
 - **Video:** <https://www.youtube.com/watch?v=w6LcypDgC4w>  
+- **Video approach:** 3. Stack (Optimal) (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -90,7 +91,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 3. Stack (Optimal)
+## 3. Stack (Optimal) ▶ video
 
 Instead of modifying the string and tracking counts separately, we can store both the character and its count together in the stack. This eliminates the need for in-place string manipulation and index adjustments.
 

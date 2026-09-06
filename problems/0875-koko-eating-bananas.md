@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/koko-eating-bananas/>  
 - **NeetCode:** <https://neetcode.io/problems/eating-bananas>  
 - **Video:** <https://www.youtube.com/watch?v=U2SozAs9RzA>  
+- **Video approach:** 2. Binary Search  
 
 [← Back to index](../INDEX.md)
 
@@ -42,7 +43,7 @@ public:
 
 > Where $n$ is the length of the input array $piles$ and $m$ is the maximum number of bananas in a pile.
 
-## 2. Binary Search
+## 2. Binary Search ▶ video
 
 Instead of checking every speed one by one, we notice that the total time needed **decreases** as the eating speed increases.
 This means the answer lies in a **sorted search space** from `1` to `max(piles)`.

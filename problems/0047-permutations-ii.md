@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/permutations-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/permutations-ii>  
 - **Video:** <https://www.youtube.com/watch?v=qhBVWf0YafA>  
+- **Video approach:** 2. Backtracking (Hash Map)  
 
 [← Back to index](../INDEX.md)
 
@@ -52,7 +53,7 @@ private:
 - Time complexity: $O(n! * n)$
 - Space complexity: $O(n! * n)$ for the hash set.
 
-## 2. Backtracking (Hash Map)
+## 2. Backtracking (Hash Map) ▶ video
 
 Instead of using a set to filter duplicates after the fact, we can prevent duplicates from being generated in the first place. By counting how many times each unique number appears, we only pick each distinct value once per position in the permutation.
 

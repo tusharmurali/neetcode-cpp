@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/sort-colors/>  
 - **NeetCode:** <https://neetcode.io/problems/sort-colors>  
 - **Video:** <https://www.youtube.com/watch?v=4xbWSRZHqac>  
+- **Video approach:** 3. Three Pointers - I  
 
 [← Back to index](../INDEX.md)
 
@@ -55,7 +56,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(1)$
 
-## 3. Three Pointers - I
+## 3. Three Pointers - I ▶ video
 
 The Dutch National Flag algorithm partitions the array into three sections in a single pass. We maintain pointers for the boundary of 0s (left), the boundary of 2s (right), and the current element being examined. When we see a 0, we swap it to the left section. When we see a 2, we swap it to the right section. 1s naturally end up in the middle.
 

@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/>  
 - **NeetCode:** <https://neetcode.io/problems/binary-tree-from-preorder-and-inorder-traversal>  
 - **Video:** <https://www.youtube.com/watch?v=ihj4IQGZ2zc>  
+- **Video approach:** 1. Depth First Search  
 
 [← Back to index](../INDEX.md)
 
-## 1. Depth First Search
+## 1. Depth First Search ▶ video
 
 The first element of the `preorder` array is always the root. We can find this root's position in the `inorder` array, which divides `inorder` into left and right subtrees. Elements before the root in `inorder` belong to the left subtree, and elements after belong to the right subtree. The same split applies to `preorder`. We recursively build left and right subtrees using the corresponding portions of both arrays.
 

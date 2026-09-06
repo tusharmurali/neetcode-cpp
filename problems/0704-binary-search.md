@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/binary-search/>  
 - **NeetCode:** <https://neetcode.io/problems/binary-search>  
 - **Video:** <https://www.youtube.com/watch?v=s4DPM8ct1pI>  
+- **Video approach:** 2. Iterative Binary Search  
 
 [← Back to index](../INDEX.md)
 
@@ -44,7 +45,7 @@ public:
 - Time complexity: $O(\log n)$
 - Space complexity: $O(\log n)$
 
-## 2. Iterative Binary Search
+## 2. Iterative Binary Search ▶ video
 
 Binary search checks the middle element of a sorted array and decides which half to discard.  
 Instead of using recursion, the iterative approach keeps shrinking the search range using a loop.  

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/redundant-connection/>  
 - **NeetCode:** <https://neetcode.io/problems/redundant-connection>  
 - **Video:** <https://www.youtube.com/watch?v=1lNK80tOTfc>  
+- **Video approach:** 4. Disjoint Set Union  
 
 [← Back to index](../INDEX.md)
 
@@ -195,7 +196,7 @@ public:
 
 > Where $V$ is the number of vertices and $E$ is the number of edges in the graph.
 
-## 4. Disjoint Set Union
+## 4. Disjoint Set Union ▶ video
 
 Use **Disjoint Set Union (Union-Find)** to track connected components while adding edges one by one.
 

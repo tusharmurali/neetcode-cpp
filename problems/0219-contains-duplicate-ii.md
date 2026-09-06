@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/contains-duplicate-ii/>  
 - **NeetCode:** <https://neetcode.io/problems/contains-duplicate-ii>  
 - **Video:** <https://www.youtube.com/watch?v=ypn0aZ0nrL4>  
+- **Video approach:** 3. Hash Set  
 
 [← Back to index](../INDEX.md)
 
@@ -65,7 +66,7 @@ public:
 
 > Where $n$ is the size of the array $nums$ and $k$ is the maximum distance between two equal numbers.
 
-## 3. Hash Set
+## 3. Hash Set ▶ video
 
 We only need to check for duplicates within a sliding window of size `k`. Using a hash set, we maintain exactly the elements in the current window. If a new element already exists in the set, we found a duplicate within distance `k`. We slide the window by removing the leftmost element when the window exceeds size `k`.
 

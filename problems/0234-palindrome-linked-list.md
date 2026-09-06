@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/palindrome-linked-list/>  
 - **NeetCode:** <https://neetcode.io/problems/palindrome-linked-list>  
 - **Video:** <https://www.youtube.com/watch?v=yOzXms1J6Nk>  
+- **Video approach:** 4. Fast & Slow Pointers (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -145,7 +146,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 4. Fast & Slow Pointers
+## 4. Fast & Slow Pointers ▶ video
 
 To achieve O(1) extra space, we can reverse the second half of the list in place. Then we compare the first half with the reversed second half node by node.
 

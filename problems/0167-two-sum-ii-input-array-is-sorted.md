@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/>  
 - **NeetCode:** <https://neetcode.io/problems/two-integer-sum-ii>  
 - **Video:** <https://www.youtube.com/watch?v=cQ1Oz4ckceM>  
+- **Video approach:** 4. Two Pointers  
 
 [← Back to index](../INDEX.md)
 
@@ -101,7 +102,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 4. Two Pointers
+## 4. Two Pointers ▶ video
 
 Because the array is sorted, we can use two pointers to adjust the sum efficiently.  
 If the current sum is too big, moving the right pointer left makes the sum smaller.  

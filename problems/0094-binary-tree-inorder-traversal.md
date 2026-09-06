@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/binary-tree-inorder-traversal/>  
 - **NeetCode:** <https://neetcode.io/problems/binary-tree-inorder-traversal>  
 - **Video:** <https://www.youtube.com/watch?v=g_S5WuasWUE>  
+- **Video approach:** 2. Iterative Depth First Search  
 
 [← Back to index](../INDEX.md)
 
@@ -53,7 +54,7 @@ private:
     - $O(n)$ space for the recursion stack.
     - $O(n)$ space for the output array.
 
-## 2. Iterative Depth First Search
+## 2. Iterative Depth First Search ▶ video
 
 We can simulate the recursive call stack using an explicit stack. The key insight is that we need to go as far left as possible, then process the current node, and move to the right subtree. The stack helps us remember which nodes we still need to process after finishing the left subtrees.
 

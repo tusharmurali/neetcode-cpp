@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/word-search/>  
 - **NeetCode:** <https://neetcode.io/problems/search-for-word>  
 - **Video:** <https://www.youtube.com/watch?v=pfiQ_PS1g8E>  
+- **Video approach:** 1. Backtracking (Hash Set)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Backtracking (Hash Set)
+## 1. Backtracking (Hash Set) ▶ video
 
 We need to check if the word can be formed by walking **up/down/left/right** on the grid, using **each cell at most once** in the same path.
 

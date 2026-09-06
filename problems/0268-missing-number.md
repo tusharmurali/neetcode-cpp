@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/missing-number/>  
 - **NeetCode:** <https://neetcode.io/problems/missing-number>  
 - **Video:** <https://www.youtube.com/watch?v=WnPLSRLSANE>  
+- **Video approach:** 4. Math  
 
 [← Back to index](../INDEX.md)
 
@@ -118,7 +119,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(1)$
 
-## 4. Math
+## 4. Math ▶ video
 
 We are given `n` distinct numbers from the range `[0, n]`, with **exactly one number missing**.
 

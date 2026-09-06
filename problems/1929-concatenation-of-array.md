@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/concatenation-of-array/>  
 - **NeetCode:** <https://neetcode.io/problems/concatenation-of-array>  
 - **Video:** <https://www.youtube.com/watch?v=68isPRHgcFQ>  
+- **Video approach:** 1. Iteration (Two Pass)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Iteration (Two Pass)
+## 1. Iteration (Two Pass) ▶ video
 
 To concatenate an array with itself, we need to create a new array that contains all elements of the original array twice, maintaining the same order. The elements at indices $0$ to $n - 1$ are followed by the same elements at indices $n$ to $2n - 1$.
 

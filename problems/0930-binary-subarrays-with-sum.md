@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/binary-subarrays-with-sum/>  
 - **NeetCode:** <https://neetcode.io/problems/binary-subarrays-with-sum>  
 - **Video:** <https://www.youtube.com/watch?v=j4JDr4-jvo4>  
+- **Video approach:** 4. Sliding Window (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -97,7 +98,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 4. Sliding Window
+## 4. Sliding Window ▶ video
 
 Counting subarrays with exactly `goal` sum is tricky with a sliding window because shrinking the window might skip valid subarrays. However, counting subarrays with sum at most `goal` is straightforward. We can use the identity: `count(exactly goal) = count(at most goal) - count(at most goal-1)`. For each right endpoint, we shrink the left side until the sum is at most the target, and all subarrays ending at `right` with starting points from `left` to `right` are valid.
 

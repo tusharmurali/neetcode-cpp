@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/bitwise-and-of-numbers-range/>  
 - **NeetCode:** <https://neetcode.io/problems/bitwise-and-of-numbers-range>  
 - **Video:** <https://www.youtube.com/watch?v=R3T0olAhUq0>  
+- **Video approach:** 2. Bit Manipulation - I  
 
 [← Back to index](../INDEX.md)
 
@@ -31,7 +32,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(1)$
 
-## 2. Bit Manipulation - I
+## 2. Bit Manipulation - I ▶ video
 
 For any bit position in the result to be `1`, that bit must be `1` in all numbers from `left` to `right`. If a bit is `1` in `left`, we need to check if it will flip to `0` at some point in the range. A bit at position `i` flips when we reach the next multiple of `2^(i+1)`. So we calculate how far `left` is from that flip point and check if `right` is still before it.
 

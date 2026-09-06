@@ -5,6 +5,7 @@
 - **Lists:** NeetCode All  
 - **LeetCode:** <https://leetcode.com/problems/ransom-note/>  
 - **NeetCode:** <https://neetcode.io/problems/ransom-note>  
+- **Video approach:** 2. Count Frequency (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -36,7 +37,7 @@ public:
 
 > Where $m$ and $n$ are the lengths of the strings $ransomNote$ and $magazine$, respectively.
 
-## 2. Count Frequency
+## 2. Count Frequency ▶ video
 
 Instead of searching and removing characters one by one, we can count the frequency of each character in both strings. The ransom note can be constructed if and only if the magazine contains at least as many of each character as the ransom note requires.
 

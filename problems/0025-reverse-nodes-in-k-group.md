@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/reverse-nodes-in-k-group/>  
 - **NeetCode:** <https://neetcode.io/problems/reverse-nodes-in-k-group>  
 - **Video:** <https://www.youtube.com/watch?v=1UOPsfP85V4>  
+- **Video approach:** 2. Iteration  
 
 [← Back to index](../INDEX.md)
 
@@ -64,7 +65,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(\frac{n}{k})$
 
-## 2. Iteration
+## 2. Iteration ▶ video
 
 We reverse the list **one k-sized group at a time** using pointers, without recursion.
 

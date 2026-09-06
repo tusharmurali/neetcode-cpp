@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/>  
 - **NeetCode:** <https://neetcode.io/problems/minimum-difference-between-highest-and-lowest-of-k-scores>  
 - **Video:** <https://www.youtube.com/watch?v=JU5XdBZZtlk>  
+- **Video approach:** 1. Sorting + Sliding Window (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Sorting + Sliding Window
+## 1. Sorting + Sliding Window ▶ video
 
 When we need to minimize the difference between the highest and lowest values among any `k` chosen elements, sorting the array first is key. After sorting, the smallest possible range of `k` elements will always be a contiguous segment. Why? Because picking non-adjacent elements after sorting would only increase the gap between `max` and `min`. So, we sort the array and then slide a window of size `k` across it, tracking the minimum difference between the first and last element of each window.
 

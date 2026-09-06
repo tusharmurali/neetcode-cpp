@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/>  
 - **NeetCode:** <https://neetcode.io/problems/minimum-number-of-swaps-to-make-the-string-balanced>  
 - **Video:** <https://www.youtube.com/watch?v=3YDBT9ZrfaU>  
+- **Video approach:** 2. Greedy - I (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -37,7 +38,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 2. Greedy - I
+## 2. Greedy - I ▶ video
 
 Instead of tracking opening brackets, we can track the imbalance directly. We maintain a `close` counter that increases for `]` and decreases for `[`. The `max` value this counter reaches tells us the worst-case imbalance, meaning the maximum number of unmatched closing brackets at any point.
 

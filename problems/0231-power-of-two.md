@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/power-of-two/>  
 - **NeetCode:** <https://neetcode.io/problems/power-of-two>  
 - **Video:** <https://www.youtube.com/watch?v=H2bjttEV4Vc>  
+- **Video approach:** 1. Brute Force (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Brute Force
+## 1. Brute Force ▶ video
 
 We can generate all powers of two by starting from `1` and repeatedly multiplying by `2`. If we reach exactly `n`, then `n` is a power of two. If we exceed `n` without matching it, then it's not.
 

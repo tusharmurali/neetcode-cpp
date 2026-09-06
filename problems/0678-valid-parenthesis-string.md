@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/valid-parenthesis-string/>  
 - **NeetCode:** <https://neetcode.io/problems/valid-parenthesis-string>  
 - **Video:** <https://www.youtube.com/watch?v=QhPdNS143Qg>  
+- **Video approach:** 2. Dynamic Programming (Top-Down)  
 
 [← Back to index](../INDEX.md)
 
@@ -59,7 +60,7 @@ private:
 - Time complexity: $O(3 ^ n)$
 - Space complexity: $O(n)$
 
-## 2. Dynamic Programming (Top-Down)
+## 2. Dynamic Programming (Top-Down) ▶ video
 
 We need to decide if a string containing `'('`, `')'`, and `'*'` can be turned into a **valid parentheses string**.
 

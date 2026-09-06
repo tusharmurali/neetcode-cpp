@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/largest-number/>  
 - **NeetCode:** <https://neetcode.io/problems/largest-number>  
 - **Video:** <https://www.youtube.com/watch?v=WDx6Y4i4xJ8>  
+- **Video approach:** 2. Sorting (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -48,7 +49,7 @@ public:
 
 > Where $n$ is the size of the array $nums$ and $N$ is the total number of digits in the array $nums$.
 
-## 2. Sorting
+## 2. Sorting ▶ video
 
 Instead of repeatedly scanning for the best number, we can use sorting with a custom comparator. The comparator determines the order by checking if `a + b > b + a`. By sorting the entire array once using this rule, numbers naturally arrange themselves so that their concatenation yields the largest possible value.
 

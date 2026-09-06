@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/minimum-path-sum/>  
 - **NeetCode:** <https://neetcode.io/problems/minimum-path-sum>  
 - **Video:** <https://www.youtube.com/watch?v=pGMsrvt0fpk>  
+- **Video approach:** 4. Dynamic Programming (Space Optimized)  
 
 [← Back to index](../INDEX.md)
 
@@ -109,7 +110,7 @@ public:
 
 > Where $m$ is the number of rows and $n$ is the number of columns.
 
-## 4. Dynamic Programming (Space Optimized)
+## 4. Dynamic Programming (Space Optimized) ▶ video
 
 When filling the DP table row by row (from bottom to top), we only need the current row and the row below. In fact, since we process columns right to left, we can overwrite the same 1D array. The value at `dp[c]` represents the minimum path sum from `(r+1, c)`, and `dp[c+1]` represents the path from `(r, c+1)`. After updating, `dp[c]` will hold the result for `(r, c)`.
 

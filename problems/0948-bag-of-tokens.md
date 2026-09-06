@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/bag-of-tokens/>  
 - **NeetCode:** <https://neetcode.io/problems/bag-of-tokens>  
 - **Video:** <https://www.youtube.com/watch?v=prI82maTivg>  
+- **Video approach:** 1. Greedy + Two Pointers (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Greedy + Two Pointers
+## 1. Greedy + Two Pointers ▶ video
 
 To maximize our score, we should be strategic about which tokens we play face-up (losing power, gaining score) versus face-down (gaining power, losing score). The key insight is that when gaining score, we want to spend as little power as possible, and when gaining power, we want to gain as much as possible. Sorting the tokens lets us always play the smallest token face-up and the largest token face-down.
 

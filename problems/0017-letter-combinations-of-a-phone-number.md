@@ -6,10 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/letter-combinations-of-a-phone-number/>  
 - **NeetCode:** <https://neetcode.io/problems/combinations-of-a-phone-number>  
 - **Video:** <https://www.youtube.com/watch?v=0snEunUacZY>  
+- **Video approach:** 1. Backtracking  
 
 [← Back to index](../INDEX.md)
 
-## 1. Backtracking
+## 1. Backtracking ▶ video
 
 Each digit maps to a set of characters (like on a phone keypad).  
 The task is to **choose one character per digit**, in order, and generate **all possible combinations**.

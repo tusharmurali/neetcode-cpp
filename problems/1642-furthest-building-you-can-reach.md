@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/furthest-building-you-can-reach/>  
 - **NeetCode:** <https://neetcode.io/problems/furthest-building-you-can-reach>  
 - **Video:** <https://www.youtube.com/watch?v=zyTeznvXCtg>  
+- **Video approach:** 4. Max-Heap (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -162,7 +163,7 @@ private:
 - Time complexity: $O(n \log n)$
 - Space complexity: $O(n)$
 
-## 4. Max-Heap
+## 4. Max-Heap ▶ video
 
 We can make greedy decisions as we traverse by initially using bricks for each jump, then retroactively swapping to a ladder when bricks run out. A max-heap tracks all brick usages so far, allowing us to efficiently swap the largest brick usage with a ladder when needed. This ensures ladders always cover the biggest gaps.
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/house-robber/>  
 - **NeetCode:** <https://neetcode.io/problems/house-robber>  
 - **Video:** <https://www.youtube.com/watch?v=73r3KWiEvyk>  
+- **Video approach:** 4. Dynamic Programming (Space Optimized)  
 
 [← Back to index](../INDEX.md)
 
@@ -118,7 +119,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 4. Dynamic Programming (Space Optimized)
+## 4. Dynamic Programming (Space Optimized) ▶ video
 
 We don’t actually need a full DP array.
 

@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/n-th-tribonacci-number/>  
 - **NeetCode:** <https://neetcode.io/problems/n-th-tribonacci-number>  
 - **Video:** <https://www.youtube.com/watch?v=3lpNp5Ojvrw>  
+- **Video approach:** 2. Dynamic Programming (Top-Down)  
 
 [← Back to index](../INDEX.md)
 
@@ -32,7 +33,7 @@ public:
 - Time complexity: $O(3 ^ n)$
 - Space complexity: $O(n)$
 
-## 2. Dynamic Programming (Top-Down)
+## 2. Dynamic Programming (Top-Down) ▶ video
 
 The recursive solution wastes time by recomputing the same values over and over. We can fix this with memoization: store each computed result in a cache. Before computing T(n), check if it already exists in the cache. If so, return the cached value immediately. This transforms our exponential algorithm into a linear one, since each unique subproblem is solved only once.
 

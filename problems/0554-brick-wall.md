@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/brick-wall/>  
 - **NeetCode:** <https://neetcode.io/problems/brick-wall>  
 - **Video:** <https://www.youtube.com/watch?v=Kkmv2h48ekw>  
+- **Video approach:** 2. Hash Map (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -57,7 +58,7 @@ public:
 
 > Where $m$ is the sum of widths of the bricks in the first row, $n$ is the number of rows and $g$ is the average number of gaps in each row.
 
-## 2. Hash Map
+## 2. Hash Map ▶ video
 
 Instead of checking every possible vertical position, we can think about this differently. We want to maximize the number of gaps we pass through, because each gap means we avoid cutting a brick. If we count how many times each gap position appears across all rows, the position with the most gaps is the best place to draw our line. The answer is then total rows minus the maximum gap count.
 

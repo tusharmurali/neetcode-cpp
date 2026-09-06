@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/can-place-flowers/>  
 - **NeetCode:** <https://neetcode.io/problems/can-place-flowers>  
 - **Video:** <https://www.youtube.com/watch?v=ZGxqqjljpUI>  
+- **Video approach:** 2. Iteration - II (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -38,7 +39,7 @@ public:
 - Time complexity: $O(n)$
 - Space complexity: $O(n)$
 
-## 2. Iteration - II
+## 2. Iteration - II ▶ video
 
 Instead of checking each position individually, we can count consecutive empty plots between flowers. For a sequence of `k` empty plots between two flowers, we can plant `(k-1)/2` flowers. At the beginning and end of the flowerbed, the formula differs slightly since there is no blocking flower on one side: we can plant `k/2` flowers at the edges.
 

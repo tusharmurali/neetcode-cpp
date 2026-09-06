@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/max-points-on-a-line/>  
 - **NeetCode:** <https://neetcode.io/problems/max-points-on-a-line>  
 - **Video:** <https://www.youtube.com/watch?v=Bb9lOXUOnFw>  
+- **Video approach:** 2. Math + Hash Map (auto-matched)  
 
 [← Back to index](../INDEX.md)
 
@@ -54,7 +55,7 @@ private:
 - Time complexity: $O(n ^ 3)$
 - Space complexity: $O(1)$ extra space.
 
-## 2. Math + Hash Map
+## 2. Math + Hash Map ▶ video
 
 Instead of checking every pair and then scanning all other points, we can fix one point and use a hash map to group all other points by their slope relative to the fixed point. Points with the same slope lie on the same line through the fixed point. The largest group size plus one (for the fixed point itself) gives the maximum collinear points for that reference. Repeating this for every point as the reference yields the global maximum.
 

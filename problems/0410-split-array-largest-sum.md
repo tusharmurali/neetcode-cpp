@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/split-array-largest-sum/>  
 - **NeetCode:** <https://neetcode.io/problems/split-array-largest-sum>  
 - **Video:** <https://www.youtube.com/watch?v=YUF3_eBdzsk>  
+- **Video approach:** 5. Binary Search  
 
 [← Back to index](../INDEX.md)
 
@@ -161,7 +162,7 @@ public:
 
 > Where $n$ is the size of the array $nums$ and $k$ is the number of sub-arrays to form.
 
-## 5. Binary Search
+## 5. Binary Search ▶ video
 
 Instead of trying all possible splits, we binary search on the answer itself. The minimum possible largest sum is the maximum element (when k equals n), and the maximum is the total sum (when k equals 1). For a given target sum, we greedily check if we can split the array into at most k subarrays where no subarray exceeds the target. If possible, we try a smaller target; otherwise, we need a larger one.
 

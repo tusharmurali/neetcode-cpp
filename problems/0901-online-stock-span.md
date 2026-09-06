@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/online-stock-span/>  
 - **NeetCode:** <https://neetcode.io/problems/online-stock-span>  
 - **Video:** <https://www.youtube.com/watch?v=slYh0ZNEqSw>  
+- **Video approach:** 2. Monotonic Decreasing Stack  
 
 [← Back to index](../INDEX.md)
 
@@ -38,7 +39,7 @@ public:
 
 > Where $n$ is the number of function calls.
 
-## 2. Monotonic Decreasing Stack
+## 2. Monotonic Decreasing Stack ▶ video
 
 The brute force approach repeatedly scans the same elements. We can avoid this by using a monotonic decreasing stack that stores pairs of `(price, span)`.
 

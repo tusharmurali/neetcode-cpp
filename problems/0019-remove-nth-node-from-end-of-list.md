@@ -6,6 +6,7 @@
 - **LeetCode:** <https://leetcode.com/problems/remove-nth-node-from-end-of-list/>  
 - **NeetCode:** <https://neetcode.io/problems/remove-node-from-end-of-linked-list>  
 - **Video:** <https://www.youtube.com/watch?v=XVuQxVej6y8>  
+- **Video approach:** 4. Two Pointers  
 
 [← Back to index](../INDEX.md)
 
@@ -147,7 +148,7 @@ public:
 - Time complexity: $O(N)$
 - Space complexity: $O(N)$ for recursion stack.
 
-## 4. Two Pointers
+## 4. Two Pointers ▶ video
 
 Use two pointers so that the gap between them is exactly `n`.
 Move the right pointer `n` steps ahead first.
