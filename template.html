@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="NeetCode 150 / 250 in one page: LeetCode links, every NeetCode C++ approach with complexity, copy buttons, and solved tracking.">
+<meta name="color-scheme" content="light dark">
+<!-- HEAD-END -->
+<title>NeetCode C++ Desk</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F2F4F7; --surface:#FFFFFF; --sunk:#E9EDF2; --ink:#151C26; --muted:#5B6675; --line:#D9DEE5; --line-strong:#B9C2CE;
+  --accent:#00599C; --accent-ink:#FFFFFF; --accent-soft:#E3EEF8; --accent-text:#00599C;
+  --easy:#1F8A5B; --medium:#B7791F; --hard:#C2382F;
+  --easy-soft:#E1F3EA; --medium-soft:#FBF0DA; --hard-soft:#FBE3E0;
+  --code-bg:#F7F9FB; --code-line:#E4E9EF;
+  --h-kw:#8B2E8F; --h-type:#0F6B8A; --h-str:#9A4A0B; --h-num:#1F6E3A; --h-cmt:#7A8593; --h-fn:#1B4D9B;
+  --focus:#00599C;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F141A; --surface:#171E27; --sunk:#111820; --ink:#E6EBF1; --muted:#8B96A5; --line:#2A3441; --line-strong:#3B4756;
+    --accent:#3E8FD0; --accent-ink:#0B1622; --accent-soft:#16304A; --accent-text:#7DB9EE;
+    --easy:#4CC38A; --medium:#E0A83A; --hard:#F0655A;
+    --easy-soft:#123324; --medium-soft:#3A2C0F; --hard-soft:#3E1A17;
+    --code-bg:#0E1319; --code-line:#222B36;
+    --h-kw:#D08BE0; --h-type:#63C2E0; --h-str:#E8A868; --h-num:#8FD69F; --h-cmt:#6B7787; --h-fn:#8FB8F2;
+    --focus:#7DB9EE;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F141A; --surface:#171E27; --sunk:#111820; --ink:#E6EBF1; --muted:#8B96A5; --line:#2A3441; --line-strong:#3B4756;
+  --accent:#3E8FD0; --accent-ink:#0B1622; --accent-soft:#16304A; --accent-text:#7DB9EE;
+  --easy:#4CC38A; --medium:#E0A83A; --hard:#F0655A;
+  --easy-soft:#123324; --medium-soft:#3A2C0F; --hard-soft:#3E1A17;
+  --code-bg:#0E1319; --code-line:#222B36;
+  --h-kw:#D08BE0; --h-type:#63C2E0; --h-str:#E8A868; --h-num:#8FD69F; --h-cmt:#6B7787; --h-fn:#8FB8F2;
+  --focus:#7DB9EE;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent-text)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+code,pre,.mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+
+.app{display:grid;grid-template-rows:auto 1fr;height:100vh;height:100dvh}
+.top{display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px solid var(--line);background:var(--surface)}
+.brand{display:flex;align-items:baseline;gap:8px;white-space:nowrap}
+.brand b{font-family:"IBM Plex Sans Condensed","IBM Plex Sans",sans-serif;font-weight:700;font-size:18px;letter-spacing:-.01em}
+.brand span{color:var(--muted);font-size:12px}
+.search{flex:1;display:flex;align-items:center;gap:8px;background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:0 10px;max-width:520px;min-width:160px}
+.search input{flex:1;border:0;background:transparent;padding:8px 0;font:inherit;color:var(--ink);outline:none;min-width:0}
+.search kbd{font:11px/1 "JetBrains Mono",monospace;color:var(--muted);border:1px solid var(--line-strong);border-radius:4px;padding:3px 5px}
+.seg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--sunk)}
+.seg button{border:0;background:transparent;padding:7px 11px;cursor:pointer;color:var(--muted);font-weight:500;white-space:nowrap}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:inset 0 -2px 0 var(--accent)}
+.diffs{display:flex;gap:6px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:4px 10px;background:transparent;cursor:pointer;font-size:12px;font-weight:600;color:var(--muted)}
+.chip[aria-pressed="true"].e{color:var(--easy);border-color:var(--easy);background:var(--easy-soft)}
+.chip[aria-pressed="true"].m{color:var(--medium);border-color:var(--medium);background:var(--medium-soft)}
+.chip[aria-pressed="true"].h{color:var(--hard);border-color:var(--hard);background:var(--hard-soft)}
+.icon{border:1px solid var(--line);background:var(--surface);border-radius:8px;width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:var(--muted);font-size:15px}
+.icon:hover{color:var(--ink);border-color:var(--line-strong)}
+.tools{margin-left:auto;display:flex;gap:6px;align-items:center}
+
+.main{display:grid;grid-template-columns:340px 1fr;min-height:0}
+.side{border-right:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column;min-height:0}
+.side-head{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}
+.side-head b{color:var(--ink);font-variant-numeric:tabular-nums}
+.progress{height:3px;background:var(--sunk)}
+.progress i{display:block;height:100%;background:var(--easy);width:0;transition:width .3s}
+.list{overflow:auto;flex:1;padding-bottom:24px}
+.grp{position:sticky;top:0;background:var(--surface);z-index:1;display:flex;justify-content:space-between;align-items:center;padding:10px 14px 6px;font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:600;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line)}
+.grp small{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:0;text-transform:none;font-weight:400}
+.row{display:grid;grid-template-columns:22px 44px 1fr auto;align-items:center;gap:8px;width:100%;text-align:left;border:0;background:transparent;padding:7px 14px 7px 10px;cursor:pointer;border-left:3px solid transparent}
+.row:hover{background:var(--sunk)}
+.row[aria-current="true"]{background:var(--accent-soft);border-left-color:var(--accent)}
+.row .num{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.row .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:500}
+.row.done .t{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--line-strong)}
+.row .d{width:8px;height:8px;border-radius:50%}
+.d.Easy{background:var(--easy)}.d.Medium{background:var(--medium)}.d.Hard{background:var(--hard)}
+.row input{margin:0;accent-color:var(--easy);cursor:pointer}
+.empty{padding:40px 20px;text-align:center;color:var(--muted)}
+.side-foot{border-top:1px solid var(--line);padding:8px 14px;display:flex;gap:10px;font-size:12px;color:var(--muted)}
+.side-foot button{border:0;background:none;color:var(--accent-text);cursor:pointer;padding:0;font-size:12px;font-weight:500}
+.side-foot button:hover{text-decoration:underline}
+
+.detail{overflow:auto;min-height:0}
+.wrap{max-width:980px;margin:0 auto;padding:28px 32px 80px}
+.hd{display:flex;flex-wrap:wrap;align-items:flex-start;gap:16px 24px;margin-bottom:22px}
+.hd h1{margin:0;font-family:"IBM Plex Sans Condensed","IBM Plex Sans",sans-serif;font-weight:700;font-size:34px;line-height:1.1;letter-spacing:-.01em;text-wrap:balance}
+.hd h1 .n{color:var(--muted);font-weight:500;margin-right:8px}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:10px;font-size:12px;color:var(--muted)}
+.pill{display:inline-block;border-radius:999px;padding:2px 9px;font-weight:600;font-size:12px}
+.pill.Easy{color:var(--easy);background:var(--easy-soft)}.pill.Medium{color:var(--medium);background:var(--medium-soft)}.pill.Hard{color:var(--hard);background:var(--hard-soft)}
+.tag{border:1px solid var(--line);border-radius:4px;padding:1px 6px;font-family:"JetBrains Mono",monospace;font-size:11px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-left:auto}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line-strong);border-radius:8px;padding:8px 13px;text-decoration:none;color:var(--ink);font-weight:600;background:var(--surface);cursor:pointer}
+.btn:hover{border-color:var(--accent);color:var(--accent-text)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.primary:hover{filter:brightness(1.08);color:var(--accent-ink)}
+.btn.done-btn[aria-pressed="true"]{background:var(--easy-soft);color:var(--easy);border-color:var(--easy)}
+.note{border-left:3px solid var(--medium);background:var(--medium-soft);color:var(--ink);padding:8px 12px;border-radius:0 6px 6px 0;font-size:13px;margin-bottom:18px}
+
+.tabs{display:flex;flex-wrap:wrap;gap:4px;border-bottom:1px solid var(--line);margin-bottom:18px}
+.tabs button{border:0;background:transparent;padding:9px 12px;cursor:pointer;color:var(--muted);font-weight:500;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs button:hover{color:var(--ink)}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
+.tabs button .k{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--muted);margin-right:6px}
+.tabs button.all{margin-left:auto}
+
+.appr h2{font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:600;font-size:20px;margin:0 0 8px}
+.appr .intu{max-width:68ch;color:var(--ink);margin:0 0 14px}
+.appr .intu p{margin:0 0 8px}
+.appr .intu code{background:var(--sunk);padding:1px 5px;border-radius:4px;font-size:12.5px}
+.codebox{position:relative;border:1px solid var(--code-line);border-radius:10px;background:var(--code-bg);overflow:hidden;margin-bottom:12px}
+.codebox pre{margin:0;padding:16px 18px;overflow-x:auto;font-size:13px;line-height:1.55;tab-size:4}
+.codebox .copy{position:absolute;top:8px;right:8px;border:1px solid var(--line-strong);background:var(--surface);border-radius:6px;padding:4px 9px;font-size:12px;font-weight:600;cursor:pointer;opacity:.85}
+.codebox .copy:hover{opacity:1;border-color:var(--accent);color:var(--accent-text)}
+.codebox .copy.ok{color:var(--easy);border-color:var(--easy)}
+.cx{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--muted);margin-bottom:34px;max-width:70ch}
+.cx .lbl{font-family:"IBM Plex Sans Condensed",sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:11px;font-weight:600}
+.cx code{color:var(--ink);background:var(--sunk);padding:1px 5px;border-radius:4px;font-size:12px}
+.cx .where{flex-basis:100%;font-size:12.5px}
+.appr + .appr{border-top:1px dashed var(--line);padding-top:26px}
+.hint{color:var(--muted);font-size:12px;margin-top:40px;border-top:1px solid var(--line);padding-top:12px;display:flex;flex-wrap:wrap;gap:14px}
+.hint kbd{font-family:"JetBrains Mono",monospace;font-size:11px;border:1px solid var(--line-strong);border-radius:4px;padding:1px 5px}
+.credit{color:var(--muted);font-size:12px;margin-top:14px;max-width:72ch}
+
+/* highlight.js theme, mapped to tokens */
+.hljs{color:var(--ink)}
+.hljs-keyword,.hljs-literal{color:var(--h-kw)}
+.hljs-type,.hljs-built_in,.hljs-class .hljs-title{color:var(--h-type)}
+.hljs-string{color:var(--h-str)}
+.hljs-number{color:var(--h-num)}
+.hljs-comment{color:var(--h-cmt);font-style:italic}
+.hljs-title.function_,.hljs-function .hljs-title{color:var(--h-fn)}
+.hljs-meta{color:var(--h-cmt)}
+
+.menu{display:none}
+@media (max-width:900px){
+  .main{grid-template-columns:1fr}
+  .side{display:none}
+  .side.open{display:flex;position:fixed;inset:0;top:var(--top-h,57px);z-index:5}
+  .top{flex-wrap:wrap}
+  .menu{display:inline-flex}
+  .diffs{display:none}
+  .wrap{padding:20px 16px 60px}
+  .hd h1{font-size:26px}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top" id="top">
+    <button class="icon menu" id="menu" aria-label="Show problem list">☰</button>
+    <div class="brand"><b>NeetCode C++ Desk</b><span id="brand-sub"></span></div>
+    <label class="search"><span aria-hidden="true">⌕</span><input id="q" type="search" placeholder="Search by number, name, or pattern…" autocomplete="off" spellcheck="false"><kbd>/</kbd></label>
+    <div class="seg" id="lists" role="group" aria-label="Problem list">
+      <button data-list="blind75">Blind 75</button>
+      <button data-list="neetcode150" aria-pressed="true">NeetCode 150</button>
+      <button data-list="neetcode250">NeetCode 250</button>
+      <button data-list="all">All</button>
+    </div>
+    <div class="diffs" id="diffs" role="group" aria-label="Difficulty">
+      <button class="chip e" data-d="Easy" aria-pressed="true">Easy</button>
+      <button class="chip m" data-d="Medium" aria-pressed="true">Medium</button>
+      <button class="chip h" data-d="Hard" aria-pressed="true">Hard</button>
+    </div>
+    <div class="tools">
+      <button class="icon" id="theme" aria-label="Toggle light or dark theme" title="Theme">◐</button>
+      <a class="icon" id="gh" href="__REPO_URL__" target="_blank" rel="noopener" aria-label="Source on GitHub" title="Source on GitHub">
+        <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+    </div>
+  </header>
+  <div class="main">
+    <aside class="side" id="side">
+      <div class="side-head"><span><b id="cnt-done">0</b> / <b id="cnt-total">0</b> solved</span><span id="cnt-shown"></span></div>
+      <div class="progress"><i id="bar"></i></div>
+      <nav class="list" id="list" aria-label="Problems"></nav>
+      <div class="side-foot"><button id="export">Export progress</button><button id="import">Import progress</button><button id="reset">Reset</button><input id="import-file" type="file" accept="application/json" hidden></div>
+    </aside>
+    <section class="detail" id="detail"></section>
+  </div>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>
+(function(){
+  const DATA = JSON.parse(document.getElementById('data').textContent);
+  const META = __META__;
+  const LISTKEY = {blind75:'Blind 75', neetcode150:'NeetCode 150', neetcode250:'NeetCode 250'};
+  const $ = s => document.querySelector(s);
+  const list = $('#list'), detail = $('#detail'), q = $('#q');
+  const store = { get(k,d){ try{ const v=localStorage.getItem('ncdesk.'+k); return v==null?d:JSON.parse(v);}catch(e){return d;} },
+                  set(k,v){ try{ localStorage.setItem('ncdesk.'+k, JSON.stringify(v)); }catch(e){} } };
+  let state = { list: store.get('list','neetcode150'), diffs: store.get('diffs',['Easy','Medium','Hard']), q:'', cur: null,
+                done: store.get('done',{}), tab: 0 };
+  const byId = {}; DATA.forEach(p => byId[p.id] = p);
+  const PREMIUM = new Set(META.premium);
+
+  // ---------- theme ----------
+  const root = document.documentElement;
+  const savedTheme = store.get('theme', null);
+  if(savedTheme) root.setAttribute('data-theme', savedTheme);
+  $('#theme').addEventListener('click', () => {
+    const dark = root.getAttribute('data-theme')==='dark' || (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    const next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next); store.set('theme', next);
+  });
+
+  // ---------- helpers ----------
+  const esc = s => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function md(s){
+    if(!s) return '';
+    s = s.replace(/<a\s+href="([^"]+)"[^>]*>(.*?)<\/a>/g, '[$2]($1)');
+    s = esc(s);
+    s = s.replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/`([^`]+)`/g,'<code>$1</code>')
+         .replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>')
+         .replace(/\$([^$]+)\$/g,'<code>$1</code>');
+    return s.split(/\n\s*\n/).map(p => '<p>'+p.replace(/  \n|\n/g,'<br>')+'</p>').join('');
+  }
+  const inline = s => md(s).replace(/^<p>|<\/p>$/g,'');
+  function complexity(c){
+    if(!c) return '';
+    let out = '';
+    for(const raw of c.split('\n')){
+      const l = raw.trim(); if(!l) continue;
+      const m = l.match(/^-\s*(Time|Space) complexity:\s*(.*)$/i);
+      if(m) out += `<span><span class="lbl">${m[1]}</span> ${inline(m[2])}</span>`;
+      else out += `<span class="where">${inline(l.replace(/^>\s*/,''))}</span>`;
+    }
+    return out;
+  }
+  const inList = p => state.list==='all' || p.lists.includes(LISTKEY[state.list]);
+  function matches(p){
+    if(!inList(p) || !state.diffs.includes(p.difficulty)) return false;
+    if(!state.q) return true;
+    const hay = (p.id+' '+p.title+' '+p.pattern).toLowerCase();
+    return state.q.toLowerCase().split(/\s+/).filter(Boolean).every(t => hay.includes(t));
+  }
+
+  // ---------- sidebar ----------
+  let visible = [];
+  function renderList(){
+    visible = DATA.filter(matches);
+    const groups = new Map();
+    visible.forEach(p => { if(!groups.has(p.pattern)) groups.set(p.pattern,[]); groups.get(p.pattern).push(p); });
+    let html = '';
+    for(const [g,ps] of groups){
+      const d = ps.filter(p=>state.done[p.id]).length;
+      html += `<div class="grp"><span>${esc(g)}</span><small>${d}/${ps.length}</small></div>`;
+      for(const p of ps){
+        html += `<button class="row${state.done[p.id]?' done':''}" data-id="${p.id}" aria-current="${state.cur===p.id}">
+          <input type="checkbox" ${state.done[p.id]?'checked':''} aria-label="Mark ${esc(p.title)} solved" data-done="${p.id}">
+          <span class="num">${p.id}</span><span class="t">${esc(p.title)}</span><span class="d ${p.difficulty}" title="${p.difficulty}"></span></button>`;
+      }
+    }
+    list.innerHTML = html || '<div class="empty">No problems match. Try a shorter search or widen the list filter.</div>';
+    const scope = DATA.filter(inList);
+    const done = scope.filter(p=>state.done[p.id]).length;
+    $('#cnt-done').textContent = done; $('#cnt-total').textContent = scope.length;
+    $('#cnt-shown').textContent = visible.length===scope.length ? '' : visible.length+' shown';
+    $('#bar').style.width = (scope.length? 100*done/scope.length : 0)+'%';
+    $('#brand-sub').textContent = DATA.length+' problems';
+    const cur = list.querySelector('[aria-current="true"]');
+    if(cur) cur.scrollIntoView({block:'nearest'});
+  }
+
+  // ---------- detail ----------
+  function renderDetail(){
+    const p = byId[state.cur];
+    if(!p){ detail.innerHTML = '<div class="wrap"><div class="empty">Pick a problem on the left.</div></div>'; return; }
+    const apps = p.approaches.slice();
+    if(p.repo_cpp) apps.push({title:'Repo solution file', cpp:p.repo_cpp, complexity:'', intuition:'The standalone file NeetCode keeps for this problem in its GitHub repo. Often a single clean version of the best approach.'});
+    const tab = Math.min(state.tab, apps.length);
+    const shown = tab===apps.length ? apps : [apps[tab]];
+    const premium = PREMIUM.has(p.id) ? `<div class="note">This one is LeetCode Premium. NeetCode hosts a free version at the NeetCode link.</div>` : '';
+    detail.innerHTML = `<div class="wrap">
+      <div class="hd">
+        <div>
+          <h1><span class="n">${p.id}.</span>${esc(p.title)}</h1>
+          <div class="meta"><span class="pill ${p.difficulty}">${p.difficulty}</span><span>${esc(p.pattern)}</span>
+            ${p.lists.map(l=>`<span class="tag">${l}</span>`).join('')}</div>
+        </div>
+        <div class="links">
+          <a class="btn primary" href="${p.leetcode}" target="_blank" rel="noopener">Open on LeetCode ↗</a>
+          <a class="btn" href="${p.neetcode}" target="_blank" rel="noopener">NeetCode</a>
+          ${p.video?`<a class="btn" href="${p.video}" target="_blank" rel="noopener">Video</a>`:''}
+          <button class="btn done-btn" id="done-btn" aria-pressed="${!!state.done[p.id]}">${state.done[p.id]?'✓ Solved':'Mark solved'}</button>
+        </div>
+      </div>
+      ${premium}
+      <div class="tabs" role="tablist">
+        ${apps.map((a,i)=>`<button role="tab" aria-selected="${tab===i}" data-tab="${i}"><span class="k">${i+1}</span>${esc(a.title)}</button>`).join('')}
+        ${apps.length>1?`<button class="all" role="tab" aria-selected="${tab===apps.length}" data-tab="${apps.length}">Show all</button>`:''}
+      </div>
+      ${shown.map(a=>`<article class="appr">
+        ${shown.length>1?`<h2>${apps.indexOf(a)+1}. ${esc(a.title)}</h2>`:''}
+        <div class="intu">${md(a.intuition)}</div>
+        <div class="codebox"><button class="copy" data-copy="${apps.indexOf(a)}">Copy</button><pre><code class="language-cpp">${a.cpp?esc(a.cpp):'// NeetCode has no C++ version of this approach yet.'}</code></pre></div>
+        ${a.complexity?`<div class="cx">${complexity(a.complexity)}</div>`:''}
+      </article>`).join('')}
+      <div class="hint"><span><kbd>/</kbd> search</span><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>Enter</kbd> open on LeetCode</span><span><kbd>1</kbd>–<kbd>9</kbd> pick approach</span><span><kbd>a</kbd> show all</span><span><kbd>x</kbd> toggle solved</span></div>
+      <p class="credit">Problem list and solutions are from <a href="https://neetcode.io" target="_blank" rel="noopener">NeetCode</a> and its MIT-licensed <a href="https://github.com/neetcode-gh/leetcode" target="_blank" rel="noopener">GitHub repo</a>. Not affiliated with NeetCode or LeetCode. Data updated ${META.updated}. Progress is saved in this browser only; use Export to move it.</p>
+    </div>`;
+    if(window.hljs) detail.querySelectorAll('pre code').forEach(el => { try{ hljs.highlightElement(el); }catch(e){} });
+    detail.scrollTop = 0;
+    detail._apps = apps;
+  }
+
+  function select(id, keepTab){
+    state.cur = id; if(!keepTab) state.tab = 0;
+    store.set('cur', id);
+    try{ history.replaceState(null,'','#'+id); }catch(e){}
+    renderList(); renderDetail();
+  }
+  function toggleDone(id){
+    if(state.done[id]) delete state.done[id]; else state.done[id]=true;
+    store.set('done', state.done); renderList(); if(state.cur===id) renderDetail();
+  }
+
+  // ---------- progress export / import ----------
+  $('#export').addEventListener('click', () => {
+    const blob = new Blob([JSON.stringify({app:'neetcode-cpp-desk', exported:new Date().toISOString(), done:Object.keys(state.done).map(Number)}, null, 1)], {type:'application/json'});
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'neetcode-progress.json'; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(()=>URL.revokeObjectURL(a.href), 2000);
+  });
+  $('#import').addEventListener('click', () => $('#import-file').click());
+  $('#import-file').addEventListener('change', e => {
+    const f = e.target.files[0]; if(!f) return;
+    f.text().then(t => {
+      const j = JSON.parse(t); const ids = Array.isArray(j) ? j : j.done;
+      if(!Array.isArray(ids)) throw new Error('bad');
+      ids.forEach(id => { if(byId[id]) state.done[id] = true; });
+      store.set('done', state.done); renderList(); renderDetail();
+    }).catch(() => { $('#cnt-shown').textContent = 'That file is not a progress export.'; });
+    e.target.value = '';
+  });
+  $('#reset').addEventListener('click', () => {
+    if(!Object.keys(state.done).length) return;
+    if(!confirm('Clear all solved marks in this browser? Export first if you want to keep them.')) return;
+    state.done = {}; store.set('done', state.done); renderList(); renderDetail();
+  });
+
+  // ---------- events ----------
+  list.addEventListener('click', e => {
+    const cb = e.target.closest('[data-done]');
+    if(cb){ e.stopPropagation(); toggleDone(+cb.dataset.done); return; }
+    const row = e.target.closest('.row'); if(row) select(+row.dataset.id);
+    if(window.innerWidth<=900) $('#side').classList.remove('open');
+  });
+  detail.addEventListener('click', e => {
+    const t = e.target.closest('[data-tab]'); if(t){ state.tab = +t.dataset.tab; renderDetail(); return; }
+    const c = e.target.closest('[data-copy]');
+    if(c){ const a = detail._apps[+c.dataset.copy]; navigator.clipboard.writeText(a.cpp||'').then(()=>{ c.textContent='Copied'; c.classList.add('ok'); setTimeout(()=>{c.textContent='Copy'; c.classList.remove('ok');},1200); }); return; }
+    if(e.target.id==='done-btn') toggleDone(state.cur);
+  });
+  $('#lists').addEventListener('click', e => {
+    const b = e.target.closest('[data-list]'); if(!b) return;
+    state.list = b.dataset.list; store.set('list', state.list);
+    $('#lists').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed', x===b));
+    renderList();
+  });
+  $('#diffs').addEventListener('click', e => {
+    const b = e.target.closest('[data-d]'); if(!b) return;
+    const d = b.dataset.d, on = !state.diffs.includes(d);
+    state.diffs = on ? state.diffs.concat(d) : state.diffs.filter(x=>x!==d);
+    b.setAttribute('aria-pressed', on); store.set('diffs', state.diffs); renderList();
+  });
+  q.addEventListener('input', () => { state.q = q.value.trim(); renderList(); });
+  $('#menu').addEventListener('click', () => { document.documentElement.style.setProperty('--top-h', $('#top').offsetHeight+'px'); $('#side').classList.toggle('open'); });
+  document.addEventListener('keydown', e => {
+    const typing = e.target===q || e.target.tagName==='INPUT';
+    if(e.key==='/' && !typing){ e.preventDefault(); q.focus(); q.select(); return; }
+    if(typing && e.key==='Escape'){ q.blur(); return; }
+    if(typing && !['ArrowDown','ArrowUp','Enter'].includes(e.key)) return;
+    if(e.metaKey||e.ctrlKey||e.altKey) return;
+    const i = visible.findIndex(p=>p.id===state.cur);
+    if(e.key==='ArrowDown'||(!typing&&e.key==='j')){ e.preventDefault(); if(visible.length) select(visible[Math.min(visible.length-1, i+1)].id); }
+    else if(e.key==='ArrowUp'||(!typing&&e.key==='k')){ e.preventDefault(); if(visible.length) select(visible[Math.max(0, i-1)].id); }
+    else if(e.key==='Enter'){ if(typing && i<0 && visible.length){ select(visible[0].id); } else if(byId[state.cur]) window.open(byId[state.cur].leetcode,'_blank','noopener'); }
+    else if(!typing && e.key==='x' && state.cur){ toggleDone(state.cur); }
+    else if(!typing && /^[1-9]$/.test(e.key) && detail._apps){ const n=+e.key-1; if(n<detail._apps.length){ state.tab=n; renderDetail(); } }
+    else if(!typing && e.key==='a' && detail._apps){ state.tab=detail._apps.length; renderDetail(); }
+  });
+  window.addEventListener('hashchange', () => { const id = parseInt(location.hash.slice(1),10); if(byId[id] && id!==state.cur) select(id); });
+
+  // ---------- init ----------
+  $('#lists').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed', x.dataset.list===state.list));
+  $('#diffs').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed', state.diffs.includes(x.dataset.d)));
+  const fromHash = parseInt(location.hash.slice(1),10);
+  let start = byId[fromHash] ? fromHash : store.get('cur', null);
+  if(!byId[start]){ const first = DATA.find(matches); start = first ? first.id : DATA[0].id; }
+  if(!inList(byId[start])){ state.list='all'; $('#lists').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed', x.dataset.list==='all')); }
+  select(start);
+})();
+</script>
+</body>
+</html>
