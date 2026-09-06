@@ -2,7 +2,7 @@
 
 One page for working through the NeetCode 150 / 250 in C++. Search a problem, open it on LeetCode, and see every approach NeetCode teaches, from brute force to optimal, with the C++ code, a short intuition, and the time and space complexity. Copy a solution with one click. Tick problems off as you go.
 
-**Live site:** https://tusharmurali.github.io/neetcode-cpp/
+**Live site:** https://tusharmurali.com/neetcode-cpp/
 
 
 
