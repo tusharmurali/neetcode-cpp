@@ -32,6 +32,9 @@ This approach is beginner-friendly because it uses direct operations on strings 
 class Solution {
 public:
     int reverse(int x) {
+        if (x == INT_MIN) {
+            return 0;
+        }
         int org = x;
         x = abs(x);
         string strX = to_string(x);
@@ -71,6 +74,9 @@ Recursion naturally fits this process because each step reduces the problem size
 class Solution {
 public:
     int reverse(int x) {
+        if (x == INT_MIN) {
+            return 0;
+        }
         long res = rec(abs(x), 0) * (x < 0 ? -1 : 1);
         if (res < INT_MIN || res > INT_MAX) {
             return 0;

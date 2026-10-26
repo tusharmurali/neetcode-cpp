@@ -100,14 +100,15 @@ public:
         for (const auto& query : queries) {
             string src = query[0];
             string target = query[1];
-            res.push_back(dfs(src, target, adj, unordered_set<string>()));
+            unordered_set<string> visited;
+            res.push_back(dfs(src, target, adj, visited));
         }
 
         return res;
     }
 
 private:
-    double dfs(const string& src, const string& target, unordered_map<string, vector<pair<string, double>>>& adj, unordered_set<string> visited) {
+    double dfs(const string& src, const string& target, unordered_map<string, vector<pair<string, double>>>& adj, unordered_set<string>& visited) {
         if (!adj.count(src) || !adj.count(target)) {
             return -1.0;
         }
@@ -133,10 +134,10 @@ private:
 
 **Complexity**
 
-- Time complexity: $O(m * n)$
-- Space complexity: $O(n + m)$
+- Time complexity: $O(e + m * (n + e))$
+- Space complexity: $O(n + e + m)$
 
-> Where $n$ is the number of unique strings and $m$ is the number of queries.
+> Where $n$ is the number of unique strings, $e$ is the number of equations, and $m$ is the number of queries.
 
 ## 3. Disjoint Set Union
 

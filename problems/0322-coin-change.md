@@ -175,9 +175,10 @@ public:
                 int cur = q.front();
                 q.pop();
                 for (int coin : coins) {
+                    if (coin > amount - cur) continue;
                     int nxt = cur + coin;
                     if (nxt == amount) return res;
-                    if (nxt > amount || seen[nxt]) continue;
+                    if (seen[nxt]) continue;
                     seen[nxt] = true;
                     q.push(nxt);
                 }

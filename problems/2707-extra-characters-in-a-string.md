@@ -9,7 +9,7 @@
 
 [← Back to index](../INDEX.md)
 
-## 1. Recursion
+## 1. Recursion (May Exceed Time Limit)
 
 At each position in the string, we have two choices: either skip the current character (counting it as extra), or try to match a dictionary word starting at this position. If a word matches, we can jump past it without counting those characters as extra.
 

@@ -172,8 +172,8 @@ The key benefit is that the `n`-node gap tells us where to delete without storin
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        ListNode* dummy = new ListNode(0, head);
-        ListNode* left = dummy;
+        ListNode dummy(0, head);
+        ListNode* left = &dummy;
         ListNode* right = head;
 
         while (n > 0) {
@@ -187,7 +187,7 @@ public:
         }
 
         left->next = left->next->next;
-        return dummy->next;
+        return dummy.next;
     }
 };
 ```

@@ -10,7 +10,7 @@
 
 [← Back to index](../INDEX.md)
 
-## 1. Brute Force (Backtracking)
+## 1. Brute Force (Backtracking) (Time Limit Exceeded)
 
 For each cell, we try to see **where water can flow** if it starts there.
 

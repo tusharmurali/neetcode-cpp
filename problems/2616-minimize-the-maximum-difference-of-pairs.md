@@ -9,7 +9,7 @@
 
 [← Back to index](../INDEX.md)
 
-## 1. Greedy + Dynamic Programming (Top-Down)
+## 1. Greedy + Dynamic Programming (Top-Down) (May Exceed Time Limit)
 
 To minimize the maximum difference among `p` pairs, we first sort the array. After sorting, optimal pairs are always adjacent elements because non-adjacent pairs would have larger differences. The problem becomes selecting `p` non-overlapping adjacent pairs to minimize the largest difference.
 

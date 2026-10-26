@@ -6,11 +6,11 @@
 - **LeetCode:** <https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/>  
 - **NeetCode:** <https://neetcode.io/problems/binary-tree-from-preorder-and-inorder-traversal>  
 - **Video:** <https://www.youtube.com/watch?v=ihj4IQGZ2zc>  
-- **Video approach:** 1. Depth First Search  
+- **Video approach:** 1. Depth First Search (May Exceed Time Limit)  
 
 [← Back to index](../INDEX.md)
 
-## 1. Depth First Search ▶ video
+## 1. Depth First Search (May Exceed Time Limit) ▶ video
 
 The first element of the `preorder` array is always the root. We can find this root's position in the `inorder` array, which divides `inorder` into left and right subtrees. Elements before the root in `inorder` belong to the left subtree, and elements after belong to the right subtree. The same split applies to `preorder`. We recursively build left and right subtrees using the corresponding portions of both arrays.
 
@@ -50,7 +50,9 @@ public:
 **Complexity**
 
 - Time complexity: $O(n ^ 2)$
-- Space complexity: $O(n)$
+- Space complexity:
+    - $O(n ^ 2)$ for Python and other implementations that copy subarrays. On a skewed tree, recursive calls retain slices of sizes $n - 1, n - 2, \ldots, 1$.
+    - $O(n)$ for implementations that use slice views without copying, such as Go.
 
 ## 2. Hash Map + Depth First Search
 

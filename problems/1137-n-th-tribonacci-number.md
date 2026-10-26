@@ -10,7 +10,7 @@
 
 [← Back to index](../INDEX.md)
 
-## 1. Recursion
+## 1. Recursion (May Exceed Time Limit)
 
 The tribonacci sequence is defined similarly to Fibonacci, but instead of summing the previous two numbers, we sum the previous three. The base cases are T(0) = 0, T(1) = 1, and T(2) = 1. For any n >= 3, we compute T(n) = T(n-1) + T(n-2) + T(n-3).
 

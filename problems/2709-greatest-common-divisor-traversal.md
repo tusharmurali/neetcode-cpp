@@ -53,8 +53,11 @@ private:
 
 **Complexity**
 
-- Time complexity: $O(n ^ 2 \log n)$
+- Time complexity: $O(n ^ 2 \log m)$
+    - Each of the $O(n ^ 2)$ pairs requires an $O(\log m)$ GCD computation.
 - Space complexity: $O(n ^ 2)$
+
+> Where $n$ is the size of the array $nums$ and $m$ is the maximum value in the array.
 
 ## 2. Disjoint Set Union ▶ video
 

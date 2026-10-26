@@ -10,7 +10,7 @@
 
 [← Back to index](../INDEX.md)
 
-## 1. Brute Force
+## 1. Brute Force (May Exceed Time Limit)
 
 A consecutive sequence grows by checking whether the next number (`num + 1`, `num + 2`, …) exists in the set.
 The brute-force approach simply starts from every number in the list and tries to extend a consecutive streak as far as possible.

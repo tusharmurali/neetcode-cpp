@@ -10,7 +10,7 @@
 
 [← Back to index](../INDEX.md)
 
-## 1. Brute Force (Backtracking)
+## 1. Brute Force (Backtracking) (May Exceed Time Limit)
 
 For every empty cell (`INF`), we try to **find the shortest path to any treasure (`0`)** by exploring all 4 directions using backtracking DFS.
 

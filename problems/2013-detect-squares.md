@@ -38,7 +38,7 @@ private:
     unordered_map<long, int> ptsCount;
     vector<vector<int>> pts;
 
-    long getKey(int x, int y) {
+    long getKey(int x, int y) const {
         return (static_cast<long>(x) << 32) | static_cast<long>(y);
     }
 
@@ -52,14 +52,18 @@ public:
         pts.push_back(point);
     }
 
-    int count(vector<int> point) {
+    int count(vector<int> point) const {
         int res = 0;
         int px = point[0], py = point[1];
 
         for (const auto& pt : pts) {
             int x = pt[0], y = pt[1];
             if (abs(py - y) != abs(px - x) || x == px || y == py) continue;
-            res += ptsCount[getKey(x, py)] * ptsCount[getKey(px, y)];
+            auto p1 = ptsCount.find(getKey(x, py));
+            auto p2 = ptsCount.find(getKey(px, y));
+            if (p1 != ptsCount.end() && p2 != ptsCount.end()) {
+                res += p1->second * p2->second;
+            }
         }
         return res;
     }
@@ -109,17 +113,28 @@ public:
         ptsCount[point[0]][point[1]]++;
     }
 
-    int count(vector<int> point) {
+    int count(vector<int> point) const {
         int res = 0;
         int x1 = point[0], y1 = point[1];
 
-        for (auto &[y2, cnt] : ptsCount[x1]) {
+        auto column = ptsCount.find(x1);
+        if (column == ptsCount.end()) return 0;
+
+        for (const auto& [y2, cnt] : column->second) {
             int side = y2 - y1;
             if (side == 0) continue;
 
             int x3 = x1 + side, x4 = x1 - side;
-            res += cnt * ptsCount[x3][y1] * ptsCount[x3][y2];
-            res += cnt * ptsCount[x4][y1] * ptsCount[x4][y2];
+            for (int x : {x3, x4}) {
+                auto other = ptsCount.find(x);
+                if (other == ptsCount.end()) continue;
+
+                const auto& counts = other->second;
+                auto p1 = counts.find(y1), p2 = counts.find(y2);
+                if (p1 != counts.end() && p2 != counts.end()) {
+                    res += cnt * p1->second * p2->second;
+                }
+            }
         }
 
         return res;

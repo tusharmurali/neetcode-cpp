@@ -113,7 +113,6 @@ Hash sets have some overhead for insertions and lookups. Since the board size is
 ```cpp
 class Solution {
 public:
-    vector<string> board;
     vector<bool> col, posDiag, negDiag;
 
     int totalNQueens(int n) {
@@ -162,7 +161,6 @@ Bit manipulation offers the most compact representation for tracking occupied co
 class Solution {
 public:
     int col = 0, posDiag = 0, negDiag = 0;
-    vector<string> board;
 
     int totalNQueens(int n) {
         int res = 0;

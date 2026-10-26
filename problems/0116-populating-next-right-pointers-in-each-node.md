@@ -68,7 +68,9 @@ public:
 **Complexity**
 
 - Time complexity: $O(n)$
-- Space complexity: $O(\log n)$
+- Space complexity: $O(n)$
+
+> Where $n$ is the number of nodes in the tree. The queue can hold the entire leaf level of a perfect binary tree, which contains $(n + 1) / 2$ nodes.
 
 ## 2. Depth First Search
 
