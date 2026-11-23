@@ -164,7 +164,7 @@ public:
         vector<int> res;
         vector<pair<int, int>> directions = {{0, 1}, {1, 0},
                                              {0, -1}, {-1, 0}};
-        vector<int> steps = {matrix[0].size(), matrix.size() - 1};
+        vector<int> steps = {(int)matrix[0].size(), (int)matrix.size() - 1};
 
         int r = 0, c = -1, d = 0;
         while (steps[d % 2]) {

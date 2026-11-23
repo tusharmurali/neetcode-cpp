@@ -21,13 +21,13 @@ class Solution {
 public:
     static const int GRAY = 1;
     static const int BLACK = 2;
-    
+
     bool leadsToDestination(int n, vector<vector<int>>& edges, int source, int destination) {
         vector<vector<int>> graph = buildDigraph(n, edges);
         vector<int> states(n, 0);
         return leadsToDest(graph, source, destination, states);
     }
-    
+
 private:
     bool leadsToDest(vector<vector<int>>& graph, int node, int dest, vector<int>& states) {
         if (states[node] != 0) {
@@ -45,7 +45,7 @@ private:
         states[node] = BLACK;
         return true;
     }
-    
+
     vector<vector<int>> buildDigraph(int n, vector<vector<int>>& edges) {
         vector<vector<int>> graph(n);
         for (auto& edge : edges) {

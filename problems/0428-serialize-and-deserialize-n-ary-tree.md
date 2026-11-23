@@ -15,19 +15,30 @@ One way to serialize an n-ary tree is to record each node along with a unique id
 ```cpp
 class Codec {
 public:
+    // Each number is stored in two chars (16 bits), since values and ids can exceed one char.
+    void putNum(string& s, int x) {
+        s += (char)(x >> 8);
+        s += (char)(x & 255);
+    }
+
+    int getNum(const string& s, int i) {
+        return ((unsigned char)s[i] << 8) | (unsigned char)s[i + 1];
+    }
+
     string serialize(Node* root) {
         string result;
         int identity = 1;
-        serializeHelper(root, result, identity, -1);
+        serializeHelper(root, result, identity, 0);
         return result;
     }
 
     void serializeHelper(Node* root, string& result, int& identity, int parentId) {
         if (!root) return;
 
-        result += (char)(identity + '0');
-        result += (char)(root->val + '0');
-        result += (parentId == -1) ? 'N' : (char)(parentId + '0');
+        // Own identity, actual value, parent's identity (0 means no parent)
+        putNum(result, identity);
+        putNum(result, root->val);
+        putNum(result, parentId);
 
         int currentId = identity;
         for (Node* child : root->children) {
@@ -41,19 +52,19 @@ public:
 
         unordered_map<int, Node*> nodes;
 
-        for (int i = 0; i < data.size(); i += 3) {
-            int identity = data[i] - '0';
-            int orgValue = data[i + 1] - '0';
+        for (int i = 0; i < data.size(); i += 6) {
+            int identity = getNum(data, i);
+            int orgValue = getNum(data, i + 2);
             nodes[identity] = new Node(orgValue, vector<Node*>());
         }
 
-        for (int i = 3; i < data.size(); i += 3) {
-            int identity = data[i] - '0';
-            int parentId = data[i + 2] - '0';
+        for (int i = 6; i < data.size(); i += 6) {
+            int identity = getNum(data, i);
+            int parentId = getNum(data, i + 4);
             nodes[parentId]->children.push_back(nodes[identity]);
         }
 
-        return nodes[data[0] - '0'];
+        return nodes[getNum(data, 0)];
     }
 };
 ```
@@ -79,6 +90,16 @@ Instead of storing parent IDs, we can store each node's value followed by its nu
 ```cpp
 class Codec {
 public:
+    // Each number is stored in two chars (16 bits), since values can exceed one char.
+    void putNum(string& s, int x) {
+        s += (char)(x >> 8);
+        s += (char)(x & 255);
+    }
+
+    int getNum(const string& s, int i) {
+        return ((unsigned char)s[i] << 8) | (unsigned char)s[i + 1];
+    }
+
     string serialize(Node* root) {
         string result;
         serializeHelper(root, result);
@@ -88,8 +109,8 @@ public:
     void serializeHelper(Node* root, string& result) {
         if (!root) return;
 
-        result += (char)(root->val + '0');
-        result += (char)(root->children.size() + '0');
+        putNum(result, root->val);
+        putNum(result, root->children.size());
 
         for (Node* child : root->children) {
             serializeHelper(child, result);
@@ -105,11 +126,10 @@ public:
     Node* deserializeHelper(string& data, int& index) {
         if (index == data.size()) return nullptr;
 
-        Node* node = new Node(data[index] - '0', vector<Node*>());
-        index++;
-        int numChildren = data[index] - '0';
+        Node* node = new Node(getNum(data, index), vector<Node*>());
+        int numChildren = getNum(data, index + 2);
+        index += 4;
         for (int i = 0; i < numChildren; i++) {
-            index++;
             node->children.push_back(deserializeHelper(data, index));
         }
 
@@ -139,6 +159,18 @@ Another approach uses a sentinel character (like '#') to mark the end of a node'
 ```cpp
 class Codec {
 public:
+    // Each number is stored in two chars (16 bits); END marks the end of a node's children.
+    static const int END = 65535;
+
+    void putNum(string& s, int x) {
+        s += (char)(x >> 8);
+        s += (char)(x & 255);
+    }
+
+    int getNum(const string& s, int i) {
+        return ((unsigned char)s[i] << 8) | (unsigned char)s[i + 1];
+    }
+
     string serialize(Node* root) {
         string result;
         serializeHelper(root, result);
@@ -148,13 +180,13 @@ public:
     void serializeHelper(Node* root, string& result) {
         if (!root) return;
 
-        result += (char)(root->val + '0');
+        putNum(result, root->val);
 
         for (Node* child : root->children) {
             serializeHelper(child, result);
         }
 
-        result += '#';
+        putNum(result, END);
     }
 
     Node* deserialize(string data) {
@@ -166,13 +198,13 @@ public:
     Node* deserializeHelper(string& data, int& index) {
         if (index == data.size()) return nullptr;
 
-        Node* node = new Node(data[index] - '0', vector<Node*>());
-        index++;
-        while (data[index] != '#') {
+        Node* node = new Node(getNum(data, index), vector<Node*>());
+        index += 2;
+        while (getNum(data, index) != END) {
             node->children.push_back(deserializeHelper(data, index));
         }
 
-        index++;
+        index += 2;
         return node;
     }
 };

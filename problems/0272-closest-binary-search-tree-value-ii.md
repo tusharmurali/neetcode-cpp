@@ -199,15 +199,15 @@ public:
         dfs(root, queue, k, target);
         return vector<int>(queue.begin(), queue.end());
     }
-    
+
 private:
     void dfs(TreeNode* node, deque<int>& queue, int k, double target) {
         if (node == nullptr) {
             return;
         }
-        
+
         dfs(node->left, queue, k, target);
-        
+
         queue.push_back(node->val);
         if (queue.size() > k) {
             if (abs(target - queue.front()) <= abs(target - queue.back())) {
@@ -217,7 +217,7 @@ private:
                 queue.pop_front();
             }
         }
-        
+
         dfs(node->right, queue, k, target);
     }
 };

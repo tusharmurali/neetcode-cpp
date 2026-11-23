@@ -18,16 +18,16 @@ public:
     int getIndex(ArrayReader &reader) {
         int left = 0;
         int length = reader.length();
-        
+
         while (length > 1) {
             length /= 2;
             int cmp = reader.compareSub(
-                left, 
-                left + length - 1, 
+                left,
+                left + length - 1,
                 left + length,
                 left + length + length - 1
             );
-            
+
             if (cmp == 0) {
                 return left + length + length;
             }
@@ -35,7 +35,7 @@ public:
                 left += length;
             }
         }
-        
+
         return left;
     }
 };

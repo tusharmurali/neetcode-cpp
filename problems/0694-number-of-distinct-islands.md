@@ -13,7 +13,61 @@
 Two islands are considered the same if one can be translated (shifted) to match the other. To identify distinct islands, we need a way to represent each island's shape independent of its position. We do this by normalizing each island: recording each cell's position relative to the island's origin (the first cell we encounter). Then we compare each new island against all previously found unique islands.
 
 ```cpp
-// NeetCode has no C++ version of this approach yet.
+class Solution {
+public:
+    int numDistinctIslands(vector<vector<int>>& grid) {
+        this->grid = &grid;
+        int m = grid.size(), n = grid[0].size();
+        seen.assign(m, vector<bool>(n, false));
+        vector<vector<pair<int, int>>> uniqueIslands;
+
+        // Repeatedly start DFS's as long as there are islands remaining.
+        for (int row = 0; row < m; row++) {
+            for (int col = 0; col < n; col++) {
+                currentIsland.clear();
+                rowOrigin = row;
+                colOrigin = col;
+                dfs(row, col);
+                if (currentIsland.empty() || !isUnique(uniqueIslands)) {
+                    continue;
+                }
+                uniqueIslands.push_back(currentIsland);
+            }
+        }
+        return uniqueIslands.size();
+    }
+
+private:
+    vector<vector<int>>* grid;
+    vector<vector<bool>> seen;
+    vector<pair<int, int>> currentIsland;
+    int rowOrigin, colOrigin;
+
+    bool isUnique(vector<vector<pair<int, int>>>& uniqueIslands) {
+        for (auto& otherIsland : uniqueIslands) {
+            if (otherIsland.size() != currentIsland.size()) {
+                continue;
+            }
+            if (otherIsland == currentIsland) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // Do a DFS to find all cells in the current island.
+    void dfs(int row, int col) {
+        auto& g = *grid;
+        if (row < 0 || col < 0 || row >= g.size() || col >= g[0].size()) return;
+        if (seen[row][col] || g[row][col] == 0) return;
+        seen[row][col] = true;
+        currentIsland.push_back({row - rowOrigin, col - colOrigin});
+        dfs(row + 1, col);
+        dfs(row - 1, col);
+        dfs(row, col + 1);
+        dfs(row, col - 1);
+    }
+};
 ```
 
 **Complexity**
@@ -28,7 +82,48 @@ Two islands are considered the same if one can be translated (shifted) to match 
 Instead of comparing islands one by one, we can use a hash set for O(1) lookup. Each island is represented as a set of relative coordinates (offsets from the origin cell). Since sets of tuples are hashable (using frozenset in Python), we can directly add each island's shape to a set of unique islands. Duplicate shapes will naturally be filtered out.
 
 ```cpp
-// NeetCode has no C++ version of this approach yet.
+class Solution {
+public:
+    int numDistinctIslands(vector<vector<int>>& grid) {
+        this->grid = &grid;
+        int m = grid.size(), n = grid[0].size();
+        seen.assign(m, vector<bool>(n, false));
+        set<set<pair<int, int>>> uniqueIslands;
+
+        // Repeatedly start DFS's as long as there are islands remaining.
+        for (int row = 0; row < m; row++) {
+            for (int col = 0; col < n; col++) {
+                currentIsland.clear();
+                rowOrigin = row;
+                colOrigin = col;
+                dfs(row, col);
+                if (!currentIsland.empty()) {
+                    uniqueIslands.insert(currentIsland);
+                }
+            }
+        }
+        return uniqueIslands.size();
+    }
+
+private:
+    vector<vector<int>>* grid;
+    vector<vector<bool>> seen;
+    set<pair<int, int>> currentIsland;
+    int rowOrigin, colOrigin;
+
+    // Do a DFS to find all cells in the current island.
+    void dfs(int row, int col) {
+        auto& g = *grid;
+        if (row < 0 || col < 0 || row >= g.size() || col >= g[0].size()) return;
+        if (seen[row][col] || g[row][col] == 0) return;
+        seen[row][col] = true;
+        currentIsland.insert({row - rowOrigin, col - colOrigin});
+        dfs(row + 1, col);
+        dfs(row - 1, col);
+        dfs(row, col + 1);
+        dfs(row, col - 1);
+    }
+};
 ```
 
 **Complexity**

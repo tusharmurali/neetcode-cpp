@@ -53,7 +53,37 @@ public:
 
 > Where $n$ is the size of the input array $words$, and $m$ is the maximum length of a string.
 
-## 2. Trie
+## 2. Brute Force (Using Built-In Function)
+
+Most programming languages provide built-in methods to check if a string starts with or ends with another string. We can use these to simplify the prefix and suffix checks.
+
+```cpp
+class Solution {
+public:
+    int countPrefixSuffixPairs(vector<string>& words) {
+        int res = 0;
+        for (int i = 0; i < words.size(); i++) {
+            for (int j = i + 1; j < words.size(); j++) {
+                string w1 = words[i], w2 = words[j];
+                if (w2.rfind(w1, 0) == 0 &&
+                    w2.compare(w2.size() - w1.size(), w1.size(), w1) == 0) {
+                    res++;
+                }
+            }
+        }
+        return res;
+    }
+};
+```
+
+**Complexity**
+
+* Time complexity: $O(n ^ 2 * m)$
+* Space complexity: $O(1)$
+
+> Where $n$ is the size of the input array $words$, and $m$ is the maximum length of a string.
+
+## 3. Trie
 
 We can use a trie where each node is keyed by a pair of characters: one from the prefix and one from the suffix. By processing words in reverse order and storing them in this combined trie, when we look up a word, we find how many previously seen words have it as both prefix and suffix.
 

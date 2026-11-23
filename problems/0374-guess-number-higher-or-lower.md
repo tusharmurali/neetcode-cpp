@@ -18,8 +18,8 @@ The simplest approach is to try every number from `1` to `n` until we find the c
 /**
  * Forward declaration of guess API.
  * @param  num   your guess
- * @return 	     -1 if num is higher than the picked number
- *			      1 if num is lower than the picked number
+ * @return        -1 if num is higher than the picked number
+ *                 1 if num is lower than the picked number
  *               otherwise return 0
  * int guess(int num);
  */
@@ -48,8 +48,8 @@ Since the numbers from `1` to `n` are sorted, we can use binary search to find t
 /**
  * Forward declaration of guess API.
  * @param  num   your guess
- * @return 	     -1 if num is higher than the picked number
- *			      1 if num is lower than the picked number
+ * @return        -1 if num is higher than the picked number
+ *                 1 if num is lower than the picked number
  *               otherwise return 0
  * int guess(int num);
  */
@@ -86,8 +86,8 @@ Ternary search divides the search space into three parts instead of two. We pick
 /**
  * Forward declaration of guess API.
  * @param  num   your guess
- * @return 	     -1 if num is higher than the picked number
- *			      1 if num is lower than the picked number
+ * @return        -1 if num is higher than the picked number
+ *                 1 if num is lower than the picked number
  *               otherwise return 0
  * int guess(int num);
  */

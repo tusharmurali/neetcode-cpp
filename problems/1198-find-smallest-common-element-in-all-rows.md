@@ -61,6 +61,7 @@ Since each row is sorted, we can use binary search to check if an element exists
 
 ```cpp
 class Solution {
+public:
     int smallestCommonElement(vector<vector<int>>& mat) {
         int n = mat.size(), m = mat[0].size();
         for (int j = 0; j < m; ++j) {
@@ -83,6 +84,7 @@ In the solution above, we always search the entire row. We can improve the avera
 
 ```cpp
 class Solution {
+public:
     int smallestCommonElement(vector<vector<int>>& mat) {
         int n = mat.size(), m = mat[0].size();
         vector<int> pos(n);

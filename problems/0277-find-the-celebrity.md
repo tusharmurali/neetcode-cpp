@@ -13,7 +13,34 @@
 A celebrity is someone who is known by everyone but knows nobody. For each person, we can check if they satisfy both conditions: they don't know anyone else, and everyone else knows them. If both conditions hold, that person is the celebrity.
 
 ```cpp
-// NeetCode has no C++ version of this approach yet.
+/* The knows API is defined for you.
+      bool knows(int a, int b); */
+
+class Solution {
+private:
+    int numberOfPeople;
+
+    bool isCelebrity(int i) {
+        for (int j = 0; j < numberOfPeople; j++) {
+            if (i == j) continue; // Don't ask if they know themselves.
+            if (knows(i, j) || !knows(j, i)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+public:
+    int findCelebrity(int n) {
+        numberOfPeople = n;
+        for (int i = 0; i < n; i++) {
+            if (isCelebrity(i)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+};
 ```
 
 **Complexity**
@@ -33,7 +60,7 @@ Each `knows(a, b)` call eliminates one person from being a celebrity. If `a` kno
 class Solution {
 private:
     int n;
-    
+
     bool is_celebrity(int i) {
         for (int j = 0; j < n; j++) {
             if (i == j) continue;
@@ -43,18 +70,18 @@ private:
         }
         return true;
     }
-    
+
 public:
     int findCelebrity(int n) {
         this->n = n;
         int celebrity_candidate = 0;
-        
+
         for (int i = 1; i < n; i++) {
             if (knows(celebrity_candidate, i)) {
                 celebrity_candidate = i;
             }
         }
-        
+
         if (is_celebrity(celebrity_candidate)) {
             return celebrity_candidate;
         }
@@ -77,7 +104,48 @@ We don't know what time and space the `knows(...)` API uses. Because it's not ou
 The logical deduction approach may call `knows(a, b)` multiple times with the same arguments during the verification phase. By caching the results of each call, we can avoid redundant API calls. This is particularly useful when the `knows` function is expensive to evaluate.
 
 ```cpp
-// NeetCode has no C++ version of this approach yet.
+/* The knows API is defined for you.
+      bool knows(int a, int b); */
+
+class Solution {
+private:
+    int numberOfPeople;
+    unordered_map<long long, bool> cache;
+
+    bool cachedKnows(int a, int b) {
+        long long key = (long long)a * numberOfPeople + b;
+        auto it = cache.find(key);
+        if (it == cache.end()) {
+            it = cache.emplace(key, knows(a, b)).first;
+        }
+        return it->second;
+    }
+
+    bool isCelebrity(int i) {
+        for (int j = 0; j < numberOfPeople; j++) {
+            if (i == j) continue; // Don't ask if they know themselves.
+            if (cachedKnows(i, j) || !cachedKnows(j, i)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+public:
+    int findCelebrity(int n) {
+        numberOfPeople = n;
+        int celebrityCandidate = 0;
+        for (int i = 0; i < n; i++) {
+            if (cachedKnows(celebrityCandidate, i)) {
+                celebrityCandidate = i;
+            }
+        }
+        if (isCelebrity(celebrityCandidate)) {
+            return celebrityCandidate;
+        }
+        return -1;
+    }
+};
 ```
 
 **Complexity**

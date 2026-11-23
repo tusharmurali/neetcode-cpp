@@ -17,11 +17,11 @@ class StringIterator {
 public:
     string res;
     int ptr;
-    
+
     StringIterator(string compressedString) {
         res = "";
         ptr = 0;
-        
+
         int i = 0;
         while (i < compressedString.length()) {
             char ch = compressedString[i++];
@@ -30,19 +30,19 @@ public:
                 num = num * 10 + compressedString[i] - '0';
                 i++;
             }
-            
+
             for (int j = 0; j < num; j++)
                 res += ch;
         }
     }
-    
+
     char next() {
         if (!hasNext())
             return ' ';
-        
+
         return res[ptr++];
     }
-    
+
     bool hasNext() {
         return ptr != res.length();
     }
@@ -75,7 +75,7 @@ public:
     int ptr = 0;
     vector<char> chars;
     vector<int> nums;
-    
+
     StringIterator(string compressedString) {
         for (int i = 0; i < compressedString.length(); i++) {
             if (isalpha(compressedString[i])) {
@@ -91,20 +91,20 @@ public:
             }
         }
     }
-    
+
     char next() {
         if (!hasNext())
             return ' ';
-        
+
         nums[ptr]--;
         char res = chars[ptr];
-        
+
         if (nums[ptr] == 0)
             ptr++;
-        
+
         return res;
     }
-    
+
     bool hasNext() {
         return ptr != chars.size();
     }
@@ -133,11 +133,11 @@ public:
     string res;
     int ptr = 0, num = 0;
     char ch = ' ';
-    
+
     StringIterator(string compressedString) {
         res = compressedString;
     }
-    
+
     char next() {
         if (!hasNext())
             return ' ';
@@ -148,11 +148,11 @@ public:
                 num = num * 10 + (res[ptr++] - '0');
             }
         }
-        
+
         num--;
         return ch;
     }
-    
+
     bool hasNext() {
         return ptr != res.length() || num != 0;
     }

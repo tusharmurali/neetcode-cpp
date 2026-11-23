@@ -169,79 +169,79 @@ class MyLinkedList {
         ListNode(int val) : val(val), prev(nullptr), next(nullptr) {}
     };
 public:
-	ListNode* head;
-	ListNode* tail;
+    ListNode* head;
+    ListNode* tail;
 
-	MyLinkedList() {
-		head = new ListNode(0);
-		tail = new ListNode(0);
-		head->next = tail;
-		tail->prev = head;
-	}
+    MyLinkedList() {
+        head = new ListNode(0);
+        tail = new ListNode(0);
+        head->next = tail;
+        tail->prev = head;
+    }
 
-	int get(int index) {
-		ListNode* cur = head->next;
-		while (cur && index > 0) {
-			cur = cur->next;
-			index--;
-		}
-		if (cur && cur != tail && index == 0) {
-			return cur->val;
-		}
-		return -1;
-	}
+    int get(int index) {
+        ListNode* cur = head->next;
+        while (cur && index > 0) {
+            cur = cur->next;
+            index--;
+        }
+        if (cur && cur != tail && index == 0) {
+            return cur->val;
+        }
+        return -1;
+    }
 
-	void addAtHead(int val) {
-		ListNode* node = new ListNode(val);
-		ListNode* next = head->next;
-		ListNode* prev = head;
-		prev->next = node;
-		next->prev = node;
-		node->next = next;
-		node->prev = prev;
-	}
+    void addAtHead(int val) {
+        ListNode* node = new ListNode(val);
+        ListNode* next = head->next;
+        ListNode* prev = head;
+        prev->next = node;
+        next->prev = node;
+        node->next = next;
+        node->prev = prev;
+    }
 
-	void addAtTail(int val) {
-		ListNode* node = new ListNode(val);
-		ListNode* next = tail;
-		ListNode* prev = tail->prev;
-		prev->next = node;
-		next->prev = node;
-		node->next = next;
-		node->prev = prev;
-	}
+    void addAtTail(int val) {
+        ListNode* node = new ListNode(val);
+        ListNode* next = tail;
+        ListNode* prev = tail->prev;
+        prev->next = node;
+        next->prev = node;
+        node->next = next;
+        node->prev = prev;
+    }
 
-	void addAtIndex(int index, int val) {
-		ListNode* cur = head->next;
-		while (cur && index > 0) {
-			cur = cur->next;
-			index--;
-		}
-		if (cur && index == 0) {
-			ListNode* node = new ListNode(val);
-			ListNode* next = cur;
-			ListNode* prev = cur->prev;
-			prev->next = node;
-			next->prev = node;
-			node->next = next;
-			node->prev = prev;
-		}
-	}
+    void addAtIndex(int index, int val) {
+        ListNode* cur = head->next;
+        while (cur && index > 0) {
+            cur = cur->next;
+            index--;
+        }
+        if (cur && index == 0) {
+            ListNode* node = new ListNode(val);
+            ListNode* next = cur;
+            ListNode* prev = cur->prev;
+            prev->next = node;
+            next->prev = node;
+            node->next = next;
+            node->prev = prev;
+        }
+    }
 
-	void deleteAtIndex(int index) {
-		ListNode* cur = head->next;
-		while (cur && index > 0) {
-			cur = cur->next;
-			index--;
-		}
-		if (cur && cur != tail && index == 0) {
-			ListNode* next = cur->next;
-			ListNode* prev = cur->prev;
-			next->prev = prev;
-			prev->next = next;
-			delete cur;
-		}
-	}
+    void deleteAtIndex(int index) {
+        ListNode* cur = head->next;
+        while (cur && index > 0) {
+            cur = cur->next;
+            index--;
+        }
+        if (cur && cur != tail && index == 0) {
+            ListNode* next = cur->next;
+            ListNode* prev = cur->prev;
+            next->prev = prev;
+            prev->next = next;
+            delete cur;
+        }
+    }
 };
 ```
 

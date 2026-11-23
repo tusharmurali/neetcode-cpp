@@ -27,13 +27,13 @@ public:
     int top(int K) {
         vector<int> values;
         values.reserve(scores.size());
-        
+
         for (const auto& pair : scores) {
             values.push_back(pair.second);
         }
-        
+
         sort(values.begin(), values.end(), greater<int>());
-        
+
         int total = 0;
         for (int i = 0; i < K; i++) {
             total += values[i];
@@ -66,30 +66,30 @@ Instead of sorting all `N` scores, we can use a min-heap of size `K` to find the
 class Leaderboard {
 private:
     unordered_map<int, int> scores;
-    
+
 public:
     Leaderboard() {
-        
+
     }
-    
+
     void addScore(int playerId, int score) {
         if (scores.find(playerId) == scores.end()) {
             scores[playerId] = 0;
         }
         scores[playerId] += score;
     }
-    
+
     int top(int K) {
         // By default, priority_queue is max-heap, so we use greater<int> for min-heap
         priority_queue<int, vector<int>, greater<int>> heap;
-        
+
         for (const auto& entry : scores) {
             heap.push(entry.second);
             if (heap.size() > K) {
                 heap.pop();
             }
         }
-        
+
         int total = 0;
         while (!heap.empty()) {
             total += heap.top();
@@ -97,7 +97,7 @@ public:
         }
         return total;
     }
-    
+
     void reset(int playerId) {
         scores[playerId] = 0;
     }

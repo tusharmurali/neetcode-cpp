@@ -39,3 +39,70 @@ public:
 - Space complexity: $O(1)$ constant space
 
 > Where $N$ is the length of the input string `s`.
+
+## 2. Dynamic Programming
+
+For each position `i`, we can compute how many valid substrings end at that position. If the character at position `i` matches the previous character, the count equals the previous count plus `1` (we extend all previous substrings and add one new single-character substring). Otherwise, only the single character itself forms a valid substring. The total is the sum across all positions.
+
+```cpp
+class Solution {
+public:
+    int countLetters(string s) {
+        vector<int> substrings(s.length());
+        int total = 1;
+        substrings[0] = 1;
+
+        for (int i = 1; i < s.length(); i++) {
+            if (s[i] == s[i - 1]) {
+                substrings[i] = substrings[i - 1] + 1;
+            } else {
+                substrings[i] = 1;
+            }
+
+            total += substrings[i];
+        }
+
+        return total;
+    }
+};
+```
+
+**Complexity**
+
+- Time complexity: $O(N)$
+
+- Space complexity: $O(N)$
+
+>  Where $N$ is the length of the input string `s`.
+
+## 3. Dynamic Programming (Optimized)
+
+Since we only need the previous value to compute the current one, we can optimize space by using a single variable instead of an array. This variable (`count`) tracks the count of valid substrings ending at the current position.
+
+```cpp
+class Solution {
+public:
+    int countLetters(string s) {
+        int total = 1, count = 1;
+
+        for (int i = 1; i < s.length(); i++) {
+            if (s[i] == s[i-1]) {
+                count++;
+            } else {
+                count = 1;
+            }
+            total += count;
+        }
+
+        return total;
+    }
+};
+```
+
+**Complexity**
+
+- Time complexity: $O(N)$
+
+- Space complexity: $O(1)$ constant space
+
+>  Where $N$ is the length of the input string `s`.

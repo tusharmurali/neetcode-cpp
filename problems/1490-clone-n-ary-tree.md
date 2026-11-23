@@ -20,15 +20,15 @@ public:
         if (!root) {
             return root;
         }
-        
+
         // First, copy the node itself.
         Node* node_copy = new Node(root->val);
-        
+
         // Then, recursively clone the sub-trees.
         for (Node* child : root->children) {
             node_copy->children.push_back(cloneTree(child));
         }
-        
+
         return node_copy;
     }
 };
@@ -52,16 +52,16 @@ public:
         if (!root) {
             return root;
         }
-        
+
         Node* new_root = new Node(root->val);
         // Starting point to kick off the DFS visits.
         stack<pair<Node*, Node*>> st;
         st.push({root, new_root});
-        
+
         while (!st.empty()) {
             auto [old_node, new_node] = st.top();
             st.pop();
-            
+
             for (Node* child_node : old_node->children) {
                 Node* new_child_node = new Node(child_node->val);
                 // Make a copy for each child node.
@@ -70,7 +70,7 @@ public:
                 st.push({child_node, new_child_node});
             }
         }
-        
+
         return new_root;
     }
 };
@@ -94,17 +94,17 @@ public:
         if (!root) {
             return root;
         }
-        
+
         Node* new_root = new Node(root->val);
         // Starting point to kick off the BFS visits.
         queue<pair<Node*, Node*>> q;
         q.push({root, new_root});
-        
+
         while (!q.empty()) {
             // Get the element from the head of the queue.
             auto [old_node, new_node] = q.front();
             q.pop();
-            
+
             for (Node* child_node : old_node->children) {
                 Node* new_child_node = new Node(child_node->val);
                 // Make a copy for each child node.
@@ -113,7 +113,7 @@ public:
                 q.push({child_node, new_child_node});
             }
         }
-        
+
         return new_root;
     }
 };

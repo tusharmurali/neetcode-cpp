@@ -20,13 +20,13 @@ private:
         unordered_map<string, Dir*> dirs;
         unordered_map<string, string> files;
     };
-    
+
     Dir* root;
-    
+
     vector<string> split(const string& path) {
         vector<string> result;
         string current = "";
-        
+
         for (char c : path) {
             if (c == '/') {
                 if (!current.empty()) {
@@ -40,26 +40,26 @@ private:
         if (!current.empty()) {
             result.push_back(current);
         }
-        
+
         return result;
     }
-    
+
 public:
     FileSystem() {
         root = new Dir();
     }
-    
+
     vector<string> ls(string path) {
         Dir* t = root;
         vector<string> files;
-        
+
         if (path != "/") {
             vector<string> d = split(path);
-            
+
             for (int i = 0; i < d.size() - 1; i++) {
                 t = t->dirs[d[i]];
             }
-            
+
             if (t->files.find(d[d.size() - 1]) != t->files.end()) {
                 files.push_back(d[d.size() - 1]);
                 return files;
@@ -67,23 +67,23 @@ public:
                 t = t->dirs[d[d.size() - 1]];
             }
         }
-        
+
         for (auto& pair : t->dirs) {
             files.push_back(pair.first);
         }
-        
+
         for (auto& pair : t->files) {
             files.push_back(pair.first);
         }
-        
+
         sort(files.begin(), files.end());
         return files;
     }
-    
+
     void mkdir(string path) {
         Dir* t = root;
         vector<string> d = split(path);
-        
+
         for (int i = 0; i < d.size(); i++) {
             if (t->dirs.find(d[i]) == t->dirs.end()) {
                 t->dirs[d[i]] = new Dir();
@@ -91,26 +91,26 @@ public:
             t = t->dirs[d[i]];
         }
     }
-    
+
     void addContentToFile(string filePath, string content) {
         Dir* t = root;
         vector<string> d = split(filePath);
-        
+
         for (int i = 0; i < d.size() - 1; i++) {
             t = t->dirs[d[i]];
         }
-        
+
         t->files[d[d.size() - 1]] += content;
     }
-    
+
     string readContentFromFile(string filePath) {
         Dir* t = root;
         vector<string> d = split(filePath);
-        
+
         for (int i = 0; i < d.size() - 1; i++) {
             t = t->dirs[d[i]];
         }
-        
+
         return t->files[d[d.size() - 1]];
     }
 };

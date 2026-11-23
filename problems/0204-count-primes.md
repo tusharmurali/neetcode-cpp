@@ -64,3 +64,37 @@ public:
 
 - Time complexity: $O(n \log (\log n))$
 - Space complexity: $O(n)$
+
+## 3. Sieve of Eratosthenes (Optimal)
+
+We can optimize the sieve by observing that `2` is the only even prime. Instead of processing all numbers, we start by assuming half the numbers (all odd numbers plus `2`) are prime, then only sieve odd numbers starting from `3`. When marking multiples, we skip even multiples since they are already excluded. This cuts the work roughly in half.
+
+```cpp
+class Solution {
+public:
+    int countPrimes(int n) {
+        if (n < 3) return 0;
+
+        vector<bool> isPrime(n, false);
+        int count = n / 2;
+
+        for (int i = 3; i * i < n; i += 2) {
+            if (!isPrime[i]) {
+                for (int j = i * i; j < n; j += 2 * i) {
+                    if (!isPrime[j]) {
+                        isPrime[j] = true;
+                        count--;
+                    }
+                }
+            }
+        }
+
+        return count;
+    }
+};
+```
+
+**Complexity**
+
+* Time complexity: $O(n \log (\log n))$
+* Space complexity: $O(n)$

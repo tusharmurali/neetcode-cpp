@@ -59,7 +59,7 @@ Instead of tracking heights (distance down to leaves), we can track depths (dist
 ```cpp
 class Solution {
 protected:
-    int diameter = 0;
+    int maxDiameter = 0;
 
     /**
      * return the maximum depth of leaves nodes descending from the given node
@@ -80,16 +80,16 @@ protected:
             }
             // calculate the distance between the two farthest leaves nodes.
             int distance = maxDepth1 + maxDepth2 - 2 * currDepth;
-            this->diameter = max(this->diameter, distance);
+            this->maxDiameter = max(this->maxDiameter, distance);
         }
         return maxDepth1;
     }
 
 public:
     int diameter(Node* root) {
-        this->diameter = 0;
+        this->maxDiameter = 0;
         maxDepth(root, 0);
-        return diameter;
+        return maxDiameter;
     }
 };
 ```

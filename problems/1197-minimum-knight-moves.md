@@ -15,7 +15,48 @@ Finding the minimum moves for a knight is a classic shortest path problem on an 
 Starting from the origin `(0, 0)`, we expand outward level by level. The first time we reach the target coordinates, we've found the minimum number of moves.
 
 ```cpp
-// NeetCode has no C++ version of this approach yet.
+class Solution {
+public:
+    int minKnightMoves(int x, int y) {
+        // the offsets in the eight directions
+        int offsets[8][2] = {{1, 2}, {2, 1}, {2, -1}, {1, -2},
+                             {-1, -2}, {-2, -1}, {-2, 1}, {-1, 2}};
+
+        // - Rather than using the inefficient hash set, we use the bitmap
+        //     otherwise we would run out of time for the test cases.
+        // - We create a bitmap that is sufficient to cover all the possible
+        //     inputs, according to the description of the problem.
+        vector<vector<bool>> visited(607, vector<bool>(607, false));
+
+        queue<pair<int, int>> q;
+        q.push({0, 0});
+        int steps = 0;
+
+        while (!q.empty()) {
+            int currLevelSize = q.size();
+            // iterate through the current level
+            for (int i = 0; i < currLevelSize; i++) {
+                auto [cx, cy] = q.front();
+                q.pop();
+                if (cx == x && cy == y) {
+                    return steps;
+                }
+
+                for (auto& offset : offsets) {
+                    int nx = cx + offset[0], ny = cy + offset[1];
+                    // align the coordinate to the bitmap
+                    if (!visited[nx + 302][ny + 302]) {
+                        visited[nx + 302][ny + 302] = true;
+                        q.push({nx, ny});
+                    }
+                }
+            }
+            // move on to the next level
+            steps++;
+        }
+        return steps;
+    }
+};
 ```
 
 **Complexity**
@@ -32,7 +73,64 @@ Standard BFS explores an ever-growing circle from the origin. Bidirectional BFS 
 This optimization works well because the area explored grows quadratically with distance. By meeting in the middle, each search only needs to cover roughly half the distance, significantly reducing the total positions explored.
 
 ```cpp
-// NeetCode has no C++ version of this approach yet.
+class Solution {
+public:
+    int minKnightMoves(int x, int y) {
+        // the offsets in the eight directions
+        int offsets[8][2] = {{1, 2}, {2, 1}, {2, -1}, {1, -2},
+                             {-1, -2}, {-2, -1}, {-2, 1}, {-1, 2}};
+
+        auto key = [](int a, int b) { return (long long)a * 1000 + b; };
+
+        // data structures needed to move from the origin point
+        queue<array<int, 3>> originQueue;
+        originQueue.push({0, 0, 0});
+        unordered_map<long long, int> originDistance;
+        originDistance[key(0, 0)] = 0;
+
+        // data structures needed to move from the target point
+        queue<array<int, 3>> targetQueue;
+        targetQueue.push({x, y, 0});
+        unordered_map<long long, int> targetDistance;
+        targetDistance[key(x, y)] = 0;
+
+        while (true) {
+            // check if we reach the circle of target
+            auto origin = originQueue.front();
+            originQueue.pop();
+            long long originXY = key(origin[0], origin[1]);
+            if (targetDistance.count(originXY)) {
+                return origin[2] + targetDistance[originXY];
+            }
+
+            // check if we reach the circle of origin
+            auto target = targetQueue.front();
+            targetQueue.pop();
+            long long targetXY = key(target[0], target[1]);
+            if (originDistance.count(targetXY)) {
+                return target[2] + originDistance[targetXY];
+            }
+
+            for (auto& offset : offsets) {
+                // expand the circle of origin
+                int nox = origin[0] + offset[0], noy = origin[1] + offset[1];
+                long long nextOriginXY = key(nox, noy);
+                if (!originDistance.count(nextOriginXY)) {
+                    originQueue.push({nox, noy, origin[2] + 1});
+                    originDistance[nextOriginXY] = origin[2] + 1;
+                }
+
+                // expand the circle of target
+                int ntx = target[0] + offset[0], nty = target[1] + offset[1];
+                long long nextTargetXY = key(ntx, nty);
+                if (!targetDistance.count(nextTargetXY)) {
+                    targetQueue.push({ntx, nty, target[2] + 1});
+                    targetDistance[nextTargetXY] = target[2] + 1;
+                }
+            }
+        }
+    }
+};
 ```
 
 **Complexity**
